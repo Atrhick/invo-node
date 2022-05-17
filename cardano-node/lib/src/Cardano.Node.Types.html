@@ -50,7 +50,7 @@
 </span><span id="line-50"></span><span class="hs-keyword">data</span><span> </span><span id="ConfigError"><span class="annot"><a href="Cardano.Node.Types.html#ConfigError"><span class="hs-identifier hs-var">ConfigError</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-51"></span><span>    </span><span id="ConfigErrorFileNotFound"><span class="annot"><a href="Cardano.Node.Types.html#ConfigErrorFileNotFound"><span class="hs-identifier hs-var">ConfigErrorFileNotFound</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
 </span><span id="line-52"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="ConfigErrorNoEKG"><span class="annot"><a href="Cardano.Node.Types.html#ConfigErrorNoEKG"><span class="hs-identifier hs-var">ConfigErrorNoEKG</span></a></span></span><span>
-</span><span id="line-53"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679624630"><span id="local-6989586621679624632"><span id="local-6989586621679624634"><span class="annot"><span class="annottext">Int -&gt; ConfigError -&gt; ShowS
+</span><span id="line-53"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679624615"><span id="local-6989586621679624617"><span id="local-6989586621679624619"><span class="annot"><span class="annottext">Int -&gt; ConfigError -&gt; ShowS
 [ConfigError] -&gt; ShowS
 ConfigError -&gt; String
 (Int -&gt; ConfigError -&gt; ShowS)
@@ -73,7 +73,7 @@ $cshowsPrec :: Int -&gt; ConfigError -&gt; ShowS
 </span><span id="line-58"></span><span class="hs-keyword">newtype</span><span> </span><span id="ConfigYamlFilePath"><span class="annot"><a href="Cardano.Node.Types.html#ConfigYamlFilePath"><span class="hs-identifier hs-var">ConfigYamlFilePath</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="ConfigYamlFilePath"><span class="annot"><a href="Cardano.Node.Types.html#ConfigYamlFilePath"><span class="hs-identifier hs-var">ConfigYamlFilePath</span></a></span></span><span>
 </span><span id="line-59"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unConfigPath"><span class="annot"><span class="annottext">ConfigYamlFilePath -&gt; String
 </span><a href="Cardano.Node.Types.html#unConfigPath"><span class="hs-identifier hs-var hs-var">unConfigPath</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-60"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624623"><span id="local-6989586621679624625"><span class="annot"><span class="annottext">ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool
+</span><span id="line-60"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624608"><span id="local-6989586621679624610"><span class="annot"><span class="annottext">ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool
 (ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool)
 -&gt; (ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool)
 -&gt; Eq ConfigYamlFilePath
@@ -82,7 +82,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool
 == :: ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool
 $c== :: ConfigYamlFilePath -&gt; ConfigYamlFilePath -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624616"><span id="local-6989586621679624618"><span id="local-6989586621679624620"><span class="annot"><span class="annottext">Int -&gt; ConfigYamlFilePath -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624601"><span id="local-6989586621679624603"><span id="local-6989586621679624605"><span class="annot"><span class="annottext">Int -&gt; ConfigYamlFilePath -&gt; ShowS
 [ConfigYamlFilePath] -&gt; ShowS
 ConfigYamlFilePath -&gt; String
 (Int -&gt; ConfigYamlFilePath -&gt; ShowS)
@@ -102,7 +102,7 @@ $cshowsPrec :: Int -&gt; ConfigYamlFilePath -&gt; ShowS
 </span><span id="line-62"></span><span class="hs-keyword">newtype</span><span> </span><span id="DbFile"><span class="annot"><a href="Cardano.Node.Types.html#DbFile"><span class="hs-identifier hs-var">DbFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="DbFile"><span class="annot"><a href="Cardano.Node.Types.html#DbFile"><span class="hs-identifier hs-var">DbFile</span></a></span></span><span>
 </span><span id="line-63"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unDB"><span class="annot"><span class="annottext">DbFile -&gt; String
 </span><a href="Cardano.Node.Types.html#unDB"><span class="hs-identifier hs-var hs-var">unDB</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-64"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624610"><span id="local-6989586621679624612"><span class="annot"><span class="annottext">DbFile -&gt; DbFile -&gt; Bool
+</span><span id="line-64"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624595"><span id="local-6989586621679624597"><span class="annot"><span class="annottext">DbFile -&gt; DbFile -&gt; Bool
 (DbFile -&gt; DbFile -&gt; Bool)
 -&gt; (DbFile -&gt; DbFile -&gt; Bool) -&gt; Eq DbFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -110,7 +110,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: DbFile -&gt; DbFile -&gt; Bool
 == :: DbFile -&gt; DbFile -&gt; Bool
 $c== :: DbFile -&gt; DbFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624604"><span id="local-6989586621679624606"><span id="local-6989586621679624608"><span class="annot"><span class="annottext">Int -&gt; DbFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624589"><span id="local-6989586621679624591"><span id="local-6989586621679624593"><span class="annot"><span class="annottext">Int -&gt; DbFile -&gt; ShowS
 [DbFile] -&gt; ShowS
 DbFile -&gt; String
 (Int -&gt; DbFile -&gt; ShowS)
@@ -128,7 +128,7 @@ $cshowsPrec :: Int -&gt; DbFile -&gt; ShowS
 </span><span id="line-66"></span><span class="hs-keyword">newtype</span><span> </span><span id="GenesisFile"><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-var">GenesisFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="GenesisFile"><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-var">GenesisFile</span></a></span></span><span>
 </span><span id="line-67"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unGenesisFile"><span class="annot"><span class="annottext">GenesisFile -&gt; String
 </span><a href="Cardano.Node.Types.html#unGenesisFile"><span class="hs-identifier hs-var hs-var">unGenesisFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-68"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624598"><span id="local-6989586621679624600"><span class="annot"><span class="annottext">GenesisFile -&gt; GenesisFile -&gt; Bool
+</span><span id="line-68"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624583"><span id="local-6989586621679624585"><span class="annot"><span class="annottext">GenesisFile -&gt; GenesisFile -&gt; Bool
 (GenesisFile -&gt; GenesisFile -&gt; Bool)
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Bool) -&gt; Eq GenesisFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -136,7 +136,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: GenesisFile -&gt; GenesisFile -&gt; Bool
 == :: GenesisFile -&gt; GenesisFile -&gt; Bool
 $c== :: GenesisFile -&gt; GenesisFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624583"><span id="local-6989586621679624585"><span id="local-6989586621679624587"><span id="local-6989586621679624589"><span id="local-6989586621679624591"><span id="local-6989586621679624593"><span id="local-6989586621679624595"><span class="annot"><span class="annottext">Eq GenesisFile
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624568"><span id="local-6989586621679624570"><span id="local-6989586621679624572"><span id="local-6989586621679624574"><span id="local-6989586621679624576"><span id="local-6989586621679624578"><span id="local-6989586621679624580"><span class="annot"><span class="annottext">Eq GenesisFile
 Eq GenesisFile
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Ordering)
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Bool)
@@ -175,12 +175,12 @@ compare :: GenesisFile -&gt; GenesisFile -&gt; Ordering
 $ccompare :: GenesisFile -&gt; GenesisFile -&gt; Ordering
 $cp1Ord :: Eq GenesisFile
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></a></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
-</span><span id="line-69"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624580"><span class="annot"><span class="annottext">String -&gt; GenesisFile
+</span><span id="line-69"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624565"><span class="annot"><span class="annottext">String -&gt; GenesisFile
 (String -&gt; GenesisFile) -&gt; IsString GenesisFile
 forall a. (String -&gt; a) -&gt; IsString a
 fromString :: String -&gt; GenesisFile
 $cfromString :: String -&gt; GenesisFile
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624573"><span id="local-6989586621679624575"><span id="local-6989586621679624577"><span class="annot"><span class="annottext">Int -&gt; GenesisFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624558"><span id="local-6989586621679624560"><span id="local-6989586621679624562"><span class="annot"><span class="annottext">Int -&gt; GenesisFile -&gt; ShowS
 [GenesisFile] -&gt; ShowS
 GenesisFile -&gt; String
 (Int -&gt; GenesisFile -&gt; ShowS)
@@ -197,10 +197,10 @@ showsPrec :: Int -&gt; GenesisFile -&gt; ShowS
 $cshowsPrec :: Int -&gt; GenesisFile -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-70"></span><span>
-</span><span id="line-71"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679624570"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-72"></span><span>  </span><span id="local-6989586621679624568"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser GenesisFile
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span id="local-6989586621679624565"><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679624565"><span class="hs-identifier hs-var">genFp</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">GenesisFile -&gt; Parser GenesisFile
+</span><span id="line-71"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679624555"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-72"></span><span>  </span><span id="local-6989586621679624553"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser GenesisFile
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span id="local-6989586621679624550"><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621679624550"><span class="hs-identifier hs-var">genFp</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">GenesisFile -&gt; Parser GenesisFile
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">pure</span></a></span><span> </span><span class="annot"><span class="annottext">(GenesisFile -&gt; Parser GenesisFile)
 -&gt; (String -&gt; GenesisFile) -&gt; String -&gt; Parser GenesisFile
@@ -212,9 +212,9 @@ cat b c -&gt; cat a b -&gt; cat a c
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">Text -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.unpack</span></a></span><span> </span><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679624565"><span class="hs-identifier hs-var">genFp</span></a></span><span>
-</span><span id="line-73"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span id="local-6989586621679624562"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679624562"><span class="hs-identifier hs-var">invalid</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Parser GenesisFile
+</span><a href="#local-6989586621679624550"><span class="hs-identifier hs-var">genFp</span></a></span><span>
+</span><span id="line-73"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span id="local-6989586621679624547"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679624547"><span class="hs-identifier hs-var">invalid</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Parser GenesisFile
 forall (m :: * -&gt; *) a. MonadFail m =&gt; String -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">fail</span></a></span><span> </span><span class="annot"><span class="annottext">(String -&gt; Parser GenesisFile) -&gt; String -&gt; Parser GenesisFile
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -228,12 +228,12 @@ forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; String
 forall a b. (Show a, ConvertText String b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679624562"><span class="hs-identifier hs-var">invalid</span></a></span><span>
+</span><a href="#local-6989586621679624547"><span class="hs-identifier hs-var">invalid</span></a></span><span>
 </span><span id="line-75"></span><span>
 </span><span id="line-76"></span><span class="hs-keyword">newtype</span><span> </span><span id="MaxConcurrencyBulkSync"><span class="annot"><a href="Cardano.Node.Types.html#MaxConcurrencyBulkSync"><span class="hs-identifier hs-var">MaxConcurrencyBulkSync</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="MaxConcurrencyBulkSync"><span class="annot"><a href="Cardano.Node.Types.html#MaxConcurrencyBulkSync"><span class="hs-identifier hs-var">MaxConcurrencyBulkSync</span></a></span></span><span>
 </span><span id="line-77"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unMaxConcurrencyBulkSync"><span class="annot"><span class="annottext">MaxConcurrencyBulkSync -&gt; Word
 </span><a href="Cardano.Node.Types.html#unMaxConcurrencyBulkSync"><span class="hs-identifier hs-var hs-var">unMaxConcurrencyBulkSync</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">Word</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-78"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624555"><span id="local-6989586621679624557"><span class="annot"><span class="annottext">MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool
+</span><span id="line-78"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624540"><span id="local-6989586621679624542"><span class="annot"><span class="annottext">MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool
 (MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool)
 -&gt; (MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool)
 -&gt; Eq MaxConcurrencyBulkSync
@@ -242,7 +242,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool
 == :: MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool
 $c== :: MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624540"><span id="local-6989586621679624542"><span id="local-6989586621679624544"><span id="local-6989586621679624546"><span id="local-6989586621679624548"><span id="local-6989586621679624550"><span id="local-6989586621679624552"><span class="annot"><span class="annottext">Eq MaxConcurrencyBulkSync
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624525"><span id="local-6989586621679624527"><span id="local-6989586621679624529"><span id="local-6989586621679624531"><span id="local-6989586621679624533"><span id="local-6989586621679624535"><span id="local-6989586621679624537"><span class="annot"><span class="annottext">Eq MaxConcurrencyBulkSync
 Eq MaxConcurrencyBulkSync
 -&gt; (MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Ordering)
 -&gt; (MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Bool)
@@ -288,7 +288,7 @@ compare :: MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Ordering
 $ccompare :: MaxConcurrencyBulkSync -&gt; MaxConcurrencyBulkSync -&gt; Ordering
 $cp1Ord :: Eq MaxConcurrencyBulkSync
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></a></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
-</span><span id="line-79"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624536"><span id="local-6989586621679624538"><span class="annot"><span class="annottext">Value -&gt; Parser [MaxConcurrencyBulkSync]
+</span><span id="line-79"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624521"><span id="local-6989586621679624523"><span class="annot"><span class="annottext">Value -&gt; Parser [MaxConcurrencyBulkSync]
 Value -&gt; Parser MaxConcurrencyBulkSync
 (Value -&gt; Parser MaxConcurrencyBulkSync)
 -&gt; (Value -&gt; Parser [MaxConcurrencyBulkSync])
@@ -299,7 +299,7 @@ parseJSONList :: Value -&gt; Parser [MaxConcurrencyBulkSync]
 $cparseJSONList :: Value -&gt; Parser [MaxConcurrencyBulkSync]
 parseJSON :: Value -&gt; Parser MaxConcurrencyBulkSync
 $cparseJSON :: Value -&gt; Parser MaxConcurrencyBulkSync
-</span><a href="#local-6989586621679624536"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624530"><span id="local-6989586621679624532"><span id="local-6989586621679624534"><span class="annot"><span class="annottext">Int -&gt; MaxConcurrencyBulkSync -&gt; ShowS
+</span><a href="#local-6989586621679624521"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624515"><span id="local-6989586621679624517"><span id="local-6989586621679624519"><span class="annot"><span class="annottext">Int -&gt; MaxConcurrencyBulkSync -&gt; ShowS
 [MaxConcurrencyBulkSync] -&gt; ShowS
 MaxConcurrencyBulkSync -&gt; String
 (Int -&gt; MaxConcurrencyBulkSync -&gt; ShowS)
@@ -319,7 +319,7 @@ $cshowsPrec :: Int -&gt; MaxConcurrencyBulkSync -&gt; ShowS
 </span><span id="line-81"></span><span class="hs-keyword">newtype</span><span> </span><span id="MaxConcurrencyDeadline"><span class="annot"><a href="Cardano.Node.Types.html#MaxConcurrencyDeadline"><span class="hs-identifier hs-var">MaxConcurrencyDeadline</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="MaxConcurrencyDeadline"><span class="annot"><a href="Cardano.Node.Types.html#MaxConcurrencyDeadline"><span class="hs-identifier hs-var">MaxConcurrencyDeadline</span></a></span></span><span>
 </span><span id="line-82"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unMaxConcurrencyDeadline"><span class="annot"><span class="annottext">MaxConcurrencyDeadline -&gt; Word
 </span><a href="Cardano.Node.Types.html#unMaxConcurrencyDeadline"><span class="hs-identifier hs-var hs-var">unMaxConcurrencyDeadline</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">Word</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-83"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624524"><span id="local-6989586621679624526"><span class="annot"><span class="annottext">MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool
+</span><span id="line-83"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624509"><span id="local-6989586621679624511"><span class="annot"><span class="annottext">MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool
 (MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool)
 -&gt; (MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool)
 -&gt; Eq MaxConcurrencyDeadline
@@ -328,7 +328,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool
 == :: MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool
 $c== :: MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624509"><span id="local-6989586621679624511"><span id="local-6989586621679624513"><span id="local-6989586621679624515"><span id="local-6989586621679624517"><span id="local-6989586621679624519"><span id="local-6989586621679624521"><span class="annot"><span class="annottext">Eq MaxConcurrencyDeadline
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624494"><span id="local-6989586621679624496"><span id="local-6989586621679624498"><span id="local-6989586621679624500"><span id="local-6989586621679624502"><span id="local-6989586621679624504"><span id="local-6989586621679624506"><span class="annot"><span class="annottext">Eq MaxConcurrencyDeadline
 Eq MaxConcurrencyDeadline
 -&gt; (MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Ordering)
 -&gt; (MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Bool)
@@ -374,7 +374,7 @@ compare :: MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Ordering
 $ccompare :: MaxConcurrencyDeadline -&gt; MaxConcurrencyDeadline -&gt; Ordering
 $cp1Ord :: Eq MaxConcurrencyDeadline
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></a></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
-</span><span id="line-84"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624505"><span id="local-6989586621679624507"><span class="annot"><span class="annottext">Value -&gt; Parser [MaxConcurrencyDeadline]
+</span><span id="line-84"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624490"><span id="local-6989586621679624492"><span class="annot"><span class="annottext">Value -&gt; Parser [MaxConcurrencyDeadline]
 Value -&gt; Parser MaxConcurrencyDeadline
 (Value -&gt; Parser MaxConcurrencyDeadline)
 -&gt; (Value -&gt; Parser [MaxConcurrencyDeadline])
@@ -385,7 +385,7 @@ parseJSONList :: Value -&gt; Parser [MaxConcurrencyDeadline]
 $cparseJSONList :: Value -&gt; Parser [MaxConcurrencyDeadline]
 parseJSON :: Value -&gt; Parser MaxConcurrencyDeadline
 $cparseJSON :: Value -&gt; Parser MaxConcurrencyDeadline
-</span><a href="#local-6989586621679624505"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624499"><span id="local-6989586621679624501"><span id="local-6989586621679624503"><span class="annot"><span class="annottext">Int -&gt; MaxConcurrencyDeadline -&gt; ShowS
+</span><a href="#local-6989586621679624490"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624484"><span id="local-6989586621679624486"><span id="local-6989586621679624488"><span class="annot"><span class="annottext">Int -&gt; MaxConcurrencyDeadline -&gt; ShowS
 [MaxConcurrencyDeadline] -&gt; ShowS
 MaxConcurrencyDeadline -&gt; String
 (Int -&gt; MaxConcurrencyDeadline -&gt; ShowS)
@@ -408,7 +408,7 @@ $cshowsPrec :: Int -&gt; MaxConcurrencyDeadline -&gt; ShowS
 </span><span id="line-89"></span><span class="hs-keyword">newtype</span><span> </span><span id="NodeDiffusionMode"><span class="annot"><a href="Cardano.Node.Types.html#NodeDiffusionMode"><span class="hs-identifier hs-var">NodeDiffusionMode</span></a></span></span><span>
 </span><span id="line-90"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="NodeDiffusionMode"><span class="annot"><a href="Cardano.Node.Types.html#NodeDiffusionMode"><span class="hs-identifier hs-var">NodeDiffusionMode</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="getDiffusionMode"><span class="annot"><span class="annottext">NodeDiffusionMode -&gt; DiffusionMode
 </span><a href="Cardano.Node.Types.html#getDiffusionMode"><span class="hs-identifier hs-var hs-var">getDiffusionMode</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">DiffusionMode</span></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-91"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span id="local-6989586621679624491"><span id="local-6989586621679624493"><span id="local-6989586621679624495"><span class="annot"><span class="annottext">Int -&gt; NodeDiffusionMode -&gt; ShowS
+</span><span id="line-91"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span id="local-6989586621679624476"><span id="local-6989586621679624478"><span id="local-6989586621679624480"><span class="annot"><span class="annottext">Int -&gt; NodeDiffusionMode -&gt; ShowS
 [NodeDiffusionMode] -&gt; ShowS
 NodeDiffusionMode -&gt; String
 (Int -&gt; NodeDiffusionMode -&gt; ShowS)
@@ -425,12 +425,12 @@ showsPrec :: Int -&gt; NodeDiffusionMode -&gt; ShowS
 $cshowsPrec :: Int -&gt; NodeDiffusionMode -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span>
 </span><span id="line-92"></span><span>
-</span><span id="line-93"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679624488"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeDiffusionMode"><span class="hs-identifier hs-type">NodeDiffusionMode</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-94"></span><span>    </span><span id="local-6989586621679624487"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser NodeDiffusionMode
-</span><a href="#local-6989586621679624487"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span id="local-6989586621679624486"><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679624486"><span class="hs-identifier hs-var">str</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-93"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679624473"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeDiffusionMode"><span class="hs-identifier hs-type">NodeDiffusionMode</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-94"></span><span>    </span><span id="local-6989586621679624472"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser NodeDiffusionMode
+</span><a href="#local-6989586621679624472"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span id="local-6989586621679624471"><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621679624471"><span class="hs-identifier hs-var">str</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-95"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679624486"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621679624471"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-96"></span><span>        </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;InitiatorOnly&quot;</span></span><span>
 </span><span id="line-97"></span><span>          </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">NodeDiffusionMode -&gt; Parser NodeDiffusionMode
@@ -462,8 +462,8 @@ forall (m :: * -&gt; *) a. MonadFail m =&gt; String -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">fail</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;Parsing NodeDiffusionMode failed&quot;</span></span><span>
 </span><span id="line-102"></span><span>
-</span><span id="line-103"></span><span class="hs-keyword">class</span><span> </span><span id="AdjustFilePaths"><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-var">AdjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624649"><span class="annot"><a href="#local-6989586621679624649"><span class="hs-identifier hs-type">a</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-104"></span><span>  </span><span id="adjustFilePaths"><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-type">adjustFilePaths</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679624649"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679624649"><span class="hs-identifier hs-type">a</span></a></span><span>
+</span><span id="line-103"></span><span class="hs-keyword">class</span><span> </span><span id="AdjustFilePaths"><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-var">AdjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624634"><span class="annot"><a href="#local-6989586621679624634"><span class="hs-identifier hs-type">a</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-104"></span><span>  </span><span id="adjustFilePaths"><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-type">adjustFilePaths</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679624634"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679624634"><span class="hs-identifier hs-type">a</span></a></span><span>
 </span><span id="line-105"></span><span>
 </span><span id="line-106"></span><span>
 </span><span id="line-107"></span><span class="hs-keyword">data</span><span> </span><span id="ProtocolFilepaths"><span class="annot"><a href="Cardano.Node.Types.html#ProtocolFilepaths"><span class="hs-identifier hs-var">ProtocolFilepaths</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
@@ -480,7 +480,7 @@ forall (m :: * -&gt; *) a. MonadFail m =&gt; String -&gt; m a
 </span><a href="Cardano.Node.Types.html#shelleyCertFile"><span class="hs-identifier hs-var hs-var">shelleyCertFile</span></a></span></span><span>      </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-114"></span><span>     </span><span class="hs-special">,</span><span> </span><span id="shelleyBulkCredsFile"><span class="annot"><span class="annottext">ProtocolFilepaths -&gt; Maybe String
 </span><a href="Cardano.Node.Types.html#shelleyBulkCredsFile"><span class="hs-identifier hs-var hs-var">shelleyBulkCredsFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-115"></span><span>     </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624472"><span id="local-6989586621679624474"><span class="annot"><span class="annottext">ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool
+</span><span id="line-115"></span><span>     </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624457"><span id="local-6989586621679624459"><span class="annot"><span class="annottext">ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool
 (ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool)
 -&gt; (ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool)
 -&gt; Eq ProtocolFilepaths
@@ -489,7 +489,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool
 == :: ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool
 $c== :: ProtocolFilepaths -&gt; ProtocolFilepaths -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624466"><span id="local-6989586621679624468"><span id="local-6989586621679624470"><span class="annot"><span class="annottext">Int -&gt; ProtocolFilepaths -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624451"><span id="local-6989586621679624453"><span id="local-6989586621679624455"><span class="annot"><span class="annottext">Int -&gt; ProtocolFilepaths -&gt; ShowS
 [ProtocolFilepaths] -&gt; ShowS
 ProtocolFilepaths -&gt; String
 (Int -&gt; ProtocolFilepaths -&gt; ShowS)
@@ -507,7 +507,7 @@ $cshowsPrec :: Int -&gt; ProtocolFilepaths -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-116"></span><span>
 </span><span id="line-117"></span><span class="hs-keyword">newtype</span><span> </span><span id="GenesisHash"><span class="annot"><a href="Cardano.Node.Types.html#GenesisHash"><span class="hs-identifier hs-var">GenesisHash</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="GenesisHash"><span class="annot"><a href="Cardano.Node.Types.html#GenesisHash"><span class="hs-identifier hs-var">GenesisHash</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Crypto.Hash</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Crypto.Blake2b_256</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/bytestring-0.10.12.0/src"><span class="hs-identifier hs-type">ByteString</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-118"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624458"><span id="local-6989586621679624460"><span class="annot"><span class="annottext">GenesisHash -&gt; GenesisHash -&gt; Bool
+</span><span id="line-118"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624443"><span id="local-6989586621679624445"><span class="annot"><span class="annottext">GenesisHash -&gt; GenesisHash -&gt; Bool
 (GenesisHash -&gt; GenesisHash -&gt; Bool)
 -&gt; (GenesisHash -&gt; GenesisHash -&gt; Bool) -&gt; Eq GenesisHash
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -515,7 +515,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: GenesisHash -&gt; GenesisHash -&gt; Bool
 == :: GenesisHash -&gt; GenesisHash -&gt; Bool
 $c== :: GenesisHash -&gt; GenesisHash -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624452"><span id="local-6989586621679624454"><span id="local-6989586621679624456"><span class="annot"><span class="annottext">Int -&gt; GenesisHash -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624437"><span id="local-6989586621679624439"><span id="local-6989586621679624441"><span class="annot"><span class="annottext">Int -&gt; GenesisHash -&gt; ShowS
 [GenesisHash] -&gt; ShowS
 GenesisHash -&gt; String
 (Int -&gt; GenesisHash -&gt; ShowS)
@@ -530,7 +530,7 @@ show :: GenesisHash -&gt; String
 $cshow :: GenesisHash -&gt; String
 showsPrec :: Int -&gt; GenesisHash -&gt; ShowS
 $cshowsPrec :: Int -&gt; GenesisHash -&gt; ShowS
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624444"><span id="local-6989586621679624446"><span id="local-6989586621679624448"><span id="local-6989586621679624450"><span class="annot"><span class="annottext">[GenesisHash] -&gt; Encoding
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624429"><span id="local-6989586621679624431"><span id="local-6989586621679624433"><span id="local-6989586621679624435"><span class="annot"><span class="annottext">[GenesisHash] -&gt; Encoding
 [GenesisHash] -&gt; Value
 GenesisHash -&gt; Encoding
 GenesisHash -&gt; Value
@@ -553,7 +553,7 @@ toEncoding :: GenesisHash -&gt; Encoding
 $ctoEncoding :: GenesisHash -&gt; Encoding
 toJSON :: GenesisHash -&gt; Value
 $ctoJSON :: GenesisHash -&gt; Value
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">ToJSON</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624439"><span id="local-6989586621679624441"><span class="annot"><span class="annottext">Value -&gt; Parser [GenesisHash]
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">ToJSON</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624424"><span id="local-6989586621679624426"><span class="annot"><span class="annottext">Value -&gt; Parser [GenesisHash]
 Value -&gt; Parser GenesisHash
 (Value -&gt; Parser GenesisHash)
 -&gt; (Value -&gt; Parser [GenesisHash]) -&gt; FromJSON GenesisHash
@@ -563,7 +563,7 @@ parseJSONList :: Value -&gt; Parser [GenesisHash]
 $cparseJSONList :: Value -&gt; Parser [GenesisHash]
 parseJSON :: Value -&gt; Parser GenesisHash
 $cparseJSON :: Value -&gt; Parser GenesisHash
-</span><a href="#local-6989586621679624439"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624424"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">FromJSON</span></a></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-119"></span><span>
 </span><span id="line-120"></span><span class="hs-keyword">data</span><span> </span><span id="NodeProtocolConfiguration"><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfiguration"><span class="hs-identifier hs-var">NodeProtocolConfiguration</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-121"></span><span>       </span><span id="NodeProtocolConfigurationByron"><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationByron"><span class="hs-identifier hs-var">NodeProtocolConfigurationByron</span></a></span></span><span>   </span><span class="annot"><a href="Cardano.Node.Types.html#NodeByronProtocolConfiguration"><span class="hs-identifier hs-type">NodeByronProtocolConfiguration</span></a></span><span>
@@ -572,7 +572,7 @@ $cparseJSON :: Value -&gt; Parser GenesisHash
 </span><span id="line-124"></span><span>                                        </span><span class="annot"><a href="Cardano.Node.Types.html#NodeShelleyProtocolConfiguration"><span class="hs-identifier hs-type">NodeShelleyProtocolConfiguration</span></a></span><span>
 </span><span id="line-125"></span><span>                                        </span><span class="annot"><a href="Cardano.Node.Types.html#NodeAlonzoProtocolConfiguration"><span class="hs-identifier hs-type">NodeAlonzoProtocolConfiguration</span></a></span><span>
 </span><span id="line-126"></span><span>                                        </span><span class="annot"><a href="Cardano.Node.Types.html#NodeHardForkProtocolConfiguration"><span class="hs-identifier hs-type">NodeHardForkProtocolConfiguration</span></a></span><span>
-</span><span id="line-127"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624432"><span id="local-6989586621679624434"><span class="annot"><span class="annottext">NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool
+</span><span id="line-127"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624417"><span id="local-6989586621679624419"><span class="annot"><span class="annottext">NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool
 (NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool)
 -&gt; (NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool)
 -&gt; Eq NodeProtocolConfiguration
@@ -581,7 +581,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool
 == :: NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool
 $c== :: NodeProtocolConfiguration -&gt; NodeProtocolConfiguration -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624426"><span id="local-6989586621679624428"><span id="local-6989586621679624430"><span class="annot"><span class="annottext">Int -&gt; NodeProtocolConfiguration -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624411"><span id="local-6989586621679624413"><span id="local-6989586621679624415"><span class="annot"><span class="annottext">Int -&gt; NodeProtocolConfiguration -&gt; ShowS
 [NodeProtocolConfiguration] -&gt; ShowS
 NodeProtocolConfiguration -&gt; String
 (Int -&gt; NodeProtocolConfiguration -&gt; ShowS)
@@ -605,7 +605,7 @@ $cshowsPrec :: Int -&gt; NodeProtocolConfiguration -&gt; ShowS
 </span><span id="line-132"></span><span>     </span><span class="hs-special">,</span><span> </span><span id="npcShelleyGenesisFileHash"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration -&gt; Maybe GenesisHash
 </span><a href="Cardano.Node.Types.html#npcShelleyGenesisFileHash"><span class="hs-identifier hs-var hs-var">npcShelleyGenesisFileHash</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#GenesisHash"><span class="hs-identifier hs-type">GenesisHash</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-133"></span><span>     </span><span class="hs-special">}</span><span>
-</span><span id="line-134"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624419"><span id="local-6989586621679624421"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
+</span><span id="line-134"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624404"><span id="local-6989586621679624406"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration -&gt; Bool
 (NodeShelleyProtocolConfiguration
  -&gt; NodeShelleyProtocolConfiguration -&gt; Bool)
@@ -621,7 +621,7 @@ $c/= :: NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration -&gt; Bool
 $c== :: NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624413"><span id="local-6989586621679624415"><span id="local-6989586621679624417"><span class="annot"><span class="annottext">Int -&gt; NodeShelleyProtocolConfiguration -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624398"><span id="local-6989586621679624400"><span id="local-6989586621679624402"><span class="annot"><span class="annottext">Int -&gt; NodeShelleyProtocolConfiguration -&gt; ShowS
 [NodeShelleyProtocolConfiguration] -&gt; ShowS
 NodeShelleyProtocolConfiguration -&gt; String
 (Int -&gt; NodeShelleyProtocolConfiguration -&gt; ShowS)
@@ -645,7 +645,7 @@ $cshowsPrec :: Int -&gt; NodeShelleyProtocolConfiguration -&gt; ShowS
 </span><span id="line-139"></span><span>     </span><span class="hs-special">,</span><span> </span><span id="npcAlonzoGenesisFileHash"><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration -&gt; Maybe GenesisHash
 </span><a href="Cardano.Node.Types.html#npcAlonzoGenesisFileHash"><span class="hs-identifier hs-var hs-var">npcAlonzoGenesisFileHash</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#GenesisHash"><span class="hs-identifier hs-type">GenesisHash</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-140"></span><span>     </span><span class="hs-special">}</span><span>
-</span><span id="line-141"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624406"><span id="local-6989586621679624408"><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
+</span><span id="line-141"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624391"><span id="local-6989586621679624393"><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration -&gt; Bool
 (NodeAlonzoProtocolConfiguration
  -&gt; NodeAlonzoProtocolConfiguration -&gt; Bool)
@@ -661,7 +661,7 @@ $c/= :: NodeAlonzoProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration -&gt; Bool
 $c== :: NodeAlonzoProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624400"><span id="local-6989586621679624402"><span id="local-6989586621679624404"><span class="annot"><span class="annottext">Int -&gt; NodeAlonzoProtocolConfiguration -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624385"><span id="local-6989586621679624387"><span id="local-6989586621679624389"><span class="annot"><span class="annottext">Int -&gt; NodeAlonzoProtocolConfiguration -&gt; ShowS
 [NodeAlonzoProtocolConfiguration] -&gt; ShowS
 NodeAlonzoProtocolConfiguration -&gt; String
 (Int -&gt; NodeAlonzoProtocolConfiguration -&gt; ShowS)
@@ -713,7 +713,7 @@ $cshowsPrec :: Int -&gt; NodeAlonzoProtocolConfiguration -&gt; ShowS
 </span><span id="line-167"></span><span>     </span><span class="hs-special">,</span><span> </span><span id="npcByronSupportedProtocolVersionAlt"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration -&gt; Word8
 </span><a href="Cardano.Node.Types.html#npcByronSupportedProtocolVersionAlt"><span class="hs-identifier hs-var hs-var">npcByronSupportedProtocolVersionAlt</span></a></span></span><span>   </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word8</span></a></span><span>
 </span><span id="line-168"></span><span>     </span><span class="hs-special">}</span><span>
-</span><span id="line-169"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624386"><span id="local-6989586621679624388"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
+</span><span id="line-169"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624371"><span id="local-6989586621679624373"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
 -&gt; NodeByronProtocolConfiguration -&gt; Bool
 (NodeByronProtocolConfiguration
  -&gt; NodeByronProtocolConfiguration -&gt; Bool)
@@ -729,7 +729,7 @@ $c/= :: NodeByronProtocolConfiguration
 -&gt; NodeByronProtocolConfiguration -&gt; Bool
 $c== :: NodeByronProtocolConfiguration
 -&gt; NodeByronProtocolConfiguration -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624380"><span id="local-6989586621679624382"><span id="local-6989586621679624384"><span class="annot"><span class="annottext">Int -&gt; NodeByronProtocolConfiguration -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624365"><span id="local-6989586621679624367"><span id="local-6989586621679624369"><span class="annot"><span class="annottext">Int -&gt; NodeByronProtocolConfiguration -&gt; ShowS
 [NodeByronProtocolConfiguration] -&gt; ShowS
 NodeByronProtocolConfiguration -&gt; String
 (Int -&gt; NodeByronProtocolConfiguration -&gt; ShowS)
@@ -845,7 +845,7 @@ $cshowsPrec :: Int -&gt; NodeByronProtocolConfiguration -&gt; ShowS
 </span><span id="line-259"></span><span>     </span><span class="hs-special">,</span><span> </span><span id="npcTestAlonzoHardForkAtVersion"><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration -&gt; Maybe Word
 </span><a href="Cardano.Node.Types.html#npcTestAlonzoHardForkAtVersion"><span class="hs-identifier hs-var hs-var">npcTestAlonzoHardForkAtVersion</span></a></span></span><span>       </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">Word</span></a></span><span>
 </span><span id="line-260"></span><span>     </span><span class="hs-special">}</span><span>
-</span><span id="line-261"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624366"><span id="local-6989586621679624368"><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration
+</span><span id="line-261"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624351"><span id="local-6989586621679624353"><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration
 -&gt; NodeHardForkProtocolConfiguration -&gt; Bool
 (NodeHardForkProtocolConfiguration
  -&gt; NodeHardForkProtocolConfiguration -&gt; Bool)
@@ -861,7 +861,7 @@ $c/= :: NodeHardForkProtocolConfiguration
 -&gt; NodeHardForkProtocolConfiguration -&gt; Bool
 $c== :: NodeHardForkProtocolConfiguration
 -&gt; NodeHardForkProtocolConfiguration -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624360"><span id="local-6989586621679624362"><span id="local-6989586621679624364"><span class="annot"><span class="annottext">Int -&gt; NodeHardForkProtocolConfiguration -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624345"><span id="local-6989586621679624347"><span id="local-6989586621679624349"><span class="annot"><span class="annottext">Int -&gt; NodeHardForkProtocolConfiguration -&gt; ShowS
 [NodeHardForkProtocolConfiguration] -&gt; ShowS
 NodeHardForkProtocolConfiguration -&gt; String
 (Int -&gt; NodeHardForkProtocolConfiguration -&gt; ShowS)
@@ -881,7 +881,7 @@ $cshowsPrec :: Int -&gt; NodeHardForkProtocolConfiguration -&gt; ShowS
 </span><span id="line-263"></span><span class="hs-keyword">newtype</span><span> </span><span id="TopologyFile"><span class="annot"><a href="Cardano.Node.Types.html#TopologyFile"><span class="hs-identifier hs-var">TopologyFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="TopologyFile"><span class="annot"><a href="Cardano.Node.Types.html#TopologyFile"><span class="hs-identifier hs-var">TopologyFile</span></a></span></span><span>
 </span><span id="line-264"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unTopology"><span class="annot"><span class="annottext">TopologyFile -&gt; String
 </span><a href="Cardano.Node.Types.html#unTopology"><span class="hs-identifier hs-var hs-var">unTopology</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-265"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624352"><span id="local-6989586621679624354"><span id="local-6989586621679624356"><span class="annot"><span class="annottext">Int -&gt; TopologyFile -&gt; ShowS
+</span><span id="line-265"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679624337"><span id="local-6989586621679624339"><span id="local-6989586621679624341"><span class="annot"><span class="annottext">Int -&gt; TopologyFile -&gt; ShowS
 [TopologyFile] -&gt; ShowS
 TopologyFile -&gt; String
 (Int -&gt; TopologyFile -&gt; ShowS)
@@ -896,7 +896,7 @@ show :: TopologyFile -&gt; String
 $cshow :: TopologyFile -&gt; String
 showsPrec :: Int -&gt; TopologyFile -&gt; ShowS
 $cshowsPrec :: Int -&gt; TopologyFile -&gt; ShowS
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624348"><span id="local-6989586621679624350"><span class="annot"><span class="annottext">TopologyFile -&gt; TopologyFile -&gt; Bool
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679624333"><span id="local-6989586621679624335"><span class="annot"><span class="annottext">TopologyFile -&gt; TopologyFile -&gt; Bool
 (TopologyFile -&gt; TopologyFile -&gt; Bool)
 -&gt; (TopologyFile -&gt; TopologyFile -&gt; Bool) -&gt; Eq TopologyFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -908,36 +908,36 @@ $c== :: TopologyFile -&gt; TopologyFile -&gt; Bool
 </span><span id="line-266"></span><span>
 </span><span id="line-267"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfiguration"><span class="hs-identifier hs-type">NodeProtocolConfiguration</span></a></span><span> </span><span class="hs-keyword">where</span><span>
 </span><span id="line-268"></span><span>
-</span><span id="line-269"></span><span>  </span><span id="local-6989586621679624345"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; NodeProtocolConfiguration -&gt; NodeProtocolConfiguration
-</span><a href="#local-6989586621679624345"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624344"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624344"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationByron"><span class="hs-identifier hs-type">NodeProtocolConfigurationByron</span></a></span><span> </span><span id="local-6989586621679624343"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624343"><span class="hs-identifier hs-var">pc</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-269"></span><span>  </span><span id="local-6989586621679624330"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; NodeProtocolConfiguration -&gt; NodeProtocolConfiguration
+</span><a href="#local-6989586621679624330"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624329"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624329"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationByron"><span class="hs-identifier hs-type">NodeProtocolConfigurationByron</span></a></span><span> </span><span id="local-6989586621679624328"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
+</span><a href="#local-6989586621679624328"><span class="hs-identifier hs-var">pc</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-270"></span><span>    </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration -&gt; NodeProtocolConfiguration
 </span><a href="Cardano.Node.Types.html#NodeProtocolConfigurationByron"><span class="hs-identifier hs-var">NodeProtocolConfigurationByron</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
 -&gt; NodeByronProtocolConfiguration -&gt; NodeByronProtocolConfiguration
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624344"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624343"><span class="hs-identifier hs-var">pc</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624329"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
+</span><a href="#local-6989586621679624328"><span class="hs-identifier hs-var">pc</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-271"></span><span>
-</span><span id="line-272"></span><span>  </span><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span id="local-6989586621679624342"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624342"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationShelley"><span class="hs-identifier hs-type">NodeProtocolConfigurationShelley</span></a></span><span> </span><span id="local-6989586621679624341"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624341"><span class="hs-identifier hs-var">pc</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-272"></span><span>  </span><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span id="local-6989586621679624327"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624327"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationShelley"><span class="hs-identifier hs-type">NodeProtocolConfigurationShelley</span></a></span><span> </span><span id="local-6989586621679624326"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
+</span><a href="#local-6989586621679624326"><span class="hs-identifier hs-var">pc</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-273"></span><span>    </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration -&gt; NodeProtocolConfiguration
 </span><a href="Cardano.Node.Types.html#NodeProtocolConfigurationShelley"><span class="hs-identifier hs-var">NodeProtocolConfigurationShelley</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
 -&gt; NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624342"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624341"><span class="hs-identifier hs-var">pc</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624327"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
+</span><a href="#local-6989586621679624326"><span class="hs-identifier hs-var">pc</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-274"></span><span>
-</span><span id="line-275"></span><span>  </span><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span id="local-6989586621679624340"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624340"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationCardano"><span class="hs-identifier hs-type">NodeProtocolConfigurationCardano</span></a></span><span> </span><span id="local-6989586621679624339"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624339"><span class="hs-identifier hs-var">pcb</span></a></span></span><span> </span><span id="local-6989586621679624338"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624338"><span class="hs-identifier hs-var">pcs</span></a></span></span><span> </span><span id="local-6989586621679624337"><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
-</span><a href="#local-6989586621679624337"><span class="hs-identifier hs-var">pca</span></a></span></span><span> </span><span id="local-6989586621679624336"><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration
-</span><a href="#local-6989586621679624336"><span class="hs-identifier hs-var">pch</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-275"></span><span>  </span><span class="annot"><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span id="local-6989586621679624325"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624325"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#NodeProtocolConfigurationCardano"><span class="hs-identifier hs-type">NodeProtocolConfigurationCardano</span></a></span><span> </span><span id="local-6989586621679624324"><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
+</span><a href="#local-6989586621679624324"><span class="hs-identifier hs-var">pcb</span></a></span></span><span> </span><span id="local-6989586621679624323"><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
+</span><a href="#local-6989586621679624323"><span class="hs-identifier hs-var">pcs</span></a></span></span><span> </span><span id="local-6989586621679624322"><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
+</span><a href="#local-6989586621679624322"><span class="hs-identifier hs-var">pca</span></a></span></span><span> </span><span id="local-6989586621679624321"><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration
+</span><a href="#local-6989586621679624321"><span class="hs-identifier hs-var">pch</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-276"></span><span>    </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration
@@ -947,143 +947,143 @@ forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 -&gt; NodeByronProtocolConfiguration -&gt; NodeByronProtocolConfiguration
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624340"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624339"><span class="hs-identifier hs-var">pcb</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624325"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
+</span><a href="#local-6989586621679624324"><span class="hs-identifier hs-var">pcb</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-277"></span><span>                                     </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
 -&gt; NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624340"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624338"><span class="hs-identifier hs-var">pcs</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624325"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
+</span><a href="#local-6989586621679624323"><span class="hs-identifier hs-var">pcs</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-278"></span><span>                                     </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
 -&gt; NodeAlonzoProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624340"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
-</span><a href="#local-6989586621679624337"><span class="hs-identifier hs-var">pca</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624325"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
+</span><a href="#local-6989586621679624322"><span class="hs-identifier hs-var">pca</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-279"></span><span>                                     </span><span class="annot"><span class="annottext">NodeHardForkProtocolConfiguration
-</span><a href="#local-6989586621679624336"><span class="hs-identifier hs-var">pch</span></a></span><span>
+</span><a href="#local-6989586621679624321"><span class="hs-identifier hs-var">pch</span></a></span><span>
 </span><span id="line-280"></span><span>
 </span><span id="line-281"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeByronProtocolConfiguration"><span class="hs-identifier hs-type">NodeByronProtocolConfiguration</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-282"></span><span>  </span><span id="local-6989586621679624334"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
+</span><span id="line-282"></span><span>  </span><span id="local-6989586621679624319"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
 -&gt; NodeByronProtocolConfiguration -&gt; NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624334"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624333"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624333"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624332"><span class="annot"><span class="annottext">x :: NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624332"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeByronProtocolConfiguration"><span class="hs-identifier hs-type">NodeByronProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
-</span><span id="line-283"></span><span>                        </span><span id="local-6989586621679624331"><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624319"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624318"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624318"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624317"><span class="annot"><span class="annottext">x :: NodeByronProtocolConfiguration
+</span><a href="#local-6989586621679624317"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeByronProtocolConfiguration"><span class="hs-identifier hs-type">NodeByronProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
+</span><span id="line-283"></span><span>                        </span><span id="local-6989586621679624316"><span class="annot"><span class="annottext">GenesisFile
 npcByronGenesisFile :: GenesisFile
 npcByronGenesisFile :: NodeByronProtocolConfiguration -&gt; GenesisFile
-</span><a href="#local-6989586621679624331"><span class="hs-identifier hs-var hs-var">npcByronGenesisFile</span></a></span></span><span>
+</span><a href="#local-6989586621679624316"><span class="hs-identifier hs-var hs-var">npcByronGenesisFile</span></a></span></span><span>
 </span><span id="line-284"></span><span>                      </span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-285"></span><span>    </span><span class="annot"><span class="annottext">NodeByronProtocolConfiguration
-</span><a href="#local-6989586621679624332"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcByronGenesisFile :: GenesisFile
+</span><a href="#local-6989586621679624317"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcByronGenesisFile :: GenesisFile
 </span><a href="Cardano.Node.Types.html#npcByronGenesisFile"><span class="hs-identifier hs-var">npcByronGenesisFile</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS -&gt; GenesisFile -&gt; GenesisFile
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624333"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
-</span><a href="#local-6989586621679624331"><span class="hs-identifier hs-var">npcByronGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621679624318"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624316"><span class="hs-identifier hs-var">npcByronGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-286"></span><span>
 </span><span id="line-287"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeShelleyProtocolConfiguration"><span class="hs-identifier hs-type">NodeShelleyProtocolConfiguration</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-288"></span><span>  </span><span id="local-6989586621679624329"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
+</span><span id="line-288"></span><span>  </span><span id="local-6989586621679624314"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
 -&gt; NodeShelleyProtocolConfiguration
 -&gt; NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624329"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624328"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624328"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624327"><span class="annot"><span class="annottext">x :: NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624327"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeShelleyProtocolConfiguration"><span class="hs-identifier hs-type">NodeShelleyProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
-</span><span id="line-289"></span><span>                        </span><span id="local-6989586621679624326"><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624314"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624313"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624313"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624312"><span class="annot"><span class="annottext">x :: NodeShelleyProtocolConfiguration
+</span><a href="#local-6989586621679624312"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeShelleyProtocolConfiguration"><span class="hs-identifier hs-type">NodeShelleyProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
+</span><span id="line-289"></span><span>                        </span><span id="local-6989586621679624311"><span class="annot"><span class="annottext">GenesisFile
 npcShelleyGenesisFile :: GenesisFile
 npcShelleyGenesisFile :: NodeShelleyProtocolConfiguration -&gt; GenesisFile
-</span><a href="#local-6989586621679624326"><span class="hs-identifier hs-var hs-var">npcShelleyGenesisFile</span></a></span></span><span>
+</span><a href="#local-6989586621679624311"><span class="hs-identifier hs-var hs-var">npcShelleyGenesisFile</span></a></span></span><span>
 </span><span id="line-290"></span><span>                      </span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-291"></span><span>    </span><span class="annot"><span class="annottext">NodeShelleyProtocolConfiguration
-</span><a href="#local-6989586621679624327"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcShelleyGenesisFile :: GenesisFile
+</span><a href="#local-6989586621679624312"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcShelleyGenesisFile :: GenesisFile
 </span><a href="Cardano.Node.Types.html#npcShelleyGenesisFile"><span class="hs-identifier hs-var">npcShelleyGenesisFile</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS -&gt; GenesisFile -&gt; GenesisFile
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624328"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
-</span><a href="#local-6989586621679624326"><span class="hs-identifier hs-var">npcShelleyGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621679624313"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624311"><span class="hs-identifier hs-var">npcShelleyGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-292"></span><span>
 </span><span id="line-293"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#NodeAlonzoProtocolConfiguration"><span class="hs-identifier hs-type">NodeAlonzoProtocolConfiguration</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-294"></span><span>  </span><span id="local-6989586621679624324"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
+</span><span id="line-294"></span><span>  </span><span id="local-6989586621679624309"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS
 -&gt; NodeAlonzoProtocolConfiguration
 -&gt; NodeAlonzoProtocolConfiguration
-</span><a href="#local-6989586621679624324"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624323"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624323"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624322"><span class="annot"><span class="annottext">x :: NodeAlonzoProtocolConfiguration
-</span><a href="#local-6989586621679624322"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeAlonzoProtocolConfiguration"><span class="hs-identifier hs-type">NodeAlonzoProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
-</span><span id="line-295"></span><span>                        </span><span id="local-6989586621679624321"><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624309"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624308"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624308"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624307"><span class="annot"><span class="annottext">x :: NodeAlonzoProtocolConfiguration
+</span><a href="#local-6989586621679624307"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Types.html#NodeAlonzoProtocolConfiguration"><span class="hs-identifier hs-type">NodeAlonzoProtocolConfiguration</span></a></span><span> </span><span class="hs-special">{</span><span>
+</span><span id="line-295"></span><span>                        </span><span id="local-6989586621679624306"><span class="annot"><span class="annottext">GenesisFile
 npcAlonzoGenesisFile :: GenesisFile
 npcAlonzoGenesisFile :: NodeAlonzoProtocolConfiguration -&gt; GenesisFile
-</span><a href="#local-6989586621679624321"><span class="hs-identifier hs-var hs-var">npcAlonzoGenesisFile</span></a></span></span><span>
+</span><a href="#local-6989586621679624306"><span class="hs-identifier hs-var hs-var">npcAlonzoGenesisFile</span></a></span></span><span>
 </span><span id="line-296"></span><span>                      </span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-297"></span><span>    </span><span class="annot"><span class="annottext">NodeAlonzoProtocolConfiguration
-</span><a href="#local-6989586621679624322"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcAlonzoGenesisFile :: GenesisFile
+</span><a href="#local-6989586621679624307"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">npcAlonzoGenesisFile :: GenesisFile
 </span><a href="Cardano.Node.Types.html#npcAlonzoGenesisFile"><span class="hs-identifier hs-var">npcAlonzoGenesisFile</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS -&gt; GenesisFile -&gt; GenesisFile
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624323"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
-</span><a href="#local-6989586621679624321"><span class="hs-identifier hs-var">npcAlonzoGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621679624308"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">GenesisFile
+</span><a href="#local-6989586621679624306"><span class="hs-identifier hs-var">npcAlonzoGenesisFile</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-298"></span><span>
 </span><span id="line-299"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Configuration.Socket.html#SocketConfig"><span class="hs-identifier hs-type">SocketConfig</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-300"></span><span>  </span><span id="local-6989586621679624319"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; SocketConfig -&gt; SocketConfig
-</span><a href="#local-6989586621679624319"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624318"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624318"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624317"><span class="annot"><span class="annottext">x :: SocketConfig
-</span><a href="#local-6989586621679624317"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Configuration.Socket.html#SocketConfig"><span class="hs-identifier hs-type">SocketConfig</span></a></span><span class="hs-special">{</span><span id="local-6989586621679624315"><span class="annot"><span class="annottext">Last SocketPath
+</span><span id="line-300"></span><span>  </span><span id="local-6989586621679624304"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; SocketConfig -&gt; SocketConfig
+</span><a href="#local-6989586621679624304"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624303"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624303"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679624302"><span class="annot"><span class="annottext">x :: SocketConfig
+</span><a href="#local-6989586621679624302"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Cardano.Node.Configuration.Socket.html#SocketConfig"><span class="hs-identifier hs-type">SocketConfig</span></a></span><span class="hs-special">{</span><span id="local-6989586621679624300"><span class="annot"><span class="annottext">Last SocketPath
 ncSocketPath :: SocketConfig -&gt; Last SocketPath
 ncSocketPath :: Last SocketPath
 </span><a href="Cardano.Node.Configuration.Socket.html#ncSocketPath"><span class="hs-identifier hs-var hs-var">ncSocketPath</span></a></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-301"></span><span>    </span><span class="annot"><span class="annottext">SocketConfig
-</span><a href="#local-6989586621679624317"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">ncSocketPath :: Last SocketPath
+</span><a href="#local-6989586621679624302"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">ncSocketPath :: Last SocketPath
 </span><a href="Cardano.Node.Configuration.Socket.html#ncSocketPath"><span class="hs-identifier hs-var">ncSocketPath</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS -&gt; Last SocketPath -&gt; Last SocketPath
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624318"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Last SocketPath
-</span><a href="#local-6989586621679624315"><span class="hs-identifier hs-var">ncSocketPath</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621679624303"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Last SocketPath
+</span><a href="#local-6989586621679624300"><span class="hs-identifier hs-var">ncSocketPath</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-302"></span><span>
 </span><span id="line-303"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Configuration.NodeAddress.html#SocketPath"><span class="hs-identifier hs-type">SocketPath</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-304"></span><span>  </span><span id="local-6989586621679624312"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; SocketPath -&gt; SocketPath
-</span><a href="#local-6989586621679624312"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624311"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624311"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Configuration.NodeAddress.html#SocketPath"><span class="hs-identifier hs-type">SocketPath</span></a></span><span> </span><span id="local-6989586621679624309"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624309"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; SocketPath
+</span><span id="line-304"></span><span>  </span><span id="local-6989586621679624297"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; SocketPath -&gt; SocketPath
+</span><a href="#local-6989586621679624297"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624296"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624296"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Configuration.NodeAddress.html#SocketPath"><span class="hs-identifier hs-type">SocketPath</span></a></span><span> </span><span id="local-6989586621679624294"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624294"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; SocketPath
 </span><a href="Cardano.Node.Configuration.NodeAddress.html#SocketPath"><span class="hs-identifier hs-var">SocketPath</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624311"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624309"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624296"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624294"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-305"></span><span>
 </span><span id="line-306"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-307"></span><span>  </span><span id="local-6989586621679624307"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; GenesisFile -&gt; GenesisFile
-</span><a href="#local-6989586621679624307"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624306"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624306"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span><span> </span><span id="local-6989586621679624305"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624305"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; GenesisFile
+</span><span id="line-307"></span><span>  </span><span id="local-6989586621679624292"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; GenesisFile -&gt; GenesisFile
+</span><a href="#local-6989586621679624292"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624291"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624291"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span><span> </span><span id="local-6989586621679624290"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624290"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; GenesisFile
 </span><a href="Cardano.Node.Types.html#GenesisFile"><span class="hs-identifier hs-var">GenesisFile</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624306"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624305"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679624291"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624290"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-308"></span><span>
-</span><span id="line-309"></span><span id="local-6989586621679624304"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624304"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624304"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-310"></span><span>  </span><span id="local-6989586621679624302"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; Maybe a -&gt; Maybe a
-</span><a href="#local-6989586621679624302"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624301"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624301"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; a) -&gt; Maybe a -&gt; Maybe a
+</span><span id="line-309"></span><span id="local-6989586621679624289"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624289"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624289"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-310"></span><span>  </span><span id="local-6989586621679624287"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; Maybe a -&gt; Maybe a
+</span><a href="#local-6989586621679624287"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624286"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624286"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; a) -&gt; Maybe a -&gt; Maybe a
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">fmap</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS -&gt; a -&gt; a
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624301"><span class="hs-identifier hs-var">f</span></a></span><span class="hs-special">)</span></span><span>
+</span><a href="#local-6989586621679624286"><span class="hs-identifier hs-var">f</span></a></span><span class="hs-special">)</span></span><span>
 </span><span id="line-311"></span><span>
-</span><span id="line-312"></span><span id="local-6989586621679624300"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624300"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Last</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624300"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-313"></span><span>  </span><span id="local-6989586621679624298"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; Last a -&gt; Last a
-</span><a href="#local-6989586621679624298"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624297"><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624297"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; a) -&gt; Last a -&gt; Last a
+</span><span id="line-312"></span><span id="local-6989586621679624285"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624285"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#AdjustFilePaths"><span class="hs-identifier hs-type">AdjustFilePaths</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Last</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679624285"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-313"></span><span>  </span><span id="local-6989586621679624283"><span class="annot"><span class="annottext">adjustFilePaths :: ShowS -&gt; Last a -&gt; Last a
+</span><a href="#local-6989586621679624283"><span class="hs-identifier hs-var hs-var hs-var hs-var">adjustFilePaths</span></a></span></span><span> </span><span id="local-6989586621679624282"><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679624282"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; a) -&gt; Last a -&gt; Last a
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">fmap</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ShowS -&gt; a -&gt; a
 forall a. AdjustFilePaths a =&gt; ShowS -&gt; a -&gt; a
 </span><a href="Cardano.Node.Types.html#adjustFilePaths"><span class="hs-identifier hs-var">adjustFilePaths</span></a></span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679624297"><span class="hs-identifier hs-var">f</span></a></span><span class="hs-special">)</span></span><span>
+</span><a href="#local-6989586621679624282"><span class="hs-identifier hs-var">f</span></a></span><span class="hs-special">)</span></span><span>
 </span><span id="line-314"></span><span>
 </span><span id="line-315"></span><span class="hs-keyword">data</span><span> </span><span id="VRFPrivateKeyFilePermissionError"><span class="annot"><a href="Cardano.Node.Types.html#VRFPrivateKeyFilePermissionError"><span class="hs-identifier hs-var">VRFPrivateKeyFilePermissionError</span></a></span></span><span>
 </span><span id="line-316"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="OtherPermissionsExist"><span class="annot"><a href="Cardano.Node.Types.html#OtherPermissionsExist"><span class="hs-identifier hs-var">OtherPermissionsExist</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
 </span><span id="line-317"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="GroupPermissionsExist"><span class="annot"><a href="Cardano.Node.Types.html#GroupPermissionsExist"><span class="hs-identifier hs-var">GroupPermissionsExist</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
 </span><span id="line-318"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="GenericPermissionsExist"><span class="annot"><a href="Cardano.Node.Types.html#GenericPermissionsExist"><span class="hs-identifier hs-var">GenericPermissionsExist</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
-</span><span id="line-319"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679624288"><span id="local-6989586621679624290"><span id="local-6989586621679624292"><span class="annot"><span class="annottext">Int -&gt; VRFPrivateKeyFilePermissionError -&gt; ShowS
+</span><span id="line-319"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679624273"><span id="local-6989586621679624275"><span id="local-6989586621679624277"><span class="annot"><span class="annottext">Int -&gt; VRFPrivateKeyFilePermissionError -&gt; ShowS
 [VRFPrivateKeyFilePermissionError] -&gt; ShowS
 VRFPrivateKeyFilePermissionError -&gt; String
 (Int -&gt; VRFPrivateKeyFilePermissionError -&gt; ShowS)
@@ -1102,43 +1102,43 @@ $cshowsPrec :: Int -&gt; VRFPrivateKeyFilePermissionError -&gt; ShowS
 </span><span id="line-320"></span><span>
 </span><span id="line-321"></span><span class="annot"><a href="Cardano.Node.Types.html#renderVRFPrivateKeyFilePermissionError"><span class="hs-identifier hs-type">renderVRFPrivateKeyFilePermissionError</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.Node.Types.html#VRFPrivateKeyFilePermissionError"><span class="hs-identifier hs-type">VRFPrivateKeyFilePermissionError</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-type">Text</span></a></span><span>
 </span><span id="line-322"></span><span id="renderVRFPrivateKeyFilePermissionError"><span class="annot"><span class="annottext">renderVRFPrivateKeyFilePermissionError :: VRFPrivateKeyFilePermissionError -&gt; Text
-</span><a href="Cardano.Node.Types.html#renderVRFPrivateKeyFilePermissionError"><span class="hs-identifier hs-var hs-var">renderVRFPrivateKeyFilePermissionError</span></a></span></span><span> </span><span id="local-6989586621679624287"><span class="annot"><span class="annottext">VRFPrivateKeyFilePermissionError
-</span><a href="#local-6989586621679624287"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Cardano.Node.Types.html#renderVRFPrivateKeyFilePermissionError"><span class="hs-identifier hs-var hs-var">renderVRFPrivateKeyFilePermissionError</span></a></span></span><span> </span><span id="local-6989586621679624272"><span class="annot"><span class="annottext">VRFPrivateKeyFilePermissionError
+</span><a href="#local-6989586621679624272"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-323"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">VRFPrivateKeyFilePermissionError
-</span><a href="#local-6989586621679624287"><span class="hs-identifier hs-var">err</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-324"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#OtherPermissionsExist"><span class="hs-identifier hs-type">OtherPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624286"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624286"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><a href="#local-6989586621679624272"><span class="hs-identifier hs-var">err</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-324"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#OtherPermissionsExist"><span class="hs-identifier hs-type">OtherPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624271"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624271"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-325"></span><span>      </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;VRF private key file at: &quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; Text
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.pack</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624286"><span class="hs-identifier hs-var">fp</span></a></span><span>
+</span><a href="#local-6989586621679624271"><span class="hs-identifier hs-var">fp</span></a></span><span>
 </span><span id="line-326"></span><span>      </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot; has \&quot;other\&quot; file permissions. Please remove all \&quot;other\&quot; file permissions.&quot;</span></span><span>
 </span><span id="line-327"></span><span>
-</span><span id="line-328"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#GroupPermissionsExist"><span class="hs-identifier hs-type">GroupPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624284"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624284"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-328"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#GroupPermissionsExist"><span class="hs-identifier hs-type">GroupPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624269"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624269"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-329"></span><span>      </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;VRF private key file at: &quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; Text
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.pack</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624284"><span class="hs-identifier hs-var">fp</span></a></span><span>
+</span><a href="#local-6989586621679624269"><span class="hs-identifier hs-var">fp</span></a></span><span>
 </span><span id="line-330"></span><span>      </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;has \&quot;group\&quot; file permissions. Please remove all \&quot;group\&quot; file permissions.&quot;</span></span><span>
-</span><span id="line-331"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#GenericPermissionsExist"><span class="hs-identifier hs-type">GenericPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624283"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624283"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-331"></span><span>    </span><span class="annot"><a href="Cardano.Node.Types.html#GenericPermissionsExist"><span class="hs-identifier hs-type">GenericPermissionsExist</span></a></span><span> </span><span id="local-6989586621679624268"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679624268"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-332"></span><span>      </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;VRF private key file at: &quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; Text
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.pack</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679624283"><span class="hs-identifier hs-var">fp</span></a></span><span>
+</span><a href="#local-6989586621679624268"><span class="hs-identifier hs-var">fp</span></a></span><span>
 </span><span id="line-333"></span><span>      </span><span class="annot"><span class="annottext">Text -&gt; Text -&gt; Text
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Text
