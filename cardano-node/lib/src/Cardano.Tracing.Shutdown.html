@@ -17,15 +17,15 @@
 </span><span id="line-17"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><span class="hs-identifier">Cardano.BM.Data.Tracer</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier">HasTextFormatter</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">..</span><span class="hs-special">)</span><span class="hs-special">,</span><span>
 </span><span id="line-18"></span><span>         </span><span class="annot"><span class="hs-identifier">trStructuredText</span></span><span class="hs-special">)</span><span>
 </span><span id="line-19"></span><span>
-</span><span id="line-20"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679639279"><span class="annot"><span class="hs-identifier hs-type">HasPrivacyAnnotation</span></span><span>  </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span></span><span>
+</span><span id="line-20"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679640020"><span class="annot"><span class="hs-identifier hs-type">HasPrivacyAnnotation</span></span><span>  </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span></span><span>
 </span><span id="line-21"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">HasSeverityAnnotation</span></span><span> </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-22"></span><span>  </span><span id="local-6989586621679639275"><span class="annot"><span class="annottext">getSeverityAnnotation :: ShutdownTrace -&gt; Severity
+</span><span id="line-22"></span><span>  </span><span id="local-6989586621679640016"><span class="annot"><span class="annottext">getSeverityAnnotation :: ShutdownTrace -&gt; Severity
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">getSeverityAnnotation</span></span></span><span> </span><span class="annot"><span class="annottext">ShutdownTrace
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Severity
 </span><span class="hs-identifier hs-var">Warning</span></span><span>
 </span><span id="line-23"></span><span>
 </span><span id="line-24"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Transformable</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-type">Text</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-25"></span><span>  </span><span id="local-6989586621679639267"><span class="annot"><span class="annottext">trTransformer :: TracingVerbosity -&gt; Trace IO Text -&gt; Tracer IO ShutdownTrace
+</span><span id="line-25"></span><span>  </span><span id="local-6989586621679640008"><span class="annot"><span class="annottext">trTransformer :: TracingVerbosity -&gt; Trace IO Text -&gt; Tracer IO ShutdownTrace
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">trTransformer</span></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TracingVerbosity -&gt; Trace IO Text -&gt; Tracer IO ShutdownTrace
 forall b (m :: * -&gt; *) a.
 (ToObject b, MonadIO m, HasTextFormatter b, HasPrivacyAnnotation b,
@@ -34,19 +34,19 @@ TracingVerbosity -&gt; Trace m a -&gt; Tracer m b
 </span><span class="hs-identifier hs-var">trStructuredText</span></span><span>
 </span><span id="line-26"></span><span>
 </span><span id="line-27"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">HasTextFormatter</span></span><span> </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-28"></span><span>  </span><span id="local-6989586621679639263"><span class="annot"><span class="annottext">formatText :: ShutdownTrace -&gt; Object -&gt; Text
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">formatText</span></span></span><span> </span><span id="local-6989586621679639261"><span class="annot"><span class="annottext">ShutdownTrace
-</span><a href="#local-6989586621679639261"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><span class="annottext">Object
+</span><span id="line-28"></span><span>  </span><span id="local-6989586621679640004"><span class="annot"><span class="annottext">formatText :: ShutdownTrace -&gt; Object -&gt; Text
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">formatText</span></span></span><span> </span><span id="local-6989586621679640002"><span class="annot"><span class="annottext">ShutdownTrace
+</span><a href="#local-6989586621679640002"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><span class="annottext">Object
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShutdownTrace -&gt; Text
 </span><a href="Cardano.Node.Tracing.Tracers.Shutdown.html#ppShutdownTrace"><span class="hs-identifier hs-var">ppShutdownTrace</span></a></span><span> </span><span class="annot"><span class="annottext">ShutdownTrace
-</span><a href="#local-6989586621679639261"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><a href="#local-6989586621679640002"><span class="hs-identifier hs-var">a</span></a></span><span>
 </span><span id="line-29"></span><span>
-</span><span id="line-30"></span><span class="hs-keyword">instance</span><span>  </span><span id="local-6989586621679639257"><span class="annot"><span class="hs-identifier hs-type">ToObject</span></span><span> </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-31"></span><span>  </span><span id="local-6989586621679639255"><span class="annot"><span class="annottext">toObject :: TracingVerbosity -&gt; ShutdownTrace -&gt; Object
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toObject</span></span></span><span> </span><span id="local-6989586621679639253"><span class="annot"><span class="annottext">TracingVerbosity
-</span><a href="#local-6989586621679639253"><span class="hs-identifier hs-var">verb</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DetailLevel -&gt; ShutdownTrace -&gt; Object
+</span><span id="line-30"></span><span class="hs-keyword">instance</span><span>  </span><span id="local-6989586621679639998"><span class="annot"><span class="hs-identifier hs-type">ToObject</span></span><span> </span><span class="annot"><a href="Cardano.Node.Handlers.Shutdown.html#ShutdownTrace"><span class="hs-identifier hs-type">ShutdownTrace</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-31"></span><span>  </span><span id="local-6989586621679639996"><span class="annot"><span class="annottext">toObject :: TracingVerbosity -&gt; ShutdownTrace -&gt; Object
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toObject</span></span></span><span> </span><span id="local-6989586621679639994"><span class="annot"><span class="annottext">TracingVerbosity
+</span><a href="#local-6989586621679639994"><span class="hs-identifier hs-var">verb</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DetailLevel -&gt; ShutdownTrace -&gt; Object
 forall a. LogFormatting a =&gt; DetailLevel -&gt; a -&gt; Object
 </span><span class="hs-identifier hs-var">forMachine</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TracingVerbosity -&gt; DetailLevel
 </span><a href="Cardano.Node.Tracing.Compat.html#toDetailLevel"><span class="hs-identifier hs-var">toDetailLevel</span></a></span><span> </span><span class="annot"><span class="annottext">TracingVerbosity
-</span><a href="#local-6989586621679639253"><span class="hs-identifier hs-var">verb</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679639994"><span class="hs-identifier hs-var">verb</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-32"></span></pre></body></html>

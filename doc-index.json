@@ -11706,7 +11706,7 @@
     "link": "lib/Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:TraceStartLeadershipCheckPlus"
   },
   {
-    "display_html": "<span class=\"keyword\">type</span> <a href=\"#t:ForgeTracerType\">ForgeTracerType</a> blk = <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceLabelCreds (TraceForgeEvent blk)) (TraceLabelCreds <a href=\"Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.StartLeadershipCheck\">TraceStartLeadershipCheckPlus</a>)",
+    "display_html": "<span class=\"keyword\">type</span> <a href=\"#t:ForgeTracerType\">ForgeTracerType</a> blk = <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceForgeEvent blk) <a href=\"Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.StartLeadershipCheck\">TraceStartLeadershipCheckPlus</a>",
     "name": "ForgeTracerType",
     "module": "Cardano.Node.Tracing.Tracers.StartLeadershipCheck",
     "link": "lib/Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:ForgeTracerType"
@@ -11736,7 +11736,7 @@
     "link": "lib/Cardano-Node-Tracing-Tracers-ForgingThreadStats.html#v:forgeThreadStats"
   },
   {
-    "display_html": "<a href=\"#v:docForgeStats\">docForgeStats</a> &#8759; Documented (<a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceLabelCreds (TraceForgeEvent blk)) (TraceLabelCreds <a href=\"Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.StartLeadershipCheck\">TraceStartLeadershipCheckPlus</a>))",
+    "display_html": "<a href=\"#v:docForgeStats\">docForgeStats</a> &#8759; Documented (<a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceForgeEvent blk) <a href=\"Cardano-Node-Tracing-Tracers-StartLeadershipCheck.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.StartLeadershipCheck\">TraceStartLeadershipCheckPlus</a>)",
     "name": "docForgeStats",
     "module": "Cardano.Node.Tracing.Tracers.ForgingThreadStats",
     "link": "lib/Cardano-Node-Tracing-Tracers-ForgingThreadStats.html#v:docForgeStats"
@@ -12918,7 +12918,7 @@
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#t:TraceStartLeadershipCheckPlus"
   },
   {
-    "display_html": "<span class=\"keyword\">type</span> <a href=\"#t:ForgeTracerType\">ForgeTracerType</a> blk = <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceLabelCreds (TraceForgeEvent blk)) (TraceLabelCreds <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">TraceStartLeadershipCheckPlus</a>)",
+    "display_html": "<span class=\"keyword\">type</span> <a href=\"#t:ForgeTracerType\">ForgeTracerType</a> blk = <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceForgeEvent blk) <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">TraceStartLeadershipCheckPlus</a>",
     "name": "ForgeTracerType",
     "module": "Cardano.Node.Tracing.Tracers.Consensus",
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#t:ForgeTracerType"
@@ -12942,7 +12942,7 @@
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:namesForForge"
   },
   {
-    "display_html": "<a href=\"#v:docForge\">docForge</a> &#8759; Documented (<a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceLabelCreds (TraceForgeEvent blk)) (TraceLabelCreds <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">TraceStartLeadershipCheckPlus</a>))",
+    "display_html": "<a href=\"#v:docForge\">docForge</a> &#8759; Documented (<a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Either\" title=\"Distribution.Compat.Prelude.Internal\">Either</a> (TraceForgeEvent blk) <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:TraceStartLeadershipCheckPlus\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">TraceStartLeadershipCheckPlus</a>)",
     "name": "docForge",
     "module": "Cardano.Node.Tracing.Tracers.Consensus",
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:docForge"
@@ -13272,8 +13272,8 @@
     "link": "lib/Cardano-Node-Tracing-StateRep.html#t:InitChainSelection"
   },
   {
-    "display_html": "<span class=\"keyword\">data</span> <a href=\"#t:NodeState\">NodeState</a><ul class=\"subs\"><li>= <a href=\"#v:NodeTracingOnlineConfiguring\">NodeTracingOnlineConfiguring</a></li><li>| <a href=\"#v:NodeOpeningDbs\">NodeOpeningDbs</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:OpeningDbs\" title=\"Cardano.Node.Tracing.StateRep\">OpeningDbs</a></li><li>| <a href=\"#v:NodeReplays\">NodeReplays</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:Replays\" title=\"Cardano.Node.Tracing.StateRep\">Replays</a></li><li>| <a href=\"#v:NodeInitChainSelection\">NodeInitChainSelection</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:InitChainSelection\" title=\"Cardano.Node.Tracing.StateRep\">InitChainSelection</a></li><li>| <a href=\"#v:NodeAddBlock\">NodeAddBlock</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:AddedToCurrentChain\" title=\"Cardano.Node.Tracing.StateRep\">AddedToCurrentChain</a></li><li>| <a href=\"#v:NodeStartup\">NodeStartup</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:StartupState\" title=\"Cardano.Node.Tracing.StateRep\">StartupState</a></li><li>| <a href=\"#v:NodeShutdown\">NodeShutdown</a> <a href=\"Cardano-Node-Handlers-Shutdown.html#t:ShutdownTrace\" title=\"Cardano.Node.Handlers.Shutdown\">ShutdownTrace</a></li></ul>",
-    "name": "NodeState NodeTracingOnlineConfiguring NodeOpeningDbs NodeReplays NodeInitChainSelection NodeAddBlock NodeStartup NodeShutdown",
+    "display_html": "<span class=\"keyword\">data</span> <a href=\"#t:NodeState\">NodeState</a><ul class=\"subs\"><li>= <a href=\"#v:NodeTracingOnlineConfiguring\">NodeTracingOnlineConfiguring</a></li><li>| <a href=\"#v:NodeOpeningDbs\">NodeOpeningDbs</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:OpeningDbs\" title=\"Cardano.Node.Tracing.StateRep\">OpeningDbs</a></li><li>| <a href=\"#v:NodeReplays\">NodeReplays</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:Replays\" title=\"Cardano.Node.Tracing.StateRep\">Replays</a></li><li>| <a href=\"#v:NodeInitChainSelection\">NodeInitChainSelection</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:InitChainSelection\" title=\"Cardano.Node.Tracing.StateRep\">InitChainSelection</a></li><li>| <a href=\"#v:NodeKernelOnline\">NodeKernelOnline</a></li><li>| <a href=\"#v:NodeAddBlock\">NodeAddBlock</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:AddedToCurrentChain\" title=\"Cardano.Node.Tracing.StateRep\">AddedToCurrentChain</a></li><li>| <a href=\"#v:NodeStartup\">NodeStartup</a> <a href=\"Cardano-Node-Tracing-StateRep.html#t:StartupState\" title=\"Cardano.Node.Tracing.StateRep\">StartupState</a></li><li>| <a href=\"#v:NodeShutdown\">NodeShutdown</a> <a href=\"Cardano-Node-Handlers-Shutdown.html#t:ShutdownTrace\" title=\"Cardano.Node.Handlers.Shutdown\">ShutdownTrace</a></li></ul>",
+    "name": "NodeState NodeKernelOnline NodeTracingOnlineConfiguring NodeOpeningDbs NodeReplays NodeInitChainSelection NodeAddBlock NodeStartup NodeShutdown",
     "module": "Cardano.Node.Tracing.StateRep",
     "link": "lib/Cardano-Node-Tracing-StateRep.html#t:NodeState"
   },
@@ -13312,6 +13312,24 @@
     "name": "traceNodeStateShutdown",
     "module": "Cardano.Node.Tracing.StateRep",
     "link": "lib/Cardano-Node-Tracing-StateRep.html#v:traceNodeStateShutdown"
+  },
+  {
+    "display_html": "<a href=\"#v:namesNodeState\">namesNodeState</a> &#8759; <a href=\"Cardano-Node-Tracing-StateRep.html#t:NodeState\" title=\"Cardano.Node.Tracing.StateRep\">NodeState</a> &#8594; [<a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/Data-Text.html#t:Text\" title=\"Data.Text\">Text</a>]",
+    "name": "namesNodeState",
+    "module": "Cardano.Node.Tracing.StateRep",
+    "link": "lib/Cardano-Node-Tracing-StateRep.html#v:namesNodeState"
+  },
+  {
+    "display_html": "<a href=\"#v:severityNodeState\">severityNodeState</a> &#8759; <a href=\"Cardano-Node-Tracing-StateRep.html#t:NodeState\" title=\"Cardano.Node.Tracing.StateRep\">NodeState</a> &#8594; SeverityS",
+    "name": "severityNodeState",
+    "module": "Cardano.Node.Tracing.StateRep",
+    "link": "lib/Cardano-Node-Tracing-StateRep.html#v:severityNodeState"
+  },
+  {
+    "display_html": "<a href=\"#v:docNodeState\">docNodeState</a> &#8759; Documented <a href=\"Cardano-Node-Tracing-StateRep.html#t:NodeState\" title=\"Cardano.Node.Tracing.StateRep\">NodeState</a>",
+    "name": "docNodeState",
+    "module": "Cardano.Node.Tracing.StateRep",
+    "link": "lib/Cardano-Node-Tracing-StateRep.html#v:docNodeState"
   },
   {
     "display_html": "<span class=\"keyword\">data</span> <a href=\"#t:TraceDocumentationCmd\">TraceDocumentationCmd</a> = <a href=\"#v:TraceDocumentationCmd\">TraceDocumentationCmd</a> {<ul class=\"subs\"><li><a href=\"#v:tdcConfigFile\">tdcConfigFile</a> &#8759; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:FilePath\" title=\"Distribution.Compat.Prelude.Internal\">FilePath</a></li><li><a href=\"#v:tdcOutput\">tdcOutput</a> &#8759; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:FilePath\" title=\"Distribution.Compat.Prelude.Internal\">FilePath</a></li></ul>}",

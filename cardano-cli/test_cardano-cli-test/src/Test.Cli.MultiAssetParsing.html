@@ -23,8 +23,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-21"></span><span>    </span><span id="local-6989586621679276923"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679276923"><span class="hs-identifier hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
+</span><span id="line-21"></span><span>    </span><span id="local-6989586621679276931"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679276931"><span class="hs-identifier hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -60,7 +60,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span>
 </span><span id="line-23"></span><span>      </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679276923"><span class="hs-identifier hs-var">value</span></a></span><span>
+</span><a href="#local-6989586621679276931"><span class="hs-identifier hs-var">value</span></a></span><span>
 </span><span id="line-24"></span><span>      </span><span class="annot"><span class="annottext">Value -&gt; Text
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">renderValue</span></a></span><span>
 </span><span id="line-25"></span><span>      </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Parsec String () Value
@@ -86,8 +86,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-30"></span><span>    </span><span id="local-6989586621679276917"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679276917"><span class="hs-identifier hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621679276925"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679276925"><span class="hs-identifier hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -123,7 +123,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span>
 </span><span id="line-32"></span><span>      </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679276917"><span class="hs-identifier hs-var">value</span></a></span><span>
+</span><a href="#local-6989586621679276925"><span class="hs-identifier hs-var">value</span></a></span><span>
 </span><span id="line-33"></span><span>      </span><span class="annot"><span class="annottext">Value -&gt; Text
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">renderValuePretty</span></a></span><span>
 </span><span id="line-34"></span><span>      </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Parsec String () Value

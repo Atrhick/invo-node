@@ -32,8 +32,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-30"></span><span>    </span><span id="local-6989586621679276831"><span class="annot"><span class="annottext">DelegationsAndRewards
-</span><a href="#local-6989586621679276831"><span class="hs-identifier hs-var">dAndG</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen DelegationsAndRewards -&gt; PropertyT IO DelegationsAndRewards
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621679276839"><span class="annot"><span class="annottext">DelegationsAndRewards
+</span><a href="#local-6989586621679276839"><span class="hs-identifier hs-var">dAndG</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen DelegationsAndRewards -&gt; PropertyT IO DelegationsAndRewards
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -48,7 +48,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span> </span><span class="annot"><span class="annottext">DelegationsAndRewards
-</span><a href="#local-6989586621679276831"><span class="hs-identifier hs-var">dAndG</span></a></span><span> </span><span class="annot"><span class="annottext">DelegationsAndRewards -&gt; ByteString
+</span><a href="#local-6989586621679276839"><span class="hs-identifier hs-var">dAndG</span></a></span><span> </span><span class="annot"><span class="annottext">DelegationsAndRewards -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Either String DelegationsAndRewards
 forall a. FromJSON a =&gt; ByteString -&gt; Either String a
@@ -57,27 +57,27 @@ forall a. FromJSON a =&gt; ByteString -&gt; Either String a
 </span><span id="line-33"></span><span class="annot"><a href="Test.Cli.JSON.html#genDelegationsAndRewards"><span class="hs-identifier hs-type">genDelegationsAndRewards</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Gen</span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-type">DelegationsAndRewards</span></a></span><span>
 </span><span id="line-34"></span><span id="genDelegationsAndRewards"><span class="annot"><span class="annottext">genDelegationsAndRewards :: Gen DelegationsAndRewards
 </span><a href="Test.Cli.JSON.html#genDelegationsAndRewards"><span class="hs-identifier hs-var hs-var">genDelegationsAndRewards</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-35"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276827"><span class="annot"><span class="annottext">r :: Range Int
-</span><a href="#local-6989586621679276827"><span class="hs-identifier hs-var hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Range Int
+</span><span id="line-35"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276835"><span class="annot"><span class="annottext">r :: Range Int
+</span><a href="#local-6989586621679276835"><span class="hs-identifier hs-var hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Range Int
 forall a. a -&gt; a -&gt; Range a
 </span><span class="hs-identifier hs-var">Range.constant</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">3</span></span><span>
-</span><span id="line-36"></span><span>  </span><span id="local-6989586621679276825"><span class="annot"><span class="annottext">[StakeAddress]
-</span><a href="#local-6989586621679276825"><span class="hs-identifier hs-var">sAddrs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int
+</span><span id="line-36"></span><span>  </span><span id="local-6989586621679276833"><span class="annot"><span class="annottext">[StakeAddress]
+</span><a href="#local-6989586621679276833"><span class="hs-identifier hs-var">sAddrs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int
 -&gt; GenT Identity StakeAddress -&gt; GenT Identity [StakeAddress]
 forall (m :: * -&gt; *) a. MonadGen m =&gt; Range Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">Gen.list</span></span><span> </span><span class="annot"><span class="annottext">Range Int
-</span><a href="#local-6989586621679276827"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity StakeAddress
+</span><a href="#local-6989586621679276835"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity StakeAddress
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/l/gen/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">genStakeAddress</span></a></span><span>
-</span><span id="line-37"></span><span>  </span><span id="local-6989586621679276823"><span class="annot"><span class="annottext">[Lovelace]
-</span><a href="#local-6989586621679276823"><span class="hs-identifier hs-var">sLovelace</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int -&gt; GenT Identity Lovelace -&gt; GenT Identity [Lovelace]
+</span><span id="line-37"></span><span>  </span><span id="local-6989586621679276831"><span class="annot"><span class="annottext">[Lovelace]
+</span><a href="#local-6989586621679276831"><span class="hs-identifier hs-var">sLovelace</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int -&gt; GenT Identity Lovelace -&gt; GenT Identity [Lovelace]
 forall (m :: * -&gt; *) a. MonadGen m =&gt; Range Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">Gen.list</span></span><span> </span><span class="annot"><span class="annottext">Range Int
-</span><a href="#local-6989586621679276827"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity Lovelace
+</span><a href="#local-6989586621679276835"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity Lovelace
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/l/gen/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">genLovelace</span></a></span><span>
-</span><span id="line-38"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276822"><span class="annot"><span class="annottext">delegMapAmt :: Map StakeAddress Lovelace
-</span><a href="#local-6989586621679276822"><span class="hs-identifier hs-var hs-var">delegMapAmt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(StakeAddress, Lovelace)] -&gt; Map StakeAddress Lovelace
+</span><span id="line-38"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276830"><span class="annot"><span class="annottext">delegMapAmt :: Map StakeAddress Lovelace
+</span><a href="#local-6989586621679276830"><span class="hs-identifier hs-var hs-var">delegMapAmt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(StakeAddress, Lovelace)] -&gt; Map StakeAddress Lovelace
 forall k a. Ord k =&gt; [(k, a)] -&gt; Map k a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/containers-0.6.5.1/src"><span class="hs-identifier hs-var">Map.fromList</span></a></span><span> </span><span class="annot"><span class="annottext">([(StakeAddress, Lovelace)] -&gt; Map StakeAddress Lovelace)
 -&gt; [(StakeAddress, Lovelace)] -&gt; Map StakeAddress Lovelace
@@ -85,18 +85,18 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">[StakeAddress] -&gt; [Lovelace] -&gt; [(StakeAddress, Lovelace)]
 forall a b. [a] -&gt; [b] -&gt; [(a, b)]
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">zip</span></a></span><span> </span><span class="annot"><span class="annottext">[StakeAddress]
-</span><a href="#local-6989586621679276825"><span class="hs-identifier hs-var">sAddrs</span></a></span><span> </span><span class="annot"><span class="annottext">[Lovelace]
-</span><a href="#local-6989586621679276823"><span class="hs-identifier hs-var">sLovelace</span></a></span><span>
-</span><span id="line-39"></span><span>  </span><span id="local-6989586621679276820"><span class="annot"><span class="annottext">[Hash StakePoolKey]
-</span><a href="#local-6989586621679276820"><span class="hs-identifier hs-var">poolIDs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int
+</span><a href="#local-6989586621679276833"><span class="hs-identifier hs-var">sAddrs</span></a></span><span> </span><span class="annot"><span class="annottext">[Lovelace]
+</span><a href="#local-6989586621679276831"><span class="hs-identifier hs-var">sLovelace</span></a></span><span>
+</span><span id="line-39"></span><span>  </span><span id="local-6989586621679276828"><span class="annot"><span class="annottext">[Hash StakePoolKey]
+</span><a href="#local-6989586621679276828"><span class="hs-identifier hs-var">poolIDs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Range Int
 -&gt; GenT Identity (Hash StakePoolKey)
 -&gt; GenT Identity [Hash StakePoolKey]
 forall (m :: * -&gt; *) a. MonadGen m =&gt; Range Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">Gen.list</span></span><span> </span><span class="annot"><span class="annottext">Range Int
-</span><a href="#local-6989586621679276827"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity (Hash StakePoolKey)
+</span><a href="#local-6989586621679276835"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">GenT Identity (Hash StakePoolKey)
 </span><a href="Test.Cli.JSON.html#genPoolId"><span class="hs-identifier hs-var">genPoolId</span></a></span><span>
-</span><span id="line-40"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276818"><span class="annot"><span class="annottext">delegMapPool :: Map StakeAddress (Hash StakePoolKey)
-</span><a href="#local-6989586621679276818"><span class="hs-identifier hs-var hs-var">delegMapPool</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(StakeAddress, Hash StakePoolKey)]
+</span><span id="line-40"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679276826"><span class="annot"><span class="annottext">delegMapPool :: Map StakeAddress (Hash StakePoolKey)
+</span><a href="#local-6989586621679276826"><span class="hs-identifier hs-var hs-var">delegMapPool</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(StakeAddress, Hash StakePoolKey)]
 -&gt; Map StakeAddress (Hash StakePoolKey)
 forall k a. Ord k =&gt; [(k, a)] -&gt; Map k a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/containers-0.6.5.1/src"><span class="hs-identifier hs-var">Map.fromList</span></a></span><span> </span><span class="annot"><span class="annottext">([(StakeAddress, Hash StakePoolKey)]
@@ -108,8 +108,8 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 -&gt; [Hash StakePoolKey] -&gt; [(StakeAddress, Hash StakePoolKey)]
 forall a b. [a] -&gt; [b] -&gt; [(a, b)]
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">zip</span></a></span><span> </span><span class="annot"><span class="annottext">[StakeAddress]
-</span><a href="#local-6989586621679276825"><span class="hs-identifier hs-var">sAddrs</span></a></span><span> </span><span class="annot"><span class="annottext">[Hash StakePoolKey]
-</span><a href="#local-6989586621679276820"><span class="hs-identifier hs-var">poolIDs</span></a></span><span>
+</span><a href="#local-6989586621679276833"><span class="hs-identifier hs-var">sAddrs</span></a></span><span> </span><span class="annot"><span class="annottext">[Hash StakePoolKey]
+</span><a href="#local-6989586621679276828"><span class="hs-identifier hs-var">poolIDs</span></a></span><span>
 </span><span id="line-41"></span><span>  </span><span class="annot"><span class="annottext">DelegationsAndRewards -&gt; Gen DelegationsAndRewards
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="annot"><span class="annottext">(DelegationsAndRewards -&gt; Gen DelegationsAndRewards)
@@ -118,8 +118,8 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">(Map StakeAddress Lovelace, Map StakeAddress (Hash StakePoolKey))
 -&gt; DelegationsAndRewards
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-var">DelegationsAndRewards</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Map StakeAddress Lovelace
-</span><a href="#local-6989586621679276822"><span class="hs-identifier hs-var">delegMapAmt</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Map StakeAddress (Hash StakePoolKey)
-</span><a href="#local-6989586621679276818"><span class="hs-identifier hs-var">delegMapPool</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679276830"><span class="hs-identifier hs-var">delegMapAmt</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Map StakeAddress (Hash StakePoolKey)
+</span><a href="#local-6989586621679276826"><span class="hs-identifier hs-var">delegMapPool</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-42"></span><span>
 </span><span id="line-43"></span><span class="annot"><a href="Test.Cli.JSON.html#genOpCertIntervalInformation"><span class="hs-identifier hs-type">genOpCertIntervalInformation</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Gen</span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-type">OpCertIntervalInformation</span></a></span><span>
 </span><span id="line-44"></span><span id="genOpCertIntervalInformation"><span class="annot"><span class="annottext">genOpCertIntervalInformation :: Gen OpCertIntervalInformation
@@ -342,8 +342,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-76"></span><span>  </span><span id="local-6989586621679276795"><span class="annot"><span class="annottext">QueryKesPeriodInfoOutput
-</span><a href="#local-6989586621679276795"><span class="hs-identifier hs-var">kesPeriodOutput</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen QueryKesPeriodInfoOutput
+</span><span id="line-76"></span><span>  </span><span id="local-6989586621679276803"><span class="annot"><span class="annottext">QueryKesPeriodInfoOutput
+</span><a href="#local-6989586621679276803"><span class="hs-identifier hs-var">kesPeriodOutput</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen QueryKesPeriodInfoOutput
 -&gt; PropertyT IO QueryKesPeriodInfoOutput
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
@@ -359,7 +359,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span> </span><span class="annot"><span class="annottext">QueryKesPeriodInfoOutput
-</span><a href="#local-6989586621679276795"><span class="hs-identifier hs-var">kesPeriodOutput</span></a></span><span> </span><span class="annot"><span class="annottext">QueryKesPeriodInfoOutput -&gt; ByteString
+</span><a href="#local-6989586621679276803"><span class="hs-identifier hs-var">kesPeriodOutput</span></a></span><span> </span><span class="annot"><span class="annottext">QueryKesPeriodInfoOutput -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Either String QueryKesPeriodInfoOutput
 forall a. FromJSON a =&gt; ByteString -&gt; Either String a
