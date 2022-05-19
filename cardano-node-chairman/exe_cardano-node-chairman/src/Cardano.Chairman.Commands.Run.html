@@ -83,8 +83,8 @@ forall (f :: * -&gt; *) a. HasCompleter f =&gt; Completer -&gt; Mod f a
 </span><span id="line-54"></span><span>
 </span><span id="line-55"></span><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#parseSocketPath"><span class="hs-identifier hs-type">parseSocketPath</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-type">Text</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Parser</span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">SocketPath</span></a></span><span>
 </span><span id="line-56"></span><span id="parseSocketPath"><span class="annot"><span class="annottext">parseSocketPath :: Text -&gt; Parser SocketPath
-</span><a href="Cardano.Chairman.Commands.Run.html#parseSocketPath"><span class="hs-identifier hs-var hs-var">parseSocketPath</span></a></span></span><span> </span><span id="local-6989586621679185581"><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679185581"><span class="hs-identifier hs-var">helpMessage</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Cardano.Chairman.Commands.Run.html#parseSocketPath"><span class="hs-identifier hs-var hs-var">parseSocketPath</span></a></span></span><span> </span><span id="local-6989586621679185594"><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621679185594"><span class="hs-identifier hs-var">helpMessage</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-57"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; SocketPath
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-var">SocketPath</span></a></span><span> </span><span class="annot"><span class="annottext">(FilePath -&gt; SocketPath) -&gt; Parser FilePath -&gt; Parser SocketPath
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -103,7 +103,7 @@ forall (f :: * -&gt; *) a. FilePath -&gt; Mod f a
 </span><span class="hs-identifier hs-var">help</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Text -&gt; FilePath
 forall a b. ConvertText a b =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">toS</span></span><span> </span><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679185581"><span class="hs-identifier hs-var">helpMessage</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679185594"><span class="hs-identifier hs-var">helpMessage</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-60"></span><span>    </span><span class="annot"><span class="annottext">Mod OptionFields FilePath
 -&gt; Mod OptionFields FilePath -&gt; Mod OptionFields FilePath
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
@@ -242,26 +242,26 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span id="line-92"></span><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#run"><span class="hs-identifier hs-type">run</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#RunOpts"><span class="hs-identifier hs-type">RunOpts</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-93"></span><span id="run"><span class="annot"><span class="annottext">run :: RunOpts -&gt; IO ()
 </span><a href="Cardano.Chairman.Commands.Run.html#run"><span class="hs-identifier hs-var hs-var">run</span></a></span></span><span> </span><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#RunOpts"><span class="hs-identifier hs-type">RunOpts</span></a></span><span>
-</span><span id="line-94"></span><span>    </span><span class="hs-special">{</span><span> </span><span id="local-6989586621679185568"><span class="annot"><span class="annottext">DiffTime
+</span><span id="line-94"></span><span>    </span><span class="hs-special">{</span><span> </span><span id="local-6989586621679185581"><span class="annot"><span class="annottext">DiffTime
 caRunningTime :: DiffTime
 caRunningTime :: RunOpts -&gt; DiffTime
-</span><a href="#local-6989586621679185568"><span class="hs-identifier hs-var hs-var">caRunningTime</span></a></span></span><span>
-</span><span id="line-95"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185567"><span class="annot"><span class="annottext">BlockNo
+</span><a href="#local-6989586621679185581"><span class="hs-identifier hs-var hs-var">caRunningTime</span></a></span></span><span>
+</span><span id="line-95"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185580"><span class="annot"><span class="annottext">BlockNo
 caMinProgress :: BlockNo
 caMinProgress :: RunOpts -&gt; BlockNo
-</span><a href="#local-6989586621679185567"><span class="hs-identifier hs-var hs-var">caMinProgress</span></a></span></span><span>
-</span><span id="line-96"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185566"><span class="annot"><span class="annottext">[SocketPath]
+</span><a href="#local-6989586621679185580"><span class="hs-identifier hs-var hs-var">caMinProgress</span></a></span></span><span>
+</span><span id="line-96"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185579"><span class="annot"><span class="annottext">[SocketPath]
 caSocketPaths :: [SocketPath]
 caSocketPaths :: RunOpts -&gt; [SocketPath]
-</span><a href="#local-6989586621679185566"><span class="hs-identifier hs-var hs-var">caSocketPaths</span></a></span></span><span>
-</span><span id="line-97"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185565"><span class="annot"><span class="annottext">ConfigYamlFilePath
+</span><a href="#local-6989586621679185579"><span class="hs-identifier hs-var hs-var">caSocketPaths</span></a></span></span><span>
+</span><span id="line-97"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185578"><span class="annot"><span class="annottext">ConfigYamlFilePath
 caConfigYaml :: ConfigYamlFilePath
 caConfigYaml :: RunOpts -&gt; ConfigYamlFilePath
-</span><a href="#local-6989586621679185565"><span class="hs-identifier hs-var hs-var">caConfigYaml</span></a></span></span><span>
+</span><a href="#local-6989586621679185578"><span class="hs-identifier hs-var hs-var">caConfigYaml</span></a></span></span><span>
 </span><span id="line-98"></span><span>    </span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-99"></span><span>
-</span><span id="line-100"></span><span>  </span><span id="local-6989586621679185564"><span class="annot"><span class="annottext">PartialNodeConfiguration
-</span><a href="#local-6989586621679185564"><span class="hs-identifier hs-var">configYamlPc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO PartialNodeConfiguration -&gt; IO PartialNodeConfiguration
+</span><span id="line-100"></span><span>  </span><span id="local-6989586621679185577"><span class="annot"><span class="annottext">PartialNodeConfiguration
+</span><a href="#local-6989586621679185577"><span class="hs-identifier hs-var">configYamlPc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO PartialNodeConfiguration -&gt; IO PartialNodeConfiguration
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">liftIO</span></a></span><span> </span><span class="annot"><span class="annottext">(IO PartialNodeConfiguration -&gt; IO PartialNodeConfiguration)
 -&gt; (Maybe ConfigYamlFilePath -&gt; IO PartialNodeConfiguration)
@@ -277,12 +277,12 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">ConfigYamlFilePath -&gt; Maybe ConfigYamlFilePath
 forall a. a -&gt; Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Just</span></a></span><span> </span><span class="annot"><span class="annottext">ConfigYamlFilePath
-</span><a href="#local-6989586621679185565"><span class="hs-identifier hs-var">caConfigYaml</span></a></span><span>
+</span><a href="#local-6989586621679185578"><span class="hs-identifier hs-var">caConfigYaml</span></a></span><span>
 </span><span id="line-101"></span><span>
-</span><span id="line-102"></span><span>  </span><span id="local-6989586621679185561"><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185561"><span class="hs-identifier hs-var">ptclConfig</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">PartialNodeConfiguration -&gt; Maybe NodeProtocolConfiguration
-</span><a href="#local-6989586621679185560"><span class="hs-identifier hs-var">getProtocolConfiguration</span></a></span><span> </span><span class="annot"><span class="annottext">PartialNodeConfiguration
-</span><a href="#local-6989586621679185564"><span class="hs-identifier hs-var">configYamlPc</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-102"></span><span>  </span><span id="local-6989586621679185574"><span class="annot"><span class="annottext">NodeProtocolConfiguration
+</span><a href="#local-6989586621679185574"><span class="hs-identifier hs-var">ptclConfig</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">PartialNodeConfiguration -&gt; Maybe NodeProtocolConfiguration
+</span><a href="#local-6989586621679185573"><span class="hs-identifier hs-var">getProtocolConfiguration</span></a></span><span> </span><span class="annot"><span class="annottext">PartialNodeConfiguration
+</span><a href="#local-6989586621679185577"><span class="hs-identifier hs-var">configYamlPc</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-103"></span><span>                  </span><span class="annot"><span class="annottext">Maybe NodeProtocolConfiguration
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-104"></span><span>                    </span><span class="annot"><span class="annottext">Text -&gt; IO NodeProtocolConfiguration
@@ -300,15 +300,15 @@ forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; Text
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.pack</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ConfigYamlFilePath -&gt; FilePath
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-var hs-var">unConfigPath</span></a></span><span> </span><span class="annot"><span class="annottext">ConfigYamlFilePath
-</span><a href="#local-6989586621679185565"><span class="hs-identifier hs-var">caConfigYaml</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-106"></span><span>                  </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Just</span></a></span><span> </span><span id="local-6989586621679185556"><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185556"><span class="hs-identifier hs-var">ptclConfig</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration -&gt; IO NodeProtocolConfiguration
+</span><a href="#local-6989586621679185578"><span class="hs-identifier hs-var">caConfigYaml</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-106"></span><span>                  </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Just</span></a></span><span> </span><span id="local-6989586621679185569"><span class="annot"><span class="annottext">NodeProtocolConfiguration
+</span><a href="#local-6989586621679185569"><span class="hs-identifier hs-var">ptclConfig</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration -&gt; IO NodeProtocolConfiguration
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185556"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span>
+</span><a href="#local-6989586621679185569"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span>
 </span><span id="line-107"></span><span>
-</span><span id="line-108"></span><span>  </span><span id="local-6989586621679185555"><span class="annot"><span class="annottext">Either ProtocolInstantiationError SomeConsensusProtocol
-</span><a href="#local-6989586621679185555"><span class="hs-identifier hs-var">eitherSomeProtocol</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">ExceptT ProtocolInstantiationError IO SomeConsensusProtocol
+</span><span id="line-108"></span><span>  </span><span id="local-6989586621679185568"><span class="annot"><span class="annottext">Either ProtocolInstantiationError SomeConsensusProtocol
+</span><a href="#local-6989586621679185568"><span class="hs-identifier hs-var">eitherSomeProtocol</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">ExceptT ProtocolInstantiationError IO SomeConsensusProtocol
 -&gt; IO (Either ProtocolInstantiationError SomeConsensusProtocol)
 forall e (m :: * -&gt; *) a. ExceptT e m a -&gt; m (Either e a)
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/transformers-0.5.6.2/src"><span class="hs-identifier hs-var">runExceptT</span></a></span><span> </span><span class="annot"><span class="annottext">(ExceptT ProtocolInstantiationError IO SomeConsensusProtocol
@@ -320,39 +320,39 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 -&gt; Maybe ProtocolFilepaths
 -&gt; ExceptT ProtocolInstantiationError IO SomeConsensusProtocol
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-var">mkConsensusProtocol</span></a></span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185561"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe ProtocolFilepaths
+</span><a href="#local-6989586621679185574"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe ProtocolFilepaths
 forall a. Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span>
 </span><span id="line-109"></span><span>
-</span><span id="line-110"></span><span>  </span><span id="local-6989586621679185552"><span class="annot"><span class="annottext">SomeConsensusProtocol
-</span><a href="#local-6989586621679185552"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">SomeConsensusProtocol</span></a></span><span> </span><span class="hs-glyph">&lt;-</span><span>
+</span><span id="line-110"></span><span>  </span><span id="local-6989586621679185565"><span class="annot"><span class="annottext">SomeConsensusProtocol
+</span><a href="#local-6989586621679185565"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">SomeConsensusProtocol</span></a></span><span> </span><span class="hs-glyph">&lt;-</span><span>
 </span><span id="line-111"></span><span>    </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either ProtocolInstantiationError SomeConsensusProtocol
-</span><a href="#local-6989586621679185555"><span class="hs-identifier hs-var">eitherSomeProtocol</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-112"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679185551"><span class="annot"><span class="annottext">ProtocolInstantiationError
-</span><a href="#local-6989586621679185551"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; IO ()
+</span><a href="#local-6989586621679185568"><span class="hs-identifier hs-var">eitherSomeProtocol</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-112"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679185564"><span class="annot"><span class="annottext">ProtocolInstantiationError
+</span><a href="#local-6989586621679185564"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; IO ()
 forall a (m :: * -&gt; *). (Print a, MonadIO m) =&gt; a -&gt; m ()
 </span><span class="hs-identifier hs-var">putStrLn</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ProtocolInstantiationError -&gt; FilePath
 forall e. Error e =&gt; e -&gt; FilePath
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">displayError</span></a></span><span> </span><span class="annot"><span class="annottext">ProtocolInstantiationError
-</span><a href="#local-6989586621679185551"><span class="hs-identifier hs-var">err</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; IO SomeConsensusProtocol -&gt; IO SomeConsensusProtocol
+</span><a href="#local-6989586621679185564"><span class="hs-identifier hs-var">err</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; IO SomeConsensusProtocol -&gt; IO SomeConsensusProtocol
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&gt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">IO SomeConsensusProtocol
 forall a. IO a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">exitFailure</span></a></span><span>
-</span><span id="line-113"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679185547"><span class="annot"><span class="annottext">SomeConsensusProtocol
-</span><a href="#local-6989586621679185547"><span class="hs-identifier hs-var">p</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">SomeConsensusProtocol -&gt; IO SomeConsensusProtocol
+</span><span id="line-113"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679185560"><span class="annot"><span class="annottext">SomeConsensusProtocol
+</span><a href="#local-6989586621679185560"><span class="hs-identifier hs-var">p</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">SomeConsensusProtocol -&gt; IO SomeConsensusProtocol
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">pure</span></a></span><span> </span><span class="annot"><span class="annottext">SomeConsensusProtocol
-</span><a href="#local-6989586621679185547"><span class="hs-identifier hs-var">p</span></a></span><span>
+</span><a href="#local-6989586621679185560"><span class="hs-identifier hs-var">p</span></a></span><span>
 </span><span id="line-114"></span><span>
-</span><span id="line-115"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679185546"><span class="annot"><span class="annottext">SecurityParam
-</span><a href="#local-6989586621679185546"><span class="hs-identifier hs-var">k</span></a></span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185545"><span class="annot"><span class="annottext">NetworkId
-</span><a href="#local-6989586621679185545"><span class="hs-identifier hs-var">nId</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">SomeConsensusProtocol
-</span><a href="#local-6989586621679185552"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-115"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679185559"><span class="annot"><span class="annottext">SecurityParam
+</span><a href="#local-6989586621679185559"><span class="hs-identifier hs-var">k</span></a></span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621679185558"><span class="annot"><span class="annottext">NetworkId
+</span><a href="#local-6989586621679185558"><span class="hs-identifier hs-var">nId</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">SomeConsensusProtocol
+</span><a href="#local-6989586621679185565"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-116"></span><span>            </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">SomeConsensusProtocol</span></a></span><span> </span><span class="annot"><span class="annottext">BlockType blk
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679185543"><span class="annot"><span class="annottext">ProtocolInfoArgs IO blk
-</span><a href="#local-6989586621679185543"><span class="hs-identifier hs-var">runP</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
-</span><span id="line-117"></span><span>              </span><span class="hs-keyword">let</span><span> </span><span class="annot"><span class="hs-identifier hs-type">ProtocolInfo</span></span><span> </span><span class="hs-special">{</span><span> </span><span id="local-6989586621679185541"><span class="annot"><span class="annottext">TopLevelConfig blk
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679185556"><span class="annot"><span class="annottext">ProtocolInfoArgs IO blk
+</span><a href="#local-6989586621679185556"><span class="hs-identifier hs-var">runP</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-117"></span><span>              </span><span class="hs-keyword">let</span><span> </span><span class="annot"><span class="hs-identifier hs-type">ProtocolInfo</span></span><span> </span><span class="hs-special">{</span><span> </span><span id="local-6989586621679185554"><span class="annot"><span class="annottext">TopLevelConfig blk
 pInfoConfig :: forall (m :: * -&gt; *) b. ProtocolInfo m b -&gt; TopLevelConfig b
 pInfoConfig :: TopLevelConfig blk
 </span><span class="hs-identifier hs-var hs-var">pInfoConfig</span></span></span><span> </span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ProtocolInfoArgs IO blk -&gt; ProtocolInfo IO blk
@@ -360,13 +360,13 @@ forall (m :: * -&gt; *) blk.
 Protocol m blk =&gt;
 ProtocolInfoArgs m blk -&gt; ProtocolInfo m blk
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">Protocol.protocolInfo</span></a></span><span> </span><span class="annot"><span class="annottext">ProtocolInfoArgs IO blk
-</span><a href="#local-6989586621679185543"><span class="hs-identifier hs-var">runP</span></a></span><span>
+</span><a href="#local-6989586621679185556"><span class="hs-identifier hs-var">runP</span></a></span><span>
 </span><span id="line-118"></span><span>              </span><span class="hs-keyword">in</span><span> </span><span class="hs-special">(</span><span> </span><span class="annot"><span class="annottext">TopLevelConfig blk -&gt; SecurityParam
 forall blk.
 ConsensusProtocol (BlockProtocol blk) =&gt;
 TopLevelConfig blk -&gt; SecurityParam
 </span><span class="hs-identifier hs-var">Consensus.configSecurityParam</span></span><span> </span><span class="annot"><span class="annottext">TopLevelConfig blk
-</span><a href="#local-6989586621679185541"><span class="hs-identifier hs-var">pInfoConfig</span></a></span><span>
+</span><a href="#local-6989586621679185554"><span class="hs-identifier hs-var">pInfoConfig</span></a></span><span>
 </span><span id="line-119"></span><span>                 </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">NetworkMagic -&gt; NetworkId
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">fromNetworkMagic</span></a></span><span> </span><span class="annot"><span class="annottext">(NetworkMagic -&gt; NetworkId)
 -&gt; (BlockConfig blk -&gt; NetworkMagic)
@@ -384,15 +384,15 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">TopLevelConfig blk -&gt; BlockConfig blk
 forall blk. TopLevelConfig blk -&gt; BlockConfig blk
 </span><span class="hs-identifier hs-var">Consensus.configBlock</span></span><span> </span><span class="annot"><span class="annottext">TopLevelConfig blk
-</span><a href="#local-6989586621679185541"><span class="hs-identifier hs-var">pInfoConfig</span></a></span><span>
+</span><a href="#local-6989586621679185554"><span class="hs-identifier hs-var">pInfoConfig</span></a></span><span>
 </span><span id="line-120"></span><span>                 </span><span class="hs-special">)</span><span>
 </span><span id="line-121"></span><span>
-</span><span id="line-122"></span><span>      </span><span id="local-6989586621679185534"><span class="annot"><span class="annottext">consensusModeParams :: AnyConsensusModeParams
-</span><a href="#local-6989586621679185534"><span class="hs-identifier hs-var hs-var">consensusModeParams</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SecurityParam
+</span><span id="line-122"></span><span>      </span><span id="local-6989586621679185547"><span class="annot"><span class="annottext">consensusModeParams :: AnyConsensusModeParams
+</span><a href="#local-6989586621679185547"><span class="hs-identifier hs-var hs-var">consensusModeParams</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SecurityParam
 -&gt; NodeProtocolConfiguration -&gt; AnyConsensusModeParams
-</span><a href="#local-6989586621679185533"><span class="hs-identifier hs-var">getConsensusMode</span></a></span><span> </span><span class="annot"><span class="annottext">SecurityParam
-</span><a href="#local-6989586621679185546"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185561"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span>
+</span><a href="#local-6989586621679185546"><span class="hs-identifier hs-var">getConsensusMode</span></a></span><span> </span><span class="annot"><span class="annottext">SecurityParam
+</span><a href="#local-6989586621679185559"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration
+</span><a href="#local-6989586621679185574"><span class="hs-identifier hs-var">ptclConfig</span></a></span><span>
 </span><span id="line-123"></span><span>
 </span><span id="line-124"></span><span>  </span><span class="annot"><span class="annottext">Tracer IO FilePath
 -&gt; NetworkId
@@ -409,30 +409,30 @@ forall a. Tracer IO a -&gt; Tracer IO a
 forall (m :: * -&gt; *). MonadIO m =&gt; Tracer m FilePath
 </span><span class="hs-identifier hs-var">stdoutTracer</span></span><span class="hs-special">)</span><span>
 </span><span id="line-126"></span><span>    </span><span class="annot"><span class="annottext">NetworkId
-</span><a href="#local-6989586621679185545"><span class="hs-identifier hs-var">nId</span></a></span><span>
+</span><a href="#local-6989586621679185558"><span class="hs-identifier hs-var">nId</span></a></span><span>
 </span><span id="line-127"></span><span>    </span><span class="annot"><span class="annottext">DiffTime
-</span><a href="#local-6989586621679185568"><span class="hs-identifier hs-var">caRunningTime</span></a></span><span>
+</span><a href="#local-6989586621679185581"><span class="hs-identifier hs-var">caRunningTime</span></a></span><span>
 </span><span id="line-128"></span><span>    </span><span class="annot"><span class="annottext">BlockNo
-</span><a href="#local-6989586621679185567"><span class="hs-identifier hs-var">caMinProgress</span></a></span><span>
+</span><a href="#local-6989586621679185580"><span class="hs-identifier hs-var">caMinProgress</span></a></span><span>
 </span><span id="line-129"></span><span>    </span><span class="annot"><span class="annottext">[SocketPath]
-</span><a href="#local-6989586621679185566"><span class="hs-identifier hs-var">caSocketPaths</span></a></span><span>
+</span><a href="#local-6989586621679185579"><span class="hs-identifier hs-var">caSocketPaths</span></a></span><span>
 </span><span id="line-130"></span><span>    </span><span class="annot"><span class="annottext">AnyConsensusModeParams
-</span><a href="#local-6989586621679185534"><span class="hs-identifier hs-var">consensusModeParams</span></a></span><span>
+</span><a href="#local-6989586621679185547"><span class="hs-identifier hs-var">consensusModeParams</span></a></span><span>
 </span><span id="line-131"></span><span>    </span><span class="annot"><span class="annottext">SecurityParam
-</span><a href="#local-6989586621679185546"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679185559"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-132"></span><span>
 </span><span id="line-133"></span><span>  </span><span class="annot"><span class="annottext">() -&gt; IO ()
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-134"></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-135"></span><span>  </span><span class="annot"><a href="#local-6989586621679185533"><span class="hs-identifier hs-type">getConsensusMode</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">SecurityParam</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">NodeProtocolConfiguration</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">AnyConsensusModeParams</span></a></span><span>
-</span><span id="line-136"></span><span>  </span><span id="local-6989586621679185533"><span class="annot"><span class="annottext">getConsensusMode :: SecurityParam
+</span><span id="line-135"></span><span>  </span><span class="annot"><a href="#local-6989586621679185546"><span class="hs-identifier hs-type">getConsensusMode</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">SecurityParam</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">NodeProtocolConfiguration</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">AnyConsensusModeParams</span></a></span><span>
+</span><span id="line-136"></span><span>  </span><span id="local-6989586621679185546"><span class="annot"><span class="annottext">getConsensusMode :: SecurityParam
 -&gt; NodeProtocolConfiguration -&gt; AnyConsensusModeParams
-</span><a href="#local-6989586621679185533"><span class="hs-identifier hs-var hs-var">getConsensusMode</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">SecurityParam</span></span><span> </span><span id="local-6989586621679185530"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679185530"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679185529"><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185529"><span class="hs-identifier hs-var">ncProtocolConfig</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="#local-6989586621679185546"><span class="hs-identifier hs-var hs-var">getConsensusMode</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">SecurityParam</span></span><span> </span><span id="local-6989586621679185543"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679185543"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679185542"><span class="annot"><span class="annottext">NodeProtocolConfiguration
+</span><a href="#local-6989586621679185542"><span class="hs-identifier hs-var">ncProtocolConfig</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-137"></span><span>    </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">NodeProtocolConfiguration
-</span><a href="#local-6989586621679185529"><span class="hs-identifier hs-var">ncProtocolConfig</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621679185542"><span class="hs-identifier hs-var">ncProtocolConfig</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-138"></span><span>      </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">NodeProtocolConfigurationByron</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-139"></span><span>        </span><span class="annot"><span class="annottext">ConsensusModeParams ByronMode -&gt; AnyConsensusModeParams
 forall mode. ConsensusModeParams mode -&gt; AnyConsensusModeParams
@@ -445,7 +445,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; EpochSlots
 </span><span class="hs-identifier hs-var">EpochSlots</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679185530"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679185543"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-140"></span><span>      </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">NodeProtocolConfigurationShelley</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-141"></span><span>        </span><span class="annot"><span class="annottext">ConsensusModeParams ShelleyMode -&gt; AnyConsensusModeParams
 forall mode. ConsensusModeParams mode -&gt; AnyConsensusModeParams
@@ -463,32 +463,32 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; EpochSlots
 </span><span class="hs-identifier hs-var">EpochSlots</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679185530"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679185543"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-144"></span><span>
-</span><span id="line-145"></span><span>  </span><span class="annot"><a href="#local-6989586621679185560"><span class="hs-identifier hs-type">getProtocolConfiguration</span></a></span><span>
+</span><span id="line-145"></span><span>  </span><span class="annot"><a href="#local-6989586621679185573"><span class="hs-identifier hs-type">getProtocolConfiguration</span></a></span><span>
 </span><span id="line-146"></span><span>    </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">PartialNodeConfiguration</span></a></span><span>
 </span><span id="line-147"></span><span>    </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">NodeProtocolConfiguration</span></a></span><span>
-</span><span id="line-148"></span><span>  </span><span id="local-6989586621679185560"><span class="annot"><span class="annottext">getProtocolConfiguration :: PartialNodeConfiguration -&gt; Maybe NodeProtocolConfiguration
-</span><a href="#local-6989586621679185560"><span class="hs-identifier hs-var hs-var">getProtocolConfiguration</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">PartialNodeConfiguration</span></a></span><span class="hs-special">{</span><span id="local-6989586621679185519"><span class="annot"><span class="annottext">Last NodeProtocolConfiguration
+</span><span id="line-148"></span><span>  </span><span id="local-6989586621679185573"><span class="annot"><span class="annottext">getProtocolConfiguration :: PartialNodeConfiguration -&gt; Maybe NodeProtocolConfiguration
+</span><a href="#local-6989586621679185573"><span class="hs-identifier hs-var hs-var">getProtocolConfiguration</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-type">PartialNodeConfiguration</span></a></span><span class="hs-special">{</span><span id="local-6989586621679185532"><span class="annot"><span class="annottext">Last NodeProtocolConfiguration
 pncProtocolConfig :: PartialNodeConfiguration -&gt; Last NodeProtocolConfiguration
 pncProtocolConfig :: Last NodeProtocolConfiguration
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-node-1.33.0/noopt/doc/html/cardano-node/src"><span class="hs-identifier hs-var hs-var">pncProtocolConfig</span></a></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-149"></span><span>    </span><span class="annot"><span class="annottext">Last NodeProtocolConfiguration -&gt; Maybe NodeProtocolConfiguration
 forall a. Last a -&gt; Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var">getLast</span></a></span><span> </span><span class="annot"><span class="annottext">Last NodeProtocolConfiguration
-</span><a href="#local-6989586621679185519"><span class="hs-identifier hs-var">pncProtocolConfig</span></a></span><span>
+</span><a href="#local-6989586621679185532"><span class="hs-identifier hs-var">pncProtocolConfig</span></a></span><span>
 </span><span id="line-150"></span><span>
-</span><span id="line-151"></span><span id="local-6989586621679185624"><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#timed"><span class="hs-identifier hs-type">timed</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679185624"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679185624"><span class="hs-identifier hs-type">a</span></a></span></span><span>
+</span><span id="line-151"></span><span id="local-6989586621679185637"><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#timed"><span class="hs-identifier hs-type">timed</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679185637"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679185637"><span class="hs-identifier hs-type">a</span></a></span></span><span>
 </span><span id="line-152"></span><span id="timed"><span class="annot"><span class="annottext">timed :: Tracer IO a -&gt; Tracer IO a
-</span><a href="Cardano.Chairman.Commands.Run.html#timed"><span class="hs-identifier hs-var hs-var">timed</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span id="local-6989586621679185515"><span class="annot"><span class="annottext">a -&gt; IO ()
-</span><a href="#local-6989586621679185515"><span class="hs-identifier hs-var">runTracer</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; IO ()) -&gt; Tracer IO a
+</span><a href="Cardano.Chairman.Commands.Run.html#timed"><span class="hs-identifier hs-var hs-var">timed</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Tracer</span></span><span> </span><span id="local-6989586621679185528"><span class="annot"><span class="annottext">a -&gt; IO ()
+</span><a href="#local-6989586621679185528"><span class="hs-identifier hs-var">runTracer</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(a -&gt; IO ()) -&gt; Tracer IO a
 forall (m :: * -&gt; *) a. (a -&gt; m ()) -&gt; Tracer m a
 </span><span class="hs-identifier hs-var">Tracer</span></span><span> </span><span class="annot"><span class="annottext">((a -&gt; IO ()) -&gt; Tracer IO a) -&gt; (a -&gt; IO ()) -&gt; Tracer IO a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679185514"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621679185514"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-153"></span><span>  </span><span id="local-6989586621679185513"><span class="annot"><span class="annottext">UTCTime
-</span><a href="#local-6989586621679185513"><span class="hs-identifier hs-var">ts</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO UTCTime
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679185527"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679185527"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-153"></span><span>  </span><span id="local-6989586621679185526"><span class="annot"><span class="annottext">UTCTime
+</span><a href="#local-6989586621679185526"><span class="hs-identifier hs-var">ts</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO UTCTime
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/time-1.9.3/src"><span class="hs-identifier hs-var">DTC.getCurrentTime</span></a></span><span>
 </span><span id="line-154"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; IO ()
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">IO.putStr</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FilePath
@@ -497,13 +497,13 @@ forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">UTCTime -&gt; FilePath
 forall a b. (Show a, ConvertText FilePath b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">UTCTime
-</span><a href="#local-6989586621679185513"><span class="hs-identifier hs-var">ts</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; FilePath
+</span><a href="#local-6989586621679185526"><span class="hs-identifier hs-var">ts</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; FilePath
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;] &quot;</span></span><span class="hs-special">)</span><span>
 </span><span id="line-155"></span><span>  </span><span class="annot"><span class="annottext">a -&gt; IO ()
-</span><a href="#local-6989586621679185515"><span class="hs-identifier hs-var">runTracer</span></a></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621679185514"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><a href="#local-6989586621679185528"><span class="hs-identifier hs-var">runTracer</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679185527"><span class="hs-identifier hs-var">a</span></a></span><span>
 </span><span id="line-156"></span><span>
 </span><span id="line-157"></span><span class="annot"><a href="Cardano.Chairman.Commands.Run.html#cmdRun"><span class="hs-identifier hs-type">cmdRun</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Mod</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">CommandFields</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-158"></span><span id="cmdRun"><span class="annot"><span class="annottext">cmdRun :: Mod CommandFields (IO ())

@@ -21,8 +21,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-19"></span><span>    </span><span id="local-6989586621679127973"><span class="annot"><span class="annottext">NodeIPv4Address
-</span><a href="#local-6989586621679127973"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPv4Address -&gt; PropertyT IO NodeIPv4Address
+</span><span id="line-19"></span><span>    </span><span id="local-6989586621679127997"><span class="annot"><span class="annottext">NodeIPv4Address
+</span><a href="#local-6989586621679127997"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPv4Address -&gt; PropertyT IO NodeIPv4Address
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -37,7 +37,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address
-</span><a href="#local-6989586621679127973"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address -&gt; Value
+</span><a href="#local-6989586621679127997"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NodeIPv4Address
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -51,7 +51,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address
-</span><a href="#local-6989586621679127973"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address -&gt; ByteString
+</span><a href="#local-6989586621679127997"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv4Address -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NodeIPv4Address
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
@@ -65,8 +65,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-26"></span><span>    </span><span id="local-6989586621679127968"><span class="annot"><span class="annottext">NodeIPv6Address
-</span><a href="#local-6989586621679127968"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPv6Address -&gt; PropertyT IO NodeIPv6Address
+</span><span id="line-26"></span><span>    </span><span id="local-6989586621679127992"><span class="annot"><span class="annottext">NodeIPv6Address
+</span><a href="#local-6989586621679127992"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPv6Address -&gt; PropertyT IO NodeIPv6Address
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -81,7 +81,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address
-</span><a href="#local-6989586621679127968"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address -&gt; Value
+</span><a href="#local-6989586621679127992"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NodeIPv6Address
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -95,7 +95,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address
-</span><a href="#local-6989586621679127968"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address -&gt; ByteString
+</span><a href="#local-6989586621679127992"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPv6Address -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NodeIPv6Address
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
@@ -109,8 +109,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-33"></span><span>    </span><span id="local-6989586621679127965"><span class="annot"><span class="annottext">NodeIPAddress
-</span><a href="#local-6989586621679127965"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPAddress -&gt; PropertyT IO NodeIPAddress
+</span><span id="line-33"></span><span>    </span><span id="local-6989586621679127989"><span class="annot"><span class="annottext">NodeIPAddress
+</span><a href="#local-6989586621679127989"><span class="hs-identifier hs-var">na</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeIPAddress -&gt; PropertyT IO NodeIPAddress
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -125,7 +125,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress
-</span><a href="#local-6989586621679127965"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress -&gt; Value
+</span><a href="#local-6989586621679127989"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NodeIPAddress
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -139,7 +139,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress
-</span><a href="#local-6989586621679127965"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress -&gt; ByteString
+</span><a href="#local-6989586621679127989"><span class="hs-identifier hs-var">na</span></a></span><span> </span><span class="annot"><span class="annottext">NodeIPAddress -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NodeIPAddress
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
@@ -153,8 +153,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-40"></span><span>    </span><span id="local-6989586621679127962"><span class="annot"><span class="annottext">NodeHostIPAddress
-</span><a href="#local-6989586621679127962"><span class="hs-identifier hs-var">nha</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeHostIPAddress -&gt; PropertyT IO NodeHostIPAddress
+</span><span id="line-40"></span><span>    </span><span id="local-6989586621679127986"><span class="annot"><span class="annottext">NodeHostIPAddress
+</span><a href="#local-6989586621679127986"><span class="hs-identifier hs-var">nha</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeHostIPAddress -&gt; PropertyT IO NodeHostIPAddress
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -169,7 +169,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress
-</span><a href="#local-6989586621679127962"><span class="hs-identifier hs-var">nha</span></a></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress -&gt; Value
+</span><a href="#local-6989586621679127986"><span class="hs-identifier hs-var">nha</span></a></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NodeHostIPAddress
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -183,7 +183,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress
-</span><a href="#local-6989586621679127962"><span class="hs-identifier hs-var">nha</span></a></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress -&gt; ByteString
+</span><a href="#local-6989586621679127986"><span class="hs-identifier hs-var">nha</span></a></span><span> </span><span class="annot"><span class="annottext">NodeHostIPAddress -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NodeHostIPAddress
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
@@ -197,8 +197,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-47"></span><span>    </span><span id="local-6989586621679127959"><span class="annot"><span class="annottext">NodeSetup
-</span><a href="#local-6989586621679127959"><span class="hs-identifier hs-var">ns</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeSetup -&gt; PropertyT IO NodeSetup
+</span><span id="line-47"></span><span>    </span><span id="local-6989586621679127983"><span class="annot"><span class="annottext">NodeSetup
+</span><a href="#local-6989586621679127983"><span class="hs-identifier hs-var">ns</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NodeSetup -&gt; PropertyT IO NodeSetup
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -213,7 +213,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeSetup
-</span><a href="#local-6989586621679127959"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="annot"><span class="annottext">NodeSetup -&gt; Value
+</span><a href="#local-6989586621679127983"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="annot"><span class="annottext">NodeSetup -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NodeSetup
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -227,7 +227,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NodeSetup
-</span><a href="#local-6989586621679127959"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="annot"><span class="annottext">NodeSetup -&gt; ByteString
+</span><a href="#local-6989586621679127983"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="annot"><span class="annottext">NodeSetup -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NodeSetup
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
@@ -241,8 +241,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-54"></span><span>    </span><span id="local-6989586621679127956"><span class="annot"><span class="annottext">NetworkTopology
-</span><a href="#local-6989586621679127956"><span class="hs-identifier hs-var">ntop</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NetworkTopology -&gt; PropertyT IO NetworkTopology
+</span><span id="line-54"></span><span>    </span><span id="local-6989586621679127980"><span class="annot"><span class="annottext">NetworkTopology
+</span><a href="#local-6989586621679127980"><span class="hs-identifier hs-var">ntop</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen NetworkTopology -&gt; PropertyT IO NetworkTopology
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -257,7 +257,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NetworkTopology
-</span><a href="#local-6989586621679127956"><span class="hs-identifier hs-var">ntop</span></a></span><span> </span><span class="annot"><span class="annottext">NetworkTopology -&gt; Value
+</span><a href="#local-6989586621679127980"><span class="hs-identifier hs-var">ntop</span></a></span><span> </span><span class="annot"><span class="annottext">NetworkTopology -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Result NetworkTopology
 forall a. FromJSON a =&gt; Value -&gt; Result a
@@ -271,7 +271,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.tripping</span></span><span> </span><span class="annot"><span class="annottext">NetworkTopology
-</span><a href="#local-6989586621679127956"><span class="hs-identifier hs-var">ntop</span></a></span><span> </span><span class="annot"><span class="annottext">NetworkTopology -&gt; ByteString
+</span><a href="#local-6989586621679127980"><span class="hs-identifier hs-var">ntop</span></a></span><span> </span><span class="annot"><span class="annottext">NetworkTopology -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe NetworkTopology
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a

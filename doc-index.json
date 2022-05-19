@@ -12780,10 +12780,16 @@
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:namesForChainSyncServerEvent"
   },
   {
-    "display_html": "<a href=\"#v:docChainSyncServerEvent\">docChainSyncServerEvent</a> &#8759; Documented (TraceChainSyncServerEvent blk)",
-    "name": "docChainSyncServerEvent",
+    "display_html": "<a href=\"#v:docChainSyncServerEventHeader\">docChainSyncServerEventHeader</a> &#8759; Documented (TraceChainSyncServerEvent blk)",
+    "name": "docChainSyncServerEventHeader",
     "module": "Cardano.Node.Tracing.Tracers.Consensus",
-    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:docChainSyncServerEvent"
+    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:docChainSyncServerEventHeader"
+  },
+  {
+    "display_html": "<a href=\"#v:docChainSyncServerEventBlock\">docChainSyncServerEventBlock</a> &#8759; Documented (TraceChainSyncServerEvent blk)",
+    "name": "docChainSyncServerEventBlock",
+    "module": "Cardano.Node.Tracing.Tracers.Consensus",
+    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:docChainSyncServerEventBlock"
   },
   {
     "display_html": "<a href=\"#v:severityBlockFetchDecision\">severityBlockFetchDecision</a> &#8759; [TraceLabelPeer peer (FetchDecision [Point header])] &#8594; SeverityS",
@@ -12820,6 +12826,24 @@
     "name": "docBlockFetchClient",
     "module": "Cardano.Node.Tracing.Tracers.Consensus",
     "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:docBlockFetchClient"
+  },
+  {
+    "display_html": "<span class=\"keyword\">data</span> <a href=\"#t:ClientMetrics\">ClientMetrics</a> = <a href=\"#v:ClientMetrics\">ClientMetrics</a> {<ul class=\"subs\"><li><a href=\"#v:cmSlotMap\">cmSlotMap</a> &#8759; IntPSQ <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Word64\" title=\"Distribution.Compat.Prelude.Internal\">Word64</a> <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/time-1.9.3/Data-Time-Clock.html#t:NominalDiffTime\" title=\"Data.Time.Clock\">NominalDiffTime</a></li><li><a href=\"#v:cmCdf1sVar\">cmCdf1sVar</a> &#8759; CdfCounter</li><li><a href=\"#v:cmCdf3sVar\">cmCdf3sVar</a> &#8759; CdfCounter</li><li><a href=\"#v:cmCdf5sVar\">cmCdf5sVar</a> &#8759; CdfCounter</li><li><a href=\"#v:cmDelay\">cmDelay</a> &#8759; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Double\" title=\"Distribution.Compat.Prelude.Internal\">Double</a></li><li><a href=\"#v:cmBlockSize\">cmBlockSize</a> &#8759; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Word32\" title=\"Distribution.Compat.Prelude.Internal\">Word32</a></li><li><a href=\"#v:cmTraceIt\">cmTraceIt</a> &#8759; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/Cabal-3.2.1.0/Distribution-Compat-Prelude-Internal.html#t:Bool\" title=\"Distribution.Compat.Prelude.Internal\">Bool</a></li></ul>}",
+    "name": "ClientMetrics ClientMetrics cmSlotMap cmCdf1sVar cmCdf3sVar cmCdf5sVar cmDelay cmBlockSize cmTraceIt",
+    "module": "Cardano.Node.Tracing.Tracers.Consensus",
+    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#t:ClientMetrics"
+  },
+  {
+    "display_html": "<a href=\"#v:initialClientMetrics\">initialClientMetrics</a> &#8759; <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:ClientMetrics\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">ClientMetrics</a>",
+    "name": "initialClientMetrics",
+    "module": "Cardano.Node.Tracing.Tracers.Consensus",
+    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:initialClientMetrics"
+  },
+  {
+    "display_html": "<a href=\"#v:calculateBlockFetchClientMetrics\">calculateBlockFetchClientMetrics</a> &#8759; <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:ClientMetrics\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">ClientMetrics</a> &#8594; LoggingContext &#8594; TraceLabelPeer peer (TraceFetchClientState header) &#8594; <a href=\"file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/System-IO.html#t:IO\" title=\"System.IO\">IO</a> <a href=\"Cardano-Node-Tracing-Tracers-Consensus.html#t:ClientMetrics\" title=\"Cardano.Node.Tracing.Tracers.Consensus\">ClientMetrics</a>",
+    "name": "calculateBlockFetchClientMetrics",
+    "module": "Cardano.Node.Tracing.Tracers.Consensus",
+    "link": "lib/Cardano-Node-Tracing-Tracers-Consensus.html#v:calculateBlockFetchClientMetrics"
   },
   {
     "display_html": "<a href=\"#v:severityBlockFetchServer\">severityBlockFetchServer</a> &#8759; TraceBlockFetchServerEvent blk &#8594; SeverityS",
