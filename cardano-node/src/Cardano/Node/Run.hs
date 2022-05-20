@@ -6,7 +6,6 @@
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE PackageImports #-}
 {-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE TupleSections #-}
 {-# LANGUAGE TypeApplications #-}
 
 #if !defined(mingw32_HOST_OS)
