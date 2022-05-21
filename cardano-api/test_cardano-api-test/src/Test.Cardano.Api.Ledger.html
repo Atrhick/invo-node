@@ -41,8 +41,8 @@ PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-31"></span><span>  </span><span class="hs-comment">-- If this fails, FundPair and ShelleyGenesis can also fail.</span><span>
-</span><span id="line-32"></span><span>  </span><span id="local-6989586621679324299"><span class="annot"><span class="annottext">Addr StandardCrypto
-</span><a href="#local-6989586621679324299"><span class="hs-identifier hs-var">addr</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen (Addr StandardCrypto) -&gt; PropertyT IO (Addr StandardCrypto)
+</span><span id="line-32"></span><span>  </span><span id="local-6989586621679326078"><span class="annot"><span class="annottext">Addr StandardCrypto
+</span><a href="#local-6989586621679326078"><span class="hs-identifier hs-var">addr</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen (Addr StandardCrypto) -&gt; PropertyT IO (Addr StandardCrypto)
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -58,7 +58,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">H.tripping</span></span><span> </span><span class="annot"><span class="annottext">Addr StandardCrypto
-</span><a href="#local-6989586621679324299"><span class="hs-identifier hs-var">addr</span></a></span><span> </span><span class="annot"><span class="annottext">Addr StandardCrypto -&gt; ByteString
+</span><a href="#local-6989586621679326078"><span class="hs-identifier hs-var">addr</span></a></span><span> </span><span class="annot"><span class="annottext">Addr StandardCrypto -&gt; ByteString
 forall crypto. Addr crypto -&gt; ByteString
 </span><span class="hs-identifier hs-var">serialiseAddr</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe (Addr StandardCrypto)
 forall crypto. Crypto crypto =&gt; ByteString -&gt; Maybe (Addr crypto)

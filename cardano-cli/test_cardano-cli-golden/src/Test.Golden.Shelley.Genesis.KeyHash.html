@@ -31,33 +31,33 @@ FilePath -&gt; (FilePath -&gt; m ()) -&gt; m ()
 </span><span class="hs-string">&quot;tmp&quot;</span></span><span> </span><span class="annot"><span class="annottext">((FilePath -&gt; PropertyT IO ()) -&gt; Property)
 -&gt; (FilePath -&gt; PropertyT IO ()) -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679215485"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215485"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-18"></span><span>  </span><span id="local-6989586621679215484"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215484"><span class="hs-identifier hs-var">referenceVerificationKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679217170"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217170"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-18"></span><span>  </span><span id="local-6989586621679217169"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217169"><span class="hs-identifier hs-var">referenceVerificationKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/genesis_keys/verification_key&quot;</span></span><span>
-</span><span id="line-19"></span><span>  </span><span id="local-6989586621679215482"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215482"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHashFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-19"></span><span>  </span><span id="local-6989586621679217167"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217167"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHashFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/genesis_keys/verification_key.key-hash&quot;</span></span><span>
-</span><span id="line-20"></span><span>  </span><span id="local-6989586621679215481"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215481"><span class="hs-identifier hs-var">genesisVerificationKeyHashFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-20"></span><span>  </span><span id="local-6989586621679217166"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217166"><span class="hs-identifier hs-var">genesisVerificationKeyHashFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215485"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217170"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;key-hash.hex&quot;</span></span><span>
 </span><span id="line-21"></span><span>
-</span><span id="line-22"></span><span>  </span><span id="local-6989586621679215479"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215479"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[FilePath] -&gt; PropertyT IO FilePath
+</span><span id="line-22"></span><span>  </span><span id="local-6989586621679217164"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217164"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[FilePath] -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, MonadCatch m, MonadIO m, HasCallStack) =&gt;
 [FilePath] -&gt; m FilePath
@@ -67,7 +67,7 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;key-hash&quot;</span></span><span>
 </span><span id="line-24"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--verification-key-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215484"><span class="hs-identifier hs-var">referenceVerificationKey</span></a></span><span>
+</span><a href="#local-6989586621679217169"><span class="hs-identifier hs-var">referenceVerificationKey</span></a></span><span>
 </span><span id="line-25"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-26"></span><span>
 </span><span id="line-27"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
@@ -75,22 +75,22 @@ forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m ()
 </span><span class="hs-identifier hs-var">H.writeFile</span></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215481"><span class="hs-identifier hs-var">genesisVerificationKeyHashFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215479"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span><span>
+</span><a href="#local-6989586621679217166"><span class="hs-identifier hs-var">genesisVerificationKeyHashFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217164"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span><span>
 </span><span id="line-28"></span><span>
-</span><span id="line-29"></span><span>  </span><span id="local-6989586621679215476"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215476"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHash</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-29"></span><span>  </span><span id="local-6989586621679217161"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217161"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHash</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><span class="hs-identifier hs-var">H.readFile</span></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215482"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHashFile</span></a></span><span>
+</span><a href="#local-6989586621679217167"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHashFile</span></a></span><span>
 </span><span id="line-30"></span><span>
 </span><span id="line-31"></span><span>  </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215479"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
+</span><a href="#local-6989586621679217164"><span class="hs-identifier hs-var">genesisVerificationKeyHash</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
 a -&gt; a -&gt; m ()
 </span><span class="hs-operator hs-var">===</span></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215476"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHash</span></a></span><span>
+</span><a href="#local-6989586621679217161"><span class="hs-identifier hs-var">goldenGenesisVerificationKeyHash</span></a></span><span>
 </span><span id="line-32"></span></pre></body></html>

@@ -33,29 +33,29 @@ FilePath -&gt; (FilePath -&gt; m ()) -&gt; m ()
 </span><span class="hs-string">&quot;tmp&quot;</span></span><span> </span><span class="annot"><span class="annottext">((FilePath -&gt; PropertyT IO ()) -&gt; PropertyT IO ())
 -&gt; (FilePath -&gt; PropertyT IO ()) -&gt; PropertyT IO ()
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679216240"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216240"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-25"></span><span>  </span><span id="local-6989586621679216239"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216239"><span class="hs-identifier hs-var">signingKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679217925"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217925"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-25"></span><span>  </span><span id="local-6989586621679217924"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217924"><span class="hs-identifier hs-var">signingKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/byron/keys/legacy.skey&quot;</span></span><span>
-</span><span id="line-26"></span><span>  </span><span id="local-6989586621679216237"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216237"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-26"></span><span>  </span><span id="local-6989586621679217922"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217922"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/byron/tx/legacy.tx&quot;</span></span><span>
-</span><span id="line-27"></span><span>  </span><span id="local-6989586621679216236"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216236"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-27"></span><span>  </span><span id="local-6989586621679217921"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217921"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216240"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217925"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;tx&quot;</span></span><span>
 </span><span id="line-28"></span><span>  </span><span class="annot"><span class="annottext">PropertyT IO FilePath -&gt; PropertyT IO ()
 forall (f :: * -&gt; *) a. Functor f =&gt; f a -&gt; f ()
@@ -77,10 +77,10 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;--byron-legacy-formats&quot;</span></span><span>
 </span><span id="line-32"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--wallet-key&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216239"><span class="hs-identifier hs-var">signingKey</span></a></span><span>
+</span><a href="#local-6989586621679217924"><span class="hs-identifier hs-var">signingKey</span></a></span><span>
 </span><span id="line-33"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--tx&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216236"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
+</span><a href="#local-6989586621679217921"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
 </span><span id="line-34"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--txin&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;(796a90e0a89b292d53a6129b9f0d757429063b529d27e4f56565192a8c8da5e3,10)&quot;</span></span><span>
@@ -91,8 +91,8 @@ forall (m :: * -&gt; *).
 </span><span id="line-37"></span><span>
 </span><span id="line-38"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
 </span><a href="Test.Golden.Byron.Tx.html#compareByronTxs"><span class="hs-identifier hs-var">compareByronTxs</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216236"><span class="hs-identifier hs-var">createdTx</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216237"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
+</span><a href="#local-6989586621679217921"><span class="hs-identifier hs-var">createdTx</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217922"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
 </span><span id="line-39"></span><span>
 </span><span id="line-40"></span><span class="annot"><a href="Test.Golden.Byron.Tx.html#golden_byronTx"><span class="hs-identifier hs-type">golden_byronTx</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Property</span></span><span>
 </span><span id="line-41"></span><span id="golden_byronTx"><span class="annot"><span class="annottext">golden_byronTx :: Property
@@ -107,29 +107,29 @@ FilePath -&gt; (FilePath -&gt; m ()) -&gt; m ()
 </span><span class="hs-string">&quot;tmp&quot;</span></span><span> </span><span class="annot"><span class="annottext">((FilePath -&gt; PropertyT IO ()) -&gt; PropertyT IO ())
 -&gt; (FilePath -&gt; PropertyT IO ()) -&gt; PropertyT IO ()
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679216230"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216230"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-42"></span><span>  </span><span id="local-6989586621679216229"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216229"><span class="hs-identifier hs-var">signingKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679217915"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217915"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-42"></span><span>  </span><span id="local-6989586621679217914"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217914"><span class="hs-identifier hs-var">signingKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/byron/keys/byron.skey&quot;</span></span><span>
-</span><span id="line-43"></span><span>  </span><span id="local-6989586621679216228"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216228"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-43"></span><span>  </span><span id="local-6989586621679217913"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217913"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/byron/tx/normal.tx&quot;</span></span><span>
-</span><span id="line-44"></span><span>  </span><span id="local-6989586621679216227"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216227"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-44"></span><span>  </span><span id="local-6989586621679217912"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217912"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216230"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217915"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;tx&quot;</span></span><span>
 </span><span id="line-45"></span><span>  </span><span class="annot"><span class="annottext">PropertyT IO FilePath -&gt; PropertyT IO ()
 forall (f :: * -&gt; *) a. Functor f =&gt; f a -&gt; f ()
@@ -151,10 +151,10 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;--byron-formats&quot;</span></span><span>
 </span><span id="line-49"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--wallet-key&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216229"><span class="hs-identifier hs-var">signingKey</span></a></span><span>
+</span><a href="#local-6989586621679217914"><span class="hs-identifier hs-var">signingKey</span></a></span><span>
 </span><span id="line-50"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--tx&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216227"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
+</span><a href="#local-6989586621679217912"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
 </span><span id="line-51"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--txin&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;(796a90e0a89b292d53a6129b9f0d757429063b529d27e4f56565192a8c8da5e3,10)&quot;</span></span><span>
@@ -165,15 +165,15 @@ forall (m :: * -&gt; *).
 </span><span id="line-54"></span><span>
 </span><span id="line-55"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
 </span><a href="Test.Golden.Byron.Tx.html#compareByronTxs"><span class="hs-identifier hs-var">compareByronTxs</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216227"><span class="hs-identifier hs-var">createdTx</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216228"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
+</span><a href="#local-6989586621679217912"><span class="hs-identifier hs-var">createdTx</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217913"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
 </span><span id="line-56"></span><span>
 </span><span id="line-57"></span><span class="annot"><a href="Test.Golden.Byron.Tx.html#getTxByteString"><span class="hs-identifier hs-type">getTxByteString</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">H.PropertyT</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">ATxAux</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/bytestring-0.10.12.0/src"><span class="hs-identifier hs-type">ByteString</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-58"></span><span id="getTxByteString"><span class="annot"><span class="annottext">getTxByteString :: FilePath -&gt; PropertyT IO (ATxAux ByteString)
-</span><a href="Test.Golden.Byron.Tx.html#getTxByteString"><span class="hs-identifier hs-var hs-var">getTxByteString</span></a></span></span><span> </span><span id="local-6989586621679216225"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216225"><span class="hs-identifier hs-var">txFp</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-59"></span><span>  </span><span id="local-6989586621679216224"><span class="annot"><span class="annottext">Either ByronTxError (ATxAux ByteString)
-</span><a href="#local-6989586621679216224"><span class="hs-identifier hs-var">eATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either ByronTxError (ATxAux ByteString))
+</span><a href="Test.Golden.Byron.Tx.html#getTxByteString"><span class="hs-identifier hs-var hs-var">getTxByteString</span></a></span></span><span> </span><span id="local-6989586621679217910"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217910"><span class="hs-identifier hs-var">txFp</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-59"></span><span>  </span><span id="local-6989586621679217909"><span class="annot"><span class="annottext">Either ByronTxError (ATxAux ByteString)
+</span><a href="#local-6989586621679217909"><span class="hs-identifier hs-var">eATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either ByronTxError (ATxAux ByteString))
 -&gt; PropertyT IO (Either ByronTxError (ATxAux ByteString))
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">liftIO</span></a></span><span> </span><span class="annot"><span class="annottext">(IO (Either ByronTxError (ATxAux ByteString))
@@ -199,11 +199,11 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; TxFile
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-var">TxFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216225"><span class="hs-identifier hs-var">txFp</span></a></span><span>
+</span><a href="#local-6989586621679217910"><span class="hs-identifier hs-var">txFp</span></a></span><span>
 </span><span id="line-60"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either ByronTxError (ATxAux ByteString)
-</span><a href="#local-6989586621679216224"><span class="hs-identifier hs-var">eATxAuxBS</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-61"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679216218"><span class="annot"><span class="annottext">ByronTxError
-</span><a href="#local-6989586621679216218"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe Diff -&gt; FilePath -&gt; PropertyT IO (ATxAux ByteString)
+</span><a href="#local-6989586621679217909"><span class="hs-identifier hs-var">eATxAuxBS</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-61"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679217903"><span class="annot"><span class="annottext">ByronTxError
+</span><a href="#local-6989586621679217903"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe Diff -&gt; FilePath -&gt; PropertyT IO (ATxAux ByteString)
 forall (m :: * -&gt; *) a.
 (MonadTest m, HasCallStack) =&gt;
 Maybe Diff -&gt; FilePath -&gt; m a
@@ -220,36 +220,36 @@ cat b c -&gt; cat a b -&gt; cat a c
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">ByronTxError -&gt; Text
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-var">renderByronTxError</span></a></span><span> </span><span class="annot"><span class="annottext">ByronTxError
-</span><a href="#local-6989586621679216218"><span class="hs-identifier hs-var">err</span></a></span><span>
-</span><span id="line-62"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679216215"><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216215"><span class="hs-identifier hs-var">aTxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString -&gt; PropertyT IO (ATxAux ByteString)
+</span><a href="#local-6989586621679217903"><span class="hs-identifier hs-var">err</span></a></span><span>
+</span><span id="line-62"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679217900"><span class="annot"><span class="annottext">ATxAux ByteString
+</span><a href="#local-6989586621679217900"><span class="hs-identifier hs-var">aTxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString -&gt; PropertyT IO (ATxAux ByteString)
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216215"><span class="hs-identifier hs-var">aTxAuxBS</span></a></span><span>
+</span><a href="#local-6989586621679217900"><span class="hs-identifier hs-var">aTxAuxBS</span></a></span><span>
 </span><span id="line-63"></span><span>
 </span><span id="line-64"></span><span class="annot"><a href="Test.Golden.Byron.Tx.html#compareByronTxs"><span class="hs-identifier hs-type">compareByronTxs</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">H.PropertyT</span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-65"></span><span id="compareByronTxs"><span class="annot"><span class="annottext">compareByronTxs :: FilePath -&gt; FilePath -&gt; PropertyT IO ()
-</span><a href="Test.Golden.Byron.Tx.html#compareByronTxs"><span class="hs-identifier hs-var hs-var">compareByronTxs</span></a></span></span><span> </span><span id="local-6989586621679216214"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216214"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span id="local-6989586621679216213"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216213"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-66"></span><span>  </span><span id="local-6989586621679216212"><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216212"><span class="hs-identifier hs-var">createdATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO (ATxAux ByteString)
+</span><a href="Test.Golden.Byron.Tx.html#compareByronTxs"><span class="hs-identifier hs-var hs-var">compareByronTxs</span></a></span></span><span> </span><span id="local-6989586621679217899"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217899"><span class="hs-identifier hs-var">createdTx</span></a></span></span><span> </span><span id="local-6989586621679217898"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679217898"><span class="hs-identifier hs-var">goldenTx</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-66"></span><span>  </span><span id="local-6989586621679217897"><span class="annot"><span class="annottext">ATxAux ByteString
+</span><a href="#local-6989586621679217897"><span class="hs-identifier hs-var">createdATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO (ATxAux ByteString)
 </span><a href="Test.Golden.Byron.Tx.html#getTxByteString"><span class="hs-identifier hs-var">getTxByteString</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216214"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
-</span><span id="line-67"></span><span>  </span><span id="local-6989586621679216211"><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216211"><span class="hs-identifier hs-var">goldenATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO (ATxAux ByteString)
+</span><a href="#local-6989586621679217899"><span class="hs-identifier hs-var">createdTx</span></a></span><span>
+</span><span id="line-67"></span><span>  </span><span id="local-6989586621679217896"><span class="annot"><span class="annottext">ATxAux ByteString
+</span><a href="#local-6989586621679217896"><span class="hs-identifier hs-var">goldenATxAuxBS</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO (ATxAux ByteString)
 </span><a href="Test.Golden.Byron.Tx.html#getTxByteString"><span class="hs-identifier hs-var">getTxByteString</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679216213"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
+</span><a href="#local-6989586621679217898"><span class="hs-identifier hs-var">goldenTx</span></a></span><span>
 </span><span id="line-68"></span><span>
 </span><span id="line-69"></span><span>  </span><span class="annot"><span class="annottext">ATxAux ByteString -&gt; GenTx ByronBlock
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-var">normalByronTxToGenTx</span></a></span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216211"><span class="hs-identifier hs-var">goldenATxAuxBS</span></a></span><span> </span><span class="annot"><span class="annottext">GenTx ByronBlock -&gt; GenTx ByronBlock -&gt; PropertyT IO ()
+</span><a href="#local-6989586621679217896"><span class="hs-identifier hs-var">goldenATxAuxBS</span></a></span><span> </span><span class="annot"><span class="annottext">GenTx ByronBlock -&gt; GenTx ByronBlock -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
 a -&gt; a -&gt; m ()
 </span><span class="hs-operator hs-var">===</span></span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString -&gt; GenTx ByronBlock
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-cli-1.33.0/noopt/doc/html/cardano-cli/src"><span class="hs-identifier hs-var">normalByronTxToGenTx</span></a></span><span> </span><span class="annot"><span class="annottext">ATxAux ByteString
-</span><a href="#local-6989586621679216212"><span class="hs-identifier hs-var">createdATxAuxBS</span></a></span><span>
+</span><a href="#local-6989586621679217897"><span class="hs-identifier hs-var">createdATxAuxBS</span></a></span><span>
 </span><span id="line-70"></span><span>
 </span><span id="line-71"></span><span class="annot"><a href="Test.Golden.Byron.Tx.html#txTests"><span class="hs-identifier hs-type">txTests</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">Bool</span></a></span><span>
 </span><span id="line-72"></span><span id="txTests"><span class="annot"><span class="annottext">txTests :: IO Bool

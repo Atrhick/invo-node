@@ -34,8 +34,8 @@ Integration () -&gt; Property
 </span><span class="hs-identifier hs-var">H.propertyOnce</span></span><span> </span><span class="annot"><span class="annottext">(Integration () -&gt; Property) -&gt; Integration () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-32"></span><span>  </span><span id="local-6989586621679277066"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277066"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String
+</span><span id="line-32"></span><span>  </span><span id="local-6989586621679278660"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679278660"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String
 -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) String
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
@@ -65,8 +65,8 @@ forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">=&lt;&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">PropertyT (ReaderT IntegrationState (ResourceT IO)) String
 forall (m :: * -&gt; *). (MonadTest m, MonadIO m) =&gt; m String
 </span><span class="hs-identifier hs-var">H.getProjectBase</span></span><span>
-</span><span id="line-33"></span><span>  </span><span id="local-6989586621679277059"><span class="annot"><span class="annottext">Either InitialLedgerStateError (Env, LedgerState)
-</span><a href="#local-6989586621679277059"><span class="hs-identifier hs-var">result</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either InitialLedgerStateError (Env, LedgerState))
+</span><span id="line-33"></span><span>  </span><span id="local-6989586621679278653"><span class="annot"><span class="annottext">Either InitialLedgerStateError (Env, LedgerState)
+</span><a href="#local-6989586621679278653"><span class="hs-identifier hs-var">result</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either InitialLedgerStateError (Env, LedgerState))
 -&gt; PropertyT
      (ReaderT IntegrationState (ResourceT IO))
      (Either InitialLedgerStateError (Env, LedgerState))
@@ -95,18 +95,18 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 -&gt; String -&gt; ExceptT InitialLedgerStateError IO (Env, LedgerState)
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277066"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
+</span><a href="#local-6989586621679278660"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/filepath-1.4.2.1/src"><span class="hs-operator hs-var">&lt;/&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;configuration/cardano/mainnet-config.json&quot;</span></span><span>
 </span><span id="line-34"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either InitialLedgerStateError (Env, LedgerState)
-</span><a href="#local-6989586621679277059"><span class="hs-identifier hs-var">result</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621679278653"><span class="hs-identifier hs-var">result</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-35"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Env
 </span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">LedgerState
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">() -&gt; Integration ()
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
-</span><span id="line-36"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679277057"><span class="annot"><span class="annottext">InitialLedgerStateError
-</span><a href="#local-6989586621679277057"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack -&gt; Maybe Diff -&gt; String -&gt; Integration ()
+</span><span id="line-36"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679278651"><span class="annot"><span class="annottext">InitialLedgerStateError
+</span><a href="#local-6989586621679278651"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack -&gt; Maybe Diff -&gt; String -&gt; Integration ()
 forall (m :: * -&gt; *) a.
 MonadTest m =&gt;
 CallStack -&gt; Maybe Diff -&gt; String -&gt; m a
@@ -117,7 +117,7 @@ forall a. Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Text -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">T.unpack</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">InitialLedgerStateError -&gt; Text
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">renderInitialLedgerStateError</span></a></span><span> </span><span class="annot"><span class="annottext">InitialLedgerStateError
-</span><a href="#local-6989586621679277057"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679278651"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-37"></span><span>
 </span><span id="line-38"></span><span class="annot"><a href="Test.Config.Mainnet.html#hprop_configMainnetYaml"><span class="hs-identifier hs-type">hprop_configMainnetYaml</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Property</span></span><span>
 </span><span id="line-39"></span><span id="hprop_configMainnetYaml"><span class="annot"><span class="annottext">hprop_configMainnetYaml :: Property
@@ -126,8 +126,8 @@ Integration () -&gt; Property
 </span><span class="hs-identifier hs-var">H.propertyOnce</span></span><span> </span><span class="annot"><span class="annottext">(Integration () -&gt; Property) -&gt; Integration () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-40"></span><span>  </span><span id="local-6989586621679277052"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277052"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String
+</span><span id="line-40"></span><span>  </span><span id="local-6989586621679278646"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679278646"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String
 -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) String
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
@@ -157,8 +157,8 @@ forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">=&lt;&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">PropertyT (ReaderT IntegrationState (ResourceT IO)) String
 forall (m :: * -&gt; *). (MonadTest m, MonadIO m) =&gt; m String
 </span><span class="hs-identifier hs-var">H.getProjectBase</span></span><span>
-</span><span id="line-41"></span><span>  </span><span id="local-6989586621679277051"><span class="annot"><span class="annottext">Either ParseException Value
-</span><a href="#local-6989586621679277051"><span class="hs-identifier hs-var">yamlResult</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either ParseException Value)
+</span><span id="line-41"></span><span>  </span><span id="local-6989586621679278645"><span class="annot"><span class="annottext">Either ParseException Value
+</span><a href="#local-6989586621679278645"><span class="hs-identifier hs-var">yamlResult</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either ParseException Value)
 -&gt; PropertyT
      (ReaderT IntegrationState (ResourceT IO))
      (Either ParseException Value)
@@ -187,19 +187,19 @@ forall a. FromJSON a =&gt; String -&gt; IO (Either ParseException a)
      (Either ParseException Value)
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277052"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
+</span><a href="#local-6989586621679278646"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/filepath-1.4.2.1/src"><span class="hs-operator hs-var">&lt;/&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;configuration/cardano/mainnet-config.yaml&quot;</span></span><span>
-</span><span id="line-42"></span><span>  </span><span id="local-6989586621679277049"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277049"><span class="hs-identifier hs-var">yaml</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">J.Value</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either ParseException Value
-</span><a href="#local-6989586621679277051"><span class="hs-identifier hs-var">yamlResult</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-43"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679277048"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277048"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Value -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
+</span><span id="line-42"></span><span>  </span><span id="local-6989586621679278643"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679278643"><span class="hs-identifier hs-var">yaml</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">J.Value</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either ParseException Value
+</span><a href="#local-6989586621679278645"><span class="hs-identifier hs-var">yamlResult</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-43"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679278642"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679278642"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Value -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277048"><span class="hs-identifier hs-var">v</span></a></span><span>
-</span><span id="line-44"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679277047"><span class="annot"><span class="annottext">ParseException
-</span><a href="#local-6989586621679277047"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack
+</span><a href="#local-6989586621679278642"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><span id="line-44"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679278641"><span class="annot"><span class="annottext">ParseException
+</span><a href="#local-6989586621679278641"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack
 -&gt; Maybe Diff
 -&gt; String
 -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
@@ -212,9 +212,9 @@ HasCallStack =&gt; CallStack
 forall a. Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ParseException -&gt; String
 </span><span class="hs-identifier hs-var">Y.prettyPrintParseException</span></span><span> </span><span class="annot"><span class="annottext">ParseException
-</span><a href="#local-6989586621679277047"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-45"></span><span>  </span><span id="local-6989586621679277045"><span class="annot"><span class="annottext">Either String Value
-</span><a href="#local-6989586621679277045"><span class="hs-identifier hs-var">jsonResult</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either String Value)
+</span><a href="#local-6989586621679278641"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-45"></span><span>  </span><span id="local-6989586621679278639"><span class="annot"><span class="annottext">Either String Value
+</span><a href="#local-6989586621679278639"><span class="hs-identifier hs-var">jsonResult</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO (Either String Value)
 -&gt; PropertyT
      (ReaderT IntegrationState (ResourceT IO)) (Either String Value)
 forall (m :: * -&gt; *) a.
@@ -238,19 +238,19 @@ forall a. FromJSON a =&gt; String -&gt; IO (Either String a)
      (ReaderT IntegrationState (ResourceT IO)) (Either String Value)
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277052"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
+</span><a href="#local-6989586621679278646"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/filepath-1.4.2.1/src"><span class="hs-operator hs-var">&lt;/&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;configuration/cardano/mainnet-config.json&quot;</span></span><span>
-</span><span id="line-46"></span><span>  </span><span id="local-6989586621679277043"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277043"><span class="hs-identifier hs-var">json</span></a></span></span><span>  </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">J.Value</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either String Value
-</span><a href="#local-6989586621679277045"><span class="hs-identifier hs-var">jsonResult</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-47"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679277042"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277042"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Value -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
+</span><span id="line-46"></span><span>  </span><span id="local-6989586621679278637"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679278637"><span class="hs-identifier hs-var">json</span></a></span></span><span>  </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">J.Value</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Either String Value
+</span><a href="#local-6989586621679278639"><span class="hs-identifier hs-var">jsonResult</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-47"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span id="local-6989586621679278636"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679278636"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Value -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">return</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277042"><span class="hs-identifier hs-var">v</span></a></span><span>
-</span><span id="line-48"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679277041"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277041"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack
+</span><a href="#local-6989586621679278636"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><span id="line-48"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Left</span></a></span><span> </span><span id="local-6989586621679278635"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679278635"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">CallStack
 -&gt; Maybe Diff
 -&gt; String
 -&gt; PropertyT (ReaderT IntegrationState (ResourceT IO)) Value
@@ -264,14 +264,14 @@ forall a. Maybe a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; String
 forall a. Show a =&gt; a -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">show</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679277041"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679278635"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-49"></span><span>  </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277049"><span class="hs-identifier hs-var">yaml</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Value -&gt; Integration ()
+</span><a href="#local-6989586621679278643"><span class="hs-identifier hs-var">yaml</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Value -&gt; Integration ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
 a -&gt; a -&gt; m ()
 </span><span class="hs-operator hs-var">===</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679277043"><span class="hs-identifier hs-var">json</span></a></span><span>
+</span><a href="#local-6989586621679278637"><span class="hs-identifier hs-var">json</span></a></span><span>
 </span><span id="line-50"></span><span>
 </span><span id="line-51"></span><span class="annot"><a href="Test.Config.Mainnet.html#tests"><span class="hs-identifier hs-type">tests</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">IO</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-type">Bool</span></a></span><span>
 </span><span id="line-52"></span><span id="tests"><span class="annot"><span class="annottext">tests :: IO Bool

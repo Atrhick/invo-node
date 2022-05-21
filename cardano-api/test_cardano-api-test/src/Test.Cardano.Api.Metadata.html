@@ -143,20 +143,20 @@ forall k a. Ord k =&gt; [(k, a)] -&gt; Map k a
 </span><span id="line-71"></span><span>
 </span><span id="line-72"></span><span class="annot"><a href="Test.Cardano.Api.Metadata.html#txMetadataSingleton"><span class="hs-identifier hs-type">txMetadataSingleton</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">TxMetadataValue</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">TxMetadata</span></a></span><span>
 </span><span id="line-73"></span><span id="txMetadataSingleton"><span class="annot"><span class="annottext">txMetadataSingleton :: Word64 -&gt; TxMetadataValue -&gt; TxMetadata
-</span><a href="Test.Cardano.Api.Metadata.html#txMetadataSingleton"><span class="hs-identifier hs-var hs-var">txMetadataSingleton</span></a></span></span><span> </span><span id="local-6989586621679324362"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679324362"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679324361"><span class="annot"><span class="annottext">TxMetadataValue
-</span><a href="#local-6989586621679324361"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Map Word64 TxMetadataValue -&gt; TxMetadata
+</span><a href="Test.Cardano.Api.Metadata.html#txMetadataSingleton"><span class="hs-identifier hs-var hs-var">txMetadataSingleton</span></a></span></span><span> </span><span id="local-6989586621679326141"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679326141"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679326140"><span class="annot"><span class="annottext">TxMetadataValue
+</span><a href="#local-6989586621679326140"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Map Word64 TxMetadataValue -&gt; TxMetadata
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">TxMetadata</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(Word64, TxMetadataValue)] -&gt; Map Word64 TxMetadataValue
 forall k a. Ord k =&gt; [(k, a)] -&gt; Map k a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/containers-0.6.5.1/src"><span class="hs-identifier hs-var">Map.fromList</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679324362"><span class="hs-identifier hs-var">n</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">TxMetadataValue
-</span><a href="#local-6989586621679324361"><span class="hs-identifier hs-var">v</span></a></span><span class="hs-special">)</span><span class="hs-special">]</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679326141"><span class="hs-identifier hs-var">n</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">TxMetadataValue
+</span><a href="#local-6989586621679326140"><span class="hs-identifier hs-var">v</span></a></span><span class="hs-special">)</span><span class="hs-special">]</span><span class="hs-special">)</span><span>
 </span><span id="line-74"></span><span>
 </span><span id="line-75"></span><span class="annot"><a href="Test.Cardano.Api.Metadata.html#matchMetadata"><span class="hs-identifier hs-type">matchMetadata</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/bytestring-0.10.12.0/src"><span class="hs-identifier hs-type">ByteString</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">TxMetadata</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Property</span></span><span>
 </span><span id="line-76"></span><span id="matchMetadata"><span class="annot"><span class="annottext">matchMetadata :: ByteString -&gt; TxMetadata -&gt; Property
-</span><a href="Test.Cardano.Api.Metadata.html#matchMetadata"><span class="hs-identifier hs-var hs-var">matchMetadata</span></a></span></span><span> </span><span id="local-6989586621679324360"><span class="annot"><span class="annottext">ByteString
-</span><a href="#local-6989586621679324360"><span class="hs-identifier hs-var">jsonStr</span></a></span></span><span> </span><span id="local-6989586621679324359"><span class="annot"><span class="annottext">TxMetadata
-</span><a href="#local-6989586621679324359"><span class="hs-identifier hs-var">metadata</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Test.Cardano.Api.Metadata.html#matchMetadata"><span class="hs-identifier hs-var hs-var">matchMetadata</span></a></span></span><span> </span><span id="local-6989586621679326139"><span class="annot"><span class="annottext">ByteString
+</span><a href="#local-6989586621679326139"><span class="hs-identifier hs-var">jsonStr</span></a></span></span><span> </span><span id="local-6989586621679326138"><span class="annot"><span class="annottext">TxMetadata
+</span><a href="#local-6989586621679326138"><span class="hs-identifier hs-var">metadata</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-77"></span><span>  </span><span class="annot"><span class="annottext">TestLimit -&gt; Property -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.withTests</span></span><span> </span><span class="annot"><span class="annottext">TestLimit
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">(Property -&gt; Property) -&gt; Property -&gt; Property
@@ -173,24 +173,24 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span id="line-78"></span><span>    </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Maybe Value
 forall a. FromJSON a =&gt; ByteString -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Aeson.decodeStrict'</span></span><span> </span><span class="annot"><span class="annottext">ByteString
-</span><a href="#local-6989586621679324360"><span class="hs-identifier hs-var">jsonStr</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621679326139"><span class="hs-identifier hs-var">jsonStr</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-79"></span><span>      </span><span class="annot"><span class="annottext">Maybe Value
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">TestT IO ()
 forall (m :: * -&gt; *) a. (MonadTest m, HasCallStack) =&gt; m a
 </span><span class="hs-identifier hs-var">Hedgehog.failure</span></span><span>
-</span><span id="line-80"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Just</span></a></span><span> </span><span id="local-6989586621679324354"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324354"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-80"></span><span>      </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Just</span></a></span><span> </span><span id="local-6989586621679326133"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679326133"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-81"></span><span>        </span><span class="annot"><span class="annottext">Value -&gt; TestT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Show a, HasCallStack) =&gt;
 a -&gt; m ()
 </span><span class="hs-identifier hs-var">Hedgehog.annotateShow</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324354"><span class="hs-identifier hs-var">json</span></a></span><span>
+</span><a href="#local-6989586621679326133"><span class="hs-identifier hs-var">json</span></a></span><span>
 </span><span id="line-82"></span><span>        </span><span class="annot"><span class="annottext">TxMetadataJsonSchema
 -&gt; Value -&gt; Either TxMetadataJsonError TxMetadata
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">metadataFromJson</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadataJsonSchema
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">TxMetadataJsonNoSchema</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324354"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError TxMetadata
+</span><a href="#local-6989586621679326133"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError TxMetadata
 -&gt; Either TxMetadataJsonError TxMetadata -&gt; TestT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
@@ -198,7 +198,7 @@ a -&gt; a -&gt; m ()
 </span><span class="hs-operator hs-var">===</span></span><span> </span><span class="annot"><span class="annottext">TxMetadata -&gt; Either TxMetadataJsonError TxMetadata
 forall a b. b -&gt; Either a b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Right</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadata
-</span><a href="#local-6989586621679324359"><span class="hs-identifier hs-var">metadata</span></a></span><span>
+</span><a href="#local-6989586621679326138"><span class="hs-identifier hs-var">metadata</span></a></span><span>
 </span><span id="line-83"></span><span>
 </span><span id="line-84"></span><span>
 </span><span id="line-85"></span><span class="hs-comment">-- ----------------------------------------------------------------------------</span><span>
@@ -219,8 +219,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-98"></span><span>    </span><span id="local-6989586621679324349"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324349"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
+</span><span id="line-98"></span><span>    </span><span id="local-6989586621679326128"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679326128"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -230,7 +230,7 @@ Gen a -&gt; PropertyT m a
 </span><span id="line-99"></span><span>    </span><span class="annot"><span class="annottext">Value -&gt; Either TxMetadataJsonError Value
 forall a b. b -&gt; Either a b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Right</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324349"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError Value
+</span><a href="#local-6989586621679326128"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError Value
 -&gt; Either TxMetadataJsonError Value -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
@@ -254,7 +254,7 @@ cat b c -&gt; cat a b -&gt; cat a c
 -&gt; Value -&gt; Either TxMetadataJsonError TxMetadata
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">metadataFromJson</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadataJsonSchema
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">TxMetadataJsonNoSchema</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324349"><span class="hs-identifier hs-var">json</span></a></span><span>
+</span><a href="#local-6989586621679326128"><span class="hs-identifier hs-var">json</span></a></span><span>
 </span><span id="line-101"></span><span>
 </span><span id="line-102"></span><span class="hs-comment">-- | Any JSON (fitting the detailed schema) can be converted to tx metadata and</span><span>
 </span><span id="line-103"></span><span class="hs-comment">-- back, to give the same original JSON.</span><span>
@@ -266,8 +266,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-107"></span><span>    </span><span id="local-6989586621679324343"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324343"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
+</span><span id="line-107"></span><span>    </span><span id="local-6989586621679326122"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679326122"><span class="hs-identifier hs-var">json</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen Value -&gt; PropertyT IO Value
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -277,7 +277,7 @@ Gen a -&gt; PropertyT m a
 </span><span id="line-108"></span><span>    </span><span class="annot"><span class="annottext">Value -&gt; Either TxMetadataJsonError Value
 forall a b. b -&gt; Either a b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Right</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324343"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError Value
+</span><a href="#local-6989586621679326122"><span class="hs-identifier hs-var">json</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError Value
 -&gt; Either TxMetadataJsonError Value -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
@@ -301,7 +301,7 @@ cat b c -&gt; cat a b -&gt; cat a c
 -&gt; Value -&gt; Either TxMetadataJsonError TxMetadata
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">metadataFromJson</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadataJsonSchema
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">TxMetadataJsonDetailedSchema</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679324343"><span class="hs-identifier hs-var">json</span></a></span><span>
+</span><a href="#local-6989586621679326122"><span class="hs-identifier hs-var">json</span></a></span><span>
 </span><span id="line-110"></span><span>
 </span><span id="line-111"></span><span>
 </span><span id="line-112"></span><span class="hs-comment">-- | Any tx metadata can be converted to JSON (using the detailed schema) and</span><span>
@@ -314,8 +314,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">Hedgehog.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-117"></span><span>    </span><span id="local-6989586621679324340"><span class="annot"><span class="annottext">TxMetadata
-</span><a href="#local-6989586621679324340"><span class="hs-identifier hs-var">md</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen TxMetadata -&gt; PropertyT IO TxMetadata
+</span><span id="line-117"></span><span>    </span><span id="local-6989586621679326119"><span class="annot"><span class="annottext">TxMetadata
+</span><a href="#local-6989586621679326119"><span class="hs-identifier hs-var">md</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen TxMetadata -&gt; PropertyT IO TxMetadata
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -324,7 +324,7 @@ Gen a -&gt; PropertyT m a
 </span><span id="line-118"></span><span>    </span><span class="annot"><span class="annottext">TxMetadata -&gt; Either TxMetadataJsonError TxMetadata
 forall a b. b -&gt; Either a b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Right</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadata
-</span><a href="#local-6989586621679324340"><span class="hs-identifier hs-var">md</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError TxMetadata
+</span><a href="#local-6989586621679326119"><span class="hs-identifier hs-var">md</span></a></span><span> </span><span class="annot"><span class="annottext">Either TxMetadataJsonError TxMetadata
 -&gt; Either TxMetadataJsonError TxMetadata -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
@@ -343,7 +343,7 @@ cat b c -&gt; cat a b -&gt; cat a c
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">.</span></a></span><span> </span><span class="annot"><span class="annottext">TxMetadataJsonSchema -&gt; TxMetadata -&gt; Value
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">metadataToJson</span></a></span><span>   </span><span class="annot"><span class="annottext">TxMetadataJsonSchema
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">TxMetadataJsonDetailedSchema</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">TxMetadata
-</span><a href="#local-6989586621679324340"><span class="hs-identifier hs-var">md</span></a></span><span>
+</span><a href="#local-6989586621679326119"><span class="hs-identifier hs-var">md</span></a></span><span>
 </span><span id="line-120"></span><span>
 </span><span id="line-121"></span><span class="hs-comment">-- ----------------------------------------------------------------------------</span><span>
 </span><span id="line-122"></span><span class="hs-comment">-- Automagically collecting all the tests</span><span>

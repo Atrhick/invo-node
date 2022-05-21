@@ -34,18 +34,18 @@ FilePath -&gt; (FilePath -&gt; m ()) -&gt; m ()
 </span><span class="hs-string">&quot;tmp&quot;</span></span><span> </span><span class="annot"><span class="annottext">((FilePath -&gt; PropertyT IO ()) -&gt; Property)
 -&gt; (FilePath -&gt; PropertyT IO ()) -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679214365"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214365"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679216050"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216050"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-21"></span><span>  </span><span class="hs-comment">-- Reference keys</span><span>
-</span><span id="line-22"></span><span>  </span><span id="local-6989586621679214364"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214364"><span class="hs-identifier hs-var">referenceVerKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-22"></span><span>  </span><span id="local-6989586621679216049"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216049"><span class="hs-identifier hs-var">referenceVerKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/stake_keys/verification_key&quot;</span></span><span>
-</span><span id="line-23"></span><span>  </span><span id="local-6989586621679214362"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214362"><span class="hs-identifier hs-var">referenceSignKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-23"></span><span>  </span><span id="local-6989586621679216047"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216047"><span class="hs-identifier hs-var">referenceSignKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
@@ -53,21 +53,21 @@ FilePath -&gt; m FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/stake_keys/signing_key&quot;</span></span><span>
 </span><span id="line-24"></span><span>
 </span><span id="line-25"></span><span>  </span><span class="hs-comment">-- Key filepaths</span><span>
-</span><span id="line-26"></span><span>  </span><span id="local-6989586621679214361"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214361"><span class="hs-identifier hs-var">verKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-26"></span><span>  </span><span id="local-6989586621679216046"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216046"><span class="hs-identifier hs-var">verKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214365"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216050"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;stake-verification-key-file&quot;</span></span><span>
-</span><span id="line-27"></span><span>  </span><span id="local-6989586621679214359"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214359"><span class="hs-identifier hs-var">signKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-27"></span><span>  </span><span id="local-6989586621679216044"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216044"><span class="hs-identifier hs-var">signKey</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214365"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216050"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;stake-signing-key-file&quot;</span></span><span>
 </span><span id="line-28"></span><span>
 </span><span id="line-29"></span><span>  </span><span class="hs-comment">-- Generate stake key pair</span><span>
@@ -86,21 +86,21 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;key-gen&quot;</span></span><span>
 </span><span id="line-32"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--verification-key-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214361"><span class="hs-identifier hs-var">verKey</span></a></span><span>
+</span><a href="#local-6989586621679216046"><span class="hs-identifier hs-var">verKey</span></a></span><span>
 </span><span id="line-33"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--signing-key-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214359"><span class="hs-identifier hs-var">signKey</span></a></span><span>
+</span><a href="#local-6989586621679216044"><span class="hs-identifier hs-var">signKey</span></a></span><span>
 </span><span id="line-34"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-35"></span><span>
-</span><span id="line-36"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679214356"><span class="annot"><span class="annottext">signingKeyType :: TextEnvelopeType
-</span><a href="#local-6989586621679214356"><span class="hs-identifier hs-var hs-var">signingKeyType</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AsType (SigningKey StakeKey) -&gt; TextEnvelopeType
+</span><span id="line-36"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679216041"><span class="annot"><span class="annottext">signingKeyType :: TextEnvelopeType
+</span><a href="#local-6989586621679216041"><span class="hs-identifier hs-var hs-var">signingKeyType</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AsType (SigningKey StakeKey) -&gt; TextEnvelopeType
 forall a. HasTextEnvelope a =&gt; AsType a -&gt; TextEnvelopeType
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">textEnvelopeType</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">AsType StakeKey -&gt; AsType (SigningKey StakeKey)
 forall a. AsType a -&gt; AsType (SigningKey a)
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">AsSigningKey</span></a></span><span> </span><span class="annot"><span class="annottext">AsType StakeKey
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">AsStakeKey</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-37"></span><span>      </span><span id="local-6989586621679214352"><span class="annot"><span class="annottext">verificationKeyType :: TextEnvelopeType
-</span><a href="#local-6989586621679214352"><span class="hs-identifier hs-var hs-var">verificationKeyType</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AsType (VerificationKey StakeKey) -&gt; TextEnvelopeType
+</span><span id="line-37"></span><span>      </span><span id="local-6989586621679216037"><span class="annot"><span class="annottext">verificationKeyType :: TextEnvelopeType
+</span><a href="#local-6989586621679216037"><span class="hs-identifier hs-var hs-var">verificationKeyType</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AsType (VerificationKey StakeKey) -&gt; TextEnvelopeType
 forall a. HasTextEnvelope a =&gt; AsType a -&gt; TextEnvelopeType
 </span><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-var">textEnvelopeType</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">AsType StakeKey -&gt; AsType (VerificationKey StakeKey)
 forall a. AsType a -&gt; AsType (VerificationKey a)
@@ -114,15 +114,15 @@ forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 TextEnvelopeType -&gt; FilePath -&gt; FilePath -&gt; m ()
 </span><a href="Test.OptParse.html#checkTextEnvelopeFormat"><span class="hs-identifier hs-var">checkTextEnvelopeFormat</span></a></span><span> </span><span class="annot"><span class="annottext">TextEnvelopeType
-</span><a href="#local-6989586621679214352"><span class="hs-identifier hs-var">verificationKeyType</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214364"><span class="hs-identifier hs-var">referenceVerKey</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214361"><span class="hs-identifier hs-var">verKey</span></a></span><span>
+</span><a href="#local-6989586621679216037"><span class="hs-identifier hs-var">verificationKeyType</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216049"><span class="hs-identifier hs-var">referenceVerKey</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216046"><span class="hs-identifier hs-var">verKey</span></a></span><span>
 </span><span id="line-42"></span><span>  </span><span class="annot"><span class="annottext">TextEnvelopeType -&gt; FilePath -&gt; FilePath -&gt; PropertyT IO ()
 forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 TextEnvelopeType -&gt; FilePath -&gt; FilePath -&gt; m ()
 </span><a href="Test.OptParse.html#checkTextEnvelopeFormat"><span class="hs-identifier hs-var">checkTextEnvelopeFormat</span></a></span><span> </span><span class="annot"><span class="annottext">TextEnvelopeType
-</span><a href="#local-6989586621679214356"><span class="hs-identifier hs-var">signingKeyType</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214362"><span class="hs-identifier hs-var">referenceSignKey</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679214359"><span class="hs-identifier hs-var">signKey</span></a></span><span>
+</span><a href="#local-6989586621679216041"><span class="hs-identifier hs-var">signingKeyType</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216047"><span class="hs-identifier hs-var">referenceSignKey</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216044"><span class="hs-identifier hs-var">signKey</span></a></span><span>
 </span><span id="line-43"></span></pre></body></html>

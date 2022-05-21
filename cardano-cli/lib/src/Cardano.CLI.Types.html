@@ -64,7 +64,7 @@
 </span><span id="line-64"></span><span class="hs-comment">-- in the cli's build command.</span><span>
 </span><span id="line-65"></span><span class="hs-keyword">data</span><span> </span><span id="TxBuildOutputOptions"><span class="annot"><a href="Cardano.CLI.Types.html#TxBuildOutputOptions"><span class="hs-identifier hs-var">TxBuildOutputOptions</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="OutputScriptCostOnly"><span class="annot"><a href="Cardano.CLI.Types.html#OutputScriptCostOnly"><span class="hs-identifier hs-var">OutputScriptCostOnly</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
 </span><span id="line-66"></span><span>                          </span><span class="hs-glyph">|</span><span> </span><span id="OutputTxBodyOnly"><span class="annot"><a href="Cardano.CLI.Types.html#OutputTxBodyOnly"><span class="hs-identifier hs-var">OutputTxBodyOnly</span></a></span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#TxBodyFile"><span class="hs-identifier hs-type">TxBodyFile</span></a></span><span>
-</span><span id="line-67"></span><span>                          </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348838"><span id="local-6989586621679348840"><span id="local-6989586621679348842"><span class="annot"><span class="annottext">Int -&gt; TxBuildOutputOptions -&gt; ShowS
+</span><span id="line-67"></span><span>                          </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679350384"><span id="local-6989586621679350386"><span id="local-6989586621679350388"><span class="annot"><span class="annottext">Int -&gt; TxBuildOutputOptions -&gt; ShowS
 [TxBuildOutputOptions] -&gt; ShowS
 TxBuildOutputOptions -&gt; String
 (Int -&gt; TxBuildOutputOptions -&gt; ShowS)
@@ -89,7 +89,7 @@ $cshowsPrec :: Int -&gt; TxBuildOutputOptions -&gt; ShowS
 </span><span id="line-74"></span><span>                </span><span class="hs-glyph">|</span><span> </span><span id="CBORTxByron"><span class="annot"><a href="Cardano.CLI.Types.html#CBORTxByron"><span class="hs-identifier hs-var">CBORTxByron</span></a></span></span><span>
 </span><span id="line-75"></span><span>                </span><span class="hs-glyph">|</span><span> </span><span id="CBORUpdateProposalByron"><span class="annot"><a href="Cardano.CLI.Types.html#CBORUpdateProposalByron"><span class="hs-identifier hs-var">CBORUpdateProposalByron</span></a></span></span><span>
 </span><span id="line-76"></span><span>                </span><span class="hs-glyph">|</span><span> </span><span id="CBORVoteByron"><span class="annot"><a href="Cardano.CLI.Types.html#CBORVoteByron"><span class="hs-identifier hs-var">CBORVoteByron</span></a></span></span><span>
-</span><span id="line-77"></span><span>                </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348825"><span id="local-6989586621679348827"><span id="local-6989586621679348829"><span class="annot"><span class="annottext">Int -&gt; CBORObject -&gt; ShowS
+</span><span id="line-77"></span><span>                </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679350371"><span id="local-6989586621679350373"><span id="local-6989586621679350375"><span class="annot"><span class="annottext">Int -&gt; CBORObject -&gt; ShowS
 [CBORObject] -&gt; ShowS
 CBORObject -&gt; String
 (Int -&gt; CBORObject -&gt; ShowS)
@@ -113,7 +113,7 @@ $cshowsPrec :: Int -&gt; CBORObject -&gt; ShowS
 </span><span id="line-82"></span><span class="hs-comment">-- genesis delegate certificates and MIR certificates.</span><span>
 </span><span id="line-83"></span><span class="hs-keyword">newtype</span><span> </span><span id="CertificateFile"><span class="annot"><a href="Cardano.CLI.Types.html#CertificateFile"><span class="hs-identifier hs-var">CertificateFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="CertificateFile"><span class="annot"><a href="Cardano.CLI.Types.html#CertificateFile"><span class="hs-identifier hs-var">CertificateFile</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unCertificateFile"><span class="annot"><span class="annottext">CertificateFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unCertificateFile"><span class="hs-identifier hs-var hs-var">unCertificateFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-84"></span><span>                          </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348817"><span id="local-6989586621679348819"><span class="annot"><span class="annottext">CertificateFile -&gt; CertificateFile -&gt; Bool
+</span><span id="line-84"></span><span>                          </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350363"><span id="local-6989586621679350365"><span class="annot"><span class="annottext">CertificateFile -&gt; CertificateFile -&gt; Bool
 (CertificateFile -&gt; CertificateFile -&gt; Bool)
 -&gt; (CertificateFile -&gt; CertificateFile -&gt; Bool)
 -&gt; Eq CertificateFile
@@ -122,7 +122,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: CertificateFile -&gt; CertificateFile -&gt; Bool
 == :: CertificateFile -&gt; CertificateFile -&gt; Bool
 $c== :: CertificateFile -&gt; CertificateFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348810"><span id="local-6989586621679348812"><span id="local-6989586621679348814"><span class="annot"><span class="annottext">Int -&gt; CertificateFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350356"><span id="local-6989586621679350358"><span id="local-6989586621679350360"><span class="annot"><span class="annottext">Int -&gt; CertificateFile -&gt; ShowS
 [CertificateFile] -&gt; ShowS
 CertificateFile -&gt; String
 (Int -&gt; CertificateFile -&gt; ShowS)
@@ -140,7 +140,7 @@ $cshowsPrec :: Int -&gt; CertificateFile -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-85"></span><span>
 </span><span id="line-86"></span><span class="hs-keyword">newtype</span><span> </span><span id="CurrentKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-var">CurrentKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="CurrentKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-var">CurrentKesPeriod</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unCurrentKesPeriod"><span class="annot"><span class="annottext">CurrentKesPeriod -&gt; Word64
-</span><a href="Cardano.CLI.Types.html#unCurrentKesPeriod"><span class="hs-identifier hs-var hs-var">unCurrentKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348804"><span id="local-6989586621679348806"><span class="annot"><span class="annottext">CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool
+</span><a href="Cardano.CLI.Types.html#unCurrentKesPeriod"><span class="hs-identifier hs-var hs-var">unCurrentKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350350"><span id="local-6989586621679350352"><span class="annot"><span class="annottext">CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool
 (CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool)
 -&gt; (CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool)
 -&gt; Eq CurrentKesPeriod
@@ -149,7 +149,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool
 == :: CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool
 $c== :: CurrentKesPeriod -&gt; CurrentKesPeriod -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348798"><span id="local-6989586621679348800"><span id="local-6989586621679348802"><span class="annot"><span class="annottext">Int -&gt; CurrentKesPeriod -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350344"><span id="local-6989586621679350346"><span id="local-6989586621679350348"><span class="annot"><span class="annottext">Int -&gt; CurrentKesPeriod -&gt; ShowS
 [CurrentKesPeriod] -&gt; ShowS
 CurrentKesPeriod -&gt; String
 (Int -&gt; CurrentKesPeriod -&gt; ShowS)
@@ -166,30 +166,30 @@ showsPrec :: Int -&gt; CurrentKesPeriod -&gt; ShowS
 $cshowsPrec :: Int -&gt; CurrentKesPeriod -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-87"></span><span>
-</span><span id="line-88"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348791"><span id="local-6989586621679348793"><span id="local-6989586621679348795"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-89"></span><span>  </span><span id="local-6989586621679348789"><span class="annot"><span class="annottext">toJSON :: CurrentKesPeriod -&gt; Value
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span><span> </span><span id="local-6989586621679348787"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348787"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
+</span><span id="line-88"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350337"><span id="local-6989586621679350339"><span id="local-6989586621679350341"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-89"></span><span>  </span><span id="local-6989586621679350335"><span class="annot"><span class="annottext">toJSON :: CurrentKesPeriod -&gt; Value
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span><span> </span><span id="local-6989586621679350333"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679350333"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348787"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679350333"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-90"></span><span>
-</span><span id="line-91"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348784"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-92"></span><span>  </span><span id="local-6989586621679348782"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser CurrentKesPeriod
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></span></span><span> </span><span id="local-6989586621679348780"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348780"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; CurrentKesPeriod
+</span><span id="line-91"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350330"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-92"></span><span>  </span><span id="local-6989586621679350328"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser CurrentKesPeriod
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></span></span><span> </span><span id="local-6989586621679350326"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350326"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; CurrentKesPeriod
 </span><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-var">CurrentKesPeriod</span></a></span><span> </span><span class="annot"><span class="annottext">(Word64 -&gt; CurrentKesPeriod)
 -&gt; Parser Word64 -&gt; Parser CurrentKesPeriod
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser Word64
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348780"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679350326"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-93"></span><span>
 </span><span id="line-94"></span><span class="hs-keyword">newtype</span><span> </span><span id="GenesisFile"><span class="annot"><a href="Cardano.CLI.Types.html#GenesisFile"><span class="hs-identifier hs-var">GenesisFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="GenesisFile"><span class="annot"><a href="Cardano.CLI.Types.html#GenesisFile"><span class="hs-identifier hs-var">GenesisFile</span></a></span></span><span>
 </span><span id="line-95"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unGenesisFile"><span class="annot"><span class="annottext">GenesisFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unGenesisFile"><span class="hs-identifier hs-var hs-var">unGenesisFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-96"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348773"><span id="local-6989586621679348775"><span class="annot"><span class="annottext">GenesisFile -&gt; GenesisFile -&gt; Bool
+</span><span id="line-96"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350319"><span id="local-6989586621679350321"><span class="annot"><span class="annottext">GenesisFile -&gt; GenesisFile -&gt; Bool
 (GenesisFile -&gt; GenesisFile -&gt; Bool)
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Bool) -&gt; Eq GenesisFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -197,7 +197,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: GenesisFile -&gt; GenesisFile -&gt; Bool
 == :: GenesisFile -&gt; GenesisFile -&gt; Bool
 $c== :: GenesisFile -&gt; GenesisFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348758"><span id="local-6989586621679348760"><span id="local-6989586621679348762"><span id="local-6989586621679348764"><span id="local-6989586621679348766"><span id="local-6989586621679348768"><span id="local-6989586621679348770"><span class="annot"><span class="annottext">Eq GenesisFile
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350304"><span id="local-6989586621679350306"><span id="local-6989586621679350308"><span id="local-6989586621679350310"><span id="local-6989586621679350312"><span id="local-6989586621679350314"><span id="local-6989586621679350316"><span class="annot"><span class="annottext">Eq GenesisFile
 Eq GenesisFile
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Ordering)
 -&gt; (GenesisFile -&gt; GenesisFile -&gt; Bool)
@@ -236,12 +236,12 @@ compare :: GenesisFile -&gt; GenesisFile -&gt; Ordering
 $ccompare :: GenesisFile -&gt; GenesisFile -&gt; Ordering
 $cp1Ord :: Eq GenesisFile
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></a></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
-</span><span id="line-97"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348755"><span class="annot"><span class="annottext">String -&gt; GenesisFile
+</span><span id="line-97"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350301"><span class="annot"><span class="annottext">String -&gt; GenesisFile
 (String -&gt; GenesisFile) -&gt; IsString GenesisFile
 forall a. (String -&gt; a) -&gt; IsString a
 fromString :: String -&gt; GenesisFile
 $cfromString :: String -&gt; GenesisFile
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348748"><span id="local-6989586621679348750"><span id="local-6989586621679348752"><span class="annot"><span class="annottext">Int -&gt; GenesisFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350294"><span id="local-6989586621679350296"><span id="local-6989586621679350298"><span class="annot"><span class="annottext">Int -&gt; GenesisFile -&gt; ShowS
 [GenesisFile] -&gt; ShowS
 GenesisFile -&gt; String
 (Int -&gt; GenesisFile -&gt; ShowS)
@@ -279,7 +279,7 @@ $cshowsPrec :: Int -&gt; GenesisFile -&gt; ShowS
 </span><span id="line-117"></span><span>  </span><span class="hs-comment">-- counter will be present in the node state.</span><span>
 </span><span id="line-118"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="OpCertNoBlocksMintedYet"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNoBlocksMintedYet"><span class="hs-identifier hs-var">OpCertNoBlocksMintedYet</span></a></span></span><span>
 </span><span id="line-119"></span><span>      </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span><span>
-</span><span id="line-120"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348741"><span id="local-6989586621679348743"><span class="annot"><span class="annottext">OpCertNodeAndOnDiskCounterInformation
+</span><span id="line-120"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350287"><span id="local-6989586621679350289"><span class="annot"><span class="annottext">OpCertNodeAndOnDiskCounterInformation
 -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; Bool
 (OpCertNodeAndOnDiskCounterInformation
  -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; Bool)
@@ -295,7 +295,7 @@ $c/= :: OpCertNodeAndOnDiskCounterInformation
 -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; Bool
 $c== :: OpCertNodeAndOnDiskCounterInformation
 -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348735"><span id="local-6989586621679348737"><span id="local-6989586621679348739"><span class="annot"><span class="annottext">Int -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350281"><span id="local-6989586621679350283"><span id="local-6989586621679350285"><span class="annot"><span class="annottext">Int -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; ShowS
 [OpCertNodeAndOnDiskCounterInformation] -&gt; ShowS
 OpCertNodeAndOnDiskCounterInformation -&gt; String
 (Int -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; ShowS)
@@ -314,7 +314,7 @@ $cshowsPrec :: Int -&gt; OpCertNodeAndOnDiskCounterInformation -&gt; ShowS
 </span><span id="line-121"></span><span>
 </span><span id="line-122"></span><span class="hs-keyword">newtype</span><span> </span><span id="OpCertOnDiskCounter"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-var">OpCertOnDiskCounter</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="OpCertOnDiskCounter"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-var">OpCertOnDiskCounter</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unOpCertOnDiskCounter"><span class="annot"><span class="annottext">OpCertOnDiskCounter -&gt; Word64
 </span><a href="Cardano.CLI.Types.html#unOpCertOnDiskCounter"><span class="hs-identifier hs-var hs-var">unOpCertOnDiskCounter</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-123"></span><span>                              </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348729"><span id="local-6989586621679348731"><span class="annot"><span class="annottext">OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool
+</span><span id="line-123"></span><span>                              </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350275"><span id="local-6989586621679350277"><span class="annot"><span class="annottext">OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool
 (OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool)
 -&gt; (OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool)
 -&gt; Eq OpCertOnDiskCounter
@@ -323,7 +323,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool
 == :: OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool
 $c== :: OpCertOnDiskCounter -&gt; OpCertOnDiskCounter -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348723"><span id="local-6989586621679348725"><span id="local-6989586621679348727"><span class="annot"><span class="annottext">Int -&gt; OpCertOnDiskCounter -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350269"><span id="local-6989586621679350271"><span id="local-6989586621679350273"><span class="annot"><span class="annottext">Int -&gt; OpCertOnDiskCounter -&gt; ShowS
 [OpCertOnDiskCounter] -&gt; ShowS
 OpCertOnDiskCounter -&gt; String
 (Int -&gt; OpCertOnDiskCounter -&gt; ShowS)
@@ -340,29 +340,29 @@ showsPrec :: Int -&gt; OpCertOnDiskCounter -&gt; ShowS
 $cshowsPrec :: Int -&gt; OpCertOnDiskCounter -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-124"></span><span>
-</span><span id="line-125"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348716"><span id="local-6989586621679348718"><span id="local-6989586621679348720"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-126"></span><span>  </span><span id="local-6989586621679348715"><span class="annot"><span class="annottext">toJSON :: OpCertOnDiskCounter -&gt; Value
-</span><a href="#local-6989586621679348715"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span><span> </span><span id="local-6989586621679348714"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348714"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
+</span><span id="line-125"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350262"><span id="local-6989586621679350264"><span id="local-6989586621679350266"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-126"></span><span>  </span><span id="local-6989586621679350261"><span class="annot"><span class="annottext">toJSON :: OpCertOnDiskCounter -&gt; Value
+</span><a href="#local-6989586621679350261"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span><span> </span><span id="local-6989586621679350260"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679350260"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348714"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679350260"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-127"></span><span>
-</span><span id="line-128"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348711"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-129"></span><span>  </span><span id="local-6989586621679348710"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertOnDiskCounter
-</span><a href="#local-6989586621679348710"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679348709"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348709"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertOnDiskCounter
+</span><span id="line-128"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350257"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-type">OpCertOnDiskCounter</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-129"></span><span>  </span><span id="local-6989586621679350256"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertOnDiskCounter
+</span><a href="#local-6989586621679350256"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679350255"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350255"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertOnDiskCounter
 </span><a href="Cardano.CLI.Types.html#OpCertOnDiskCounter"><span class="hs-identifier hs-var">OpCertOnDiskCounter</span></a></span><span> </span><span class="annot"><span class="annottext">(Word64 -&gt; OpCertOnDiskCounter)
 -&gt; Parser Word64 -&gt; Parser OpCertOnDiskCounter
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser Word64
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348709"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679350255"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-130"></span><span>
 </span><span id="line-131"></span><span class="hs-keyword">newtype</span><span> </span><span id="OpCertNodeStateCounter"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-var">OpCertNodeStateCounter</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="OpCertNodeStateCounter"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-var">OpCertNodeStateCounter</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unOpCertNodeStateCounter"><span class="annot"><span class="annottext">OpCertNodeStateCounter -&gt; Word64
 </span><a href="Cardano.CLI.Types.html#unOpCertNodeStateCounter"><span class="hs-identifier hs-var hs-var">unOpCertNodeStateCounter</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-132"></span><span>                                 </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348703"><span id="local-6989586621679348705"><span class="annot"><span class="annottext">OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool
+</span><span id="line-132"></span><span>                                 </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350249"><span id="local-6989586621679350251"><span class="annot"><span class="annottext">OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool
 (OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool)
 -&gt; (OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool)
 -&gt; Eq OpCertNodeStateCounter
@@ -371,7 +371,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool
 == :: OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool
 $c== :: OpCertNodeStateCounter -&gt; OpCertNodeStateCounter -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348697"><span id="local-6989586621679348699"><span id="local-6989586621679348701"><span class="annot"><span class="annottext">Int -&gt; OpCertNodeStateCounter -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350243"><span id="local-6989586621679350245"><span id="local-6989586621679350247"><span class="annot"><span class="annottext">Int -&gt; OpCertNodeStateCounter -&gt; ShowS
 [OpCertNodeStateCounter] -&gt; ShowS
 OpCertNodeStateCounter -&gt; String
 (Int -&gt; OpCertNodeStateCounter -&gt; ShowS)
@@ -388,29 +388,29 @@ showsPrec :: Int -&gt; OpCertNodeStateCounter -&gt; ShowS
 $cshowsPrec :: Int -&gt; OpCertNodeStateCounter -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-133"></span><span>
-</span><span id="line-134"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348690"><span id="local-6989586621679348692"><span id="local-6989586621679348694"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-135"></span><span>  </span><span id="local-6989586621679348689"><span class="annot"><span class="annottext">toJSON :: OpCertNodeStateCounter -&gt; Value
-</span><a href="#local-6989586621679348689"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span><span> </span><span id="local-6989586621679348688"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348688"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
+</span><span id="line-134"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350236"><span id="local-6989586621679350238"><span id="local-6989586621679350240"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-135"></span><span>  </span><span id="local-6989586621679350235"><span class="annot"><span class="annottext">toJSON :: OpCertNodeStateCounter -&gt; Value
+</span><a href="#local-6989586621679350235"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span><span> </span><span id="local-6989586621679350234"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679350234"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348688"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679350234"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-136"></span><span>
-</span><span id="line-137"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348685"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-138"></span><span>  </span><span id="local-6989586621679348684"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertNodeStateCounter
-</span><a href="#local-6989586621679348684"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679348683"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348683"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertNodeStateCounter
+</span><span id="line-137"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350231"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-type">OpCertNodeStateCounter</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-138"></span><span>  </span><span id="local-6989586621679350230"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertNodeStateCounter
+</span><a href="#local-6989586621679350230"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679350229"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350229"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertNodeStateCounter
 </span><a href="Cardano.CLI.Types.html#OpCertNodeStateCounter"><span class="hs-identifier hs-var">OpCertNodeStateCounter</span></a></span><span> </span><span class="annot"><span class="annottext">(Word64 -&gt; OpCertNodeStateCounter)
 -&gt; Parser Word64 -&gt; Parser OpCertNodeStateCounter
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser Word64
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348683"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679350229"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-139"></span><span>
 </span><span id="line-140"></span><span class="hs-keyword">newtype</span><span> </span><span id="OpCertStartingKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-var">OpCertStartingKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="OpCertStartingKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-var">OpCertStartingKesPeriod</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unOpCertStartingKesPeriod"><span class="annot"><span class="annottext">OpCertStartingKesPeriod -&gt; Word64
 </span><a href="Cardano.CLI.Types.html#unOpCertStartingKesPeriod"><span class="hs-identifier hs-var hs-var">unOpCertStartingKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-141"></span><span>                                  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348677"><span id="local-6989586621679348679"><span class="annot"><span class="annottext">OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool
+</span><span id="line-141"></span><span>                                  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350223"><span id="local-6989586621679350225"><span class="annot"><span class="annottext">OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool
 (OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool)
 -&gt; (OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool)
 -&gt; Eq OpCertStartingKesPeriod
@@ -419,7 +419,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool
 == :: OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool
 $c== :: OpCertStartingKesPeriod -&gt; OpCertStartingKesPeriod -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348671"><span id="local-6989586621679348673"><span id="local-6989586621679348675"><span class="annot"><span class="annottext">Int -&gt; OpCertStartingKesPeriod -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350217"><span id="local-6989586621679350219"><span id="local-6989586621679350221"><span class="annot"><span class="annottext">Int -&gt; OpCertStartingKesPeriod -&gt; ShowS
 [OpCertStartingKesPeriod] -&gt; ShowS
 OpCertStartingKesPeriod -&gt; String
 (Int -&gt; OpCertStartingKesPeriod -&gt; ShowS)
@@ -436,29 +436,29 @@ showsPrec :: Int -&gt; OpCertStartingKesPeriod -&gt; ShowS
 $cshowsPrec :: Int -&gt; OpCertStartingKesPeriod -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-142"></span><span>
-</span><span id="line-143"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348664"><span id="local-6989586621679348666"><span id="local-6989586621679348668"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-144"></span><span>  </span><span id="local-6989586621679348663"><span class="annot"><span class="annottext">toJSON :: OpCertStartingKesPeriod -&gt; Value
-</span><a href="#local-6989586621679348663"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span><span> </span><span id="local-6989586621679348662"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348662"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
+</span><span id="line-143"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350210"><span id="local-6989586621679350212"><span id="local-6989586621679350214"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-144"></span><span>  </span><span id="local-6989586621679350209"><span class="annot"><span class="annottext">toJSON :: OpCertStartingKesPeriod -&gt; Value
+</span><a href="#local-6989586621679350209"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span><span> </span><span id="local-6989586621679350208"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679350208"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348662"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679350208"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-145"></span><span>
-</span><span id="line-146"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348659"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-147"></span><span>  </span><span id="local-6989586621679348658"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertStartingKesPeriod
-</span><a href="#local-6989586621679348658"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679348657"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348657"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertStartingKesPeriod
+</span><span id="line-146"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350205"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-147"></span><span>  </span><span id="local-6989586621679350204"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertStartingKesPeriod
+</span><a href="#local-6989586621679350204"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679350203"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350203"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertStartingKesPeriod
 </span><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-var">OpCertStartingKesPeriod</span></a></span><span> </span><span class="annot"><span class="annottext">(Word64 -&gt; OpCertStartingKesPeriod)
 -&gt; Parser Word64 -&gt; Parser OpCertStartingKesPeriod
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser Word64
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348657"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679350203"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-148"></span><span>
 </span><span id="line-149"></span><span class="hs-keyword">newtype</span><span> </span><span id="OpCertEndingKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-var">OpCertEndingKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="OpCertEndingKesPeriod"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-var">OpCertEndingKesPeriod</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unOpCertEndingKesPeriod"><span class="annot"><span class="annottext">OpCertEndingKesPeriod -&gt; Word64
 </span><a href="Cardano.CLI.Types.html#unOpCertEndingKesPeriod"><span class="hs-identifier hs-var hs-var">unOpCertEndingKesPeriod</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Word64</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-150"></span><span>                                </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348651"><span id="local-6989586621679348653"><span class="annot"><span class="annottext">OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool
+</span><span id="line-150"></span><span>                                </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350197"><span id="local-6989586621679350199"><span class="annot"><span class="annottext">OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool
 (OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool)
 -&gt; (OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool)
 -&gt; Eq OpCertEndingKesPeriod
@@ -467,7 +467,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool
 == :: OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool
 $c== :: OpCertEndingKesPeriod -&gt; OpCertEndingKesPeriod -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348645"><span id="local-6989586621679348647"><span id="local-6989586621679348649"><span class="annot"><span class="annottext">Int -&gt; OpCertEndingKesPeriod -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350191"><span id="local-6989586621679350193"><span id="local-6989586621679350195"><span class="annot"><span class="annottext">Int -&gt; OpCertEndingKesPeriod -&gt; ShowS
 [OpCertEndingKesPeriod] -&gt; ShowS
 OpCertEndingKesPeriod -&gt; String
 (Int -&gt; OpCertEndingKesPeriod -&gt; ShowS)
@@ -484,25 +484,25 @@ showsPrec :: Int -&gt; OpCertEndingKesPeriod -&gt; ShowS
 $cshowsPrec :: Int -&gt; OpCertEndingKesPeriod -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-151"></span><span>
-</span><span id="line-152"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348638"><span id="local-6989586621679348640"><span id="local-6989586621679348642"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-153"></span><span>  </span><span id="local-6989586621679348637"><span class="annot"><span class="annottext">toJSON :: OpCertEndingKesPeriod -&gt; Value
-</span><a href="#local-6989586621679348637"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span><span> </span><span id="local-6989586621679348636"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348636"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
+</span><span id="line-152"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350184"><span id="local-6989586621679350186"><span id="local-6989586621679350188"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-153"></span><span>  </span><span id="local-6989586621679350183"><span class="annot"><span class="annottext">toJSON :: OpCertEndingKesPeriod -&gt; Value
+</span><a href="#local-6989586621679350183"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span><span> </span><span id="local-6989586621679350182"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679350182"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679348636"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679350182"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-154"></span><span>
-</span><span id="line-155"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348633"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-156"></span><span>  </span><span id="local-6989586621679348632"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertEndingKesPeriod
-</span><a href="#local-6989586621679348632"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679348631"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348631"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertEndingKesPeriod
+</span><span id="line-155"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350179"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-156"></span><span>  </span><span id="local-6989586621679350178"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser OpCertEndingKesPeriod
+</span><a href="#local-6989586621679350178"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679350177"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350177"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; OpCertEndingKesPeriod
 </span><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-var">OpCertEndingKesPeriod</span></a></span><span> </span><span class="annot"><span class="annottext">(Word64 -&gt; OpCertEndingKesPeriod)
 -&gt; Parser Word64 -&gt; Parser OpCertEndingKesPeriod
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser Word64
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348631"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679350177"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-157"></span><span>
 </span><span id="line-158"></span><span class="hs-keyword">data</span><span> </span><span id="OpCertIntervalInformation"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertIntervalInformation"><span class="hs-identifier hs-var">OpCertIntervalInformation</span></a></span></span><span>
 </span><span id="line-159"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="OpCertWithinInterval"><span class="annot"><a href="Cardano.CLI.Types.html#OpCertWithinInterval"><span class="hs-identifier hs-var">OpCertWithinInterval</span></a></span></span><span>
@@ -522,7 +522,7 @@ forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span id="line-173"></span><span>      </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertStartingKesPeriod"><span class="hs-identifier hs-type">OpCertStartingKesPeriod</span></a></span><span>
 </span><span id="line-174"></span><span>      </span><span class="annot"><a href="Cardano.CLI.Types.html#OpCertEndingKesPeriod"><span class="hs-identifier hs-type">OpCertEndingKesPeriod</span></a></span><span>
 </span><span id="line-175"></span><span>      </span><span class="annot"><a href="Cardano.CLI.Types.html#CurrentKesPeriod"><span class="hs-identifier hs-type">CurrentKesPeriod</span></a></span><span>
-</span><span id="line-176"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348623"><span id="local-6989586621679348625"><span class="annot"><span class="annottext">OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool
+</span><span id="line-176"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350169"><span id="local-6989586621679350171"><span class="annot"><span class="annottext">OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool
 (OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool)
 -&gt; (OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool)
 -&gt; Eq OpCertIntervalInformation
@@ -531,7 +531,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool
 == :: OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool
 $c== :: OpCertIntervalInformation -&gt; OpCertIntervalInformation -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348617"><span id="local-6989586621679348619"><span id="local-6989586621679348621"><span class="annot"><span class="annottext">Int -&gt; OpCertIntervalInformation -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350163"><span id="local-6989586621679350165"><span id="local-6989586621679350167"><span class="annot"><span class="annottext">Int -&gt; OpCertIntervalInformation -&gt; ShowS
 [OpCertIntervalInformation] -&gt; ShowS
 OpCertIntervalInformation -&gt; String
 (Int -&gt; OpCertIntervalInformation -&gt; ShowS)
@@ -548,10 +548,10 @@ showsPrec :: Int -&gt; OpCertIntervalInformation -&gt; ShowS
 $cshowsPrec :: Int -&gt; OpCertIntervalInformation -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-177"></span><span>
-</span><span id="line-178"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348614"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-179"></span><span>  </span><span id="local-6989586621679348613"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser GenesisFile
-</span><a href="#local-6989586621679348613"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Aeson.String</span></span><span> </span><span id="local-6989586621679348611"><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679348611"><span class="hs-identifier hs-var">genFp</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">GenesisFile -&gt; Parser GenesisFile
+</span><span id="line-178"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350160"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#GenesisFile"><span class="hs-identifier hs-type">GenesisFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-179"></span><span>  </span><span id="local-6989586621679350159"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser GenesisFile
+</span><a href="#local-6989586621679350159"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Aeson.String</span></span><span> </span><span id="local-6989586621679350157"><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621679350157"><span class="hs-identifier hs-var">genFp</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">GenesisFile -&gt; Parser GenesisFile
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">pure</span></a></span><span> </span><span class="annot"><span class="annottext">(GenesisFile -&gt; Parser GenesisFile)
 -&gt; (String -&gt; GenesisFile) -&gt; String -&gt; Parser GenesisFile
@@ -563,9 +563,9 @@ cat b c -&gt; cat a b -&gt; cat a c
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">Text -&gt; String
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.unpack</span></a></span><span> </span><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621679348611"><span class="hs-identifier hs-var">genFp</span></a></span><span>
-</span><span id="line-180"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span id="local-6989586621679348608"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348608"><span class="hs-identifier hs-var">invalid</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Text -&gt; Parser GenesisFile
+</span><a href="#local-6989586621679350157"><span class="hs-identifier hs-var">genFp</span></a></span><span>
+</span><span id="line-180"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span id="local-6989586621679350154"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679350154"><span class="hs-identifier hs-var">invalid</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Text -&gt; Parser GenesisFile
 forall a. HasCallStack =&gt; Text -&gt; a
 </span><span class="hs-identifier hs-var">panic</span></span><span> </span><span class="annot"><span class="annottext">(Text -&gt; Parser GenesisFile) -&gt; Text -&gt; Parser GenesisFile
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -580,13 +580,13 @@ forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/text-1.2.4.1/src"><span class="hs-identifier hs-var">Text.pack</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Value -&gt; String
 forall a b. (Show a, ConvertText String b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348608"><span class="hs-identifier hs-var">invalid</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679350154"><span class="hs-identifier hs-var">invalid</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-182"></span><span>
 </span><span id="line-183"></span><span class="hs-comment">-- | The desired output format.</span><span>
 </span><span id="line-184"></span><span class="hs-keyword">data</span><span> </span><span id="OutputFormat"><span class="annot"><a href="Cardano.CLI.Types.html#OutputFormat"><span class="hs-identifier hs-var">OutputFormat</span></a></span></span><span>
 </span><span id="line-185"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="OutputFormatHex"><span class="annot"><a href="Cardano.CLI.Types.html#OutputFormatHex"><span class="hs-identifier hs-var">OutputFormatHex</span></a></span></span><span>
 </span><span id="line-186"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="OutputFormatBech32"><span class="annot"><a href="Cardano.CLI.Types.html#OutputFormatBech32"><span class="hs-identifier hs-var">OutputFormatBech32</span></a></span></span><span>
-</span><span id="line-187"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348599"><span id="local-6989586621679348601"><span class="annot"><span class="annottext">OutputFormat -&gt; OutputFormat -&gt; Bool
+</span><span id="line-187"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350145"><span id="local-6989586621679350147"><span class="annot"><span class="annottext">OutputFormat -&gt; OutputFormat -&gt; Bool
 (OutputFormat -&gt; OutputFormat -&gt; Bool)
 -&gt; (OutputFormat -&gt; OutputFormat -&gt; Bool) -&gt; Eq OutputFormat
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -594,7 +594,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OutputFormat -&gt; OutputFormat -&gt; Bool
 == :: OutputFormat -&gt; OutputFormat -&gt; Bool
 $c== :: OutputFormat -&gt; OutputFormat -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348593"><span id="local-6989586621679348595"><span id="local-6989586621679348597"><span class="annot"><span class="annottext">Int -&gt; OutputFormat -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350139"><span id="local-6989586621679350141"><span id="local-6989586621679350143"><span class="annot"><span class="annottext">Int -&gt; OutputFormat -&gt; ShowS
 [OutputFormat] -&gt; ShowS
 OutputFormat -&gt; String
 (Int -&gt; OutputFormat -&gt; ShowS)
@@ -618,7 +618,7 @@ $cshowsPrec :: Int -&gt; OutputFormat -&gt; ShowS
 </span><span id="line-193"></span><span class="hs-keyword">data</span><span> </span><span id="OutputSerialisation"><span class="annot"><a href="Cardano.CLI.Types.html#OutputSerialisation"><span class="hs-identifier hs-var">OutputSerialisation</span></a></span></span><span>
 </span><span id="line-194"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="OutputLedgerCDDLSerialisation"><span class="annot"><a href="Cardano.CLI.Types.html#OutputLedgerCDDLSerialisation"><span class="hs-identifier hs-var">OutputLedgerCDDLSerialisation</span></a></span></span><span>
 </span><span id="line-195"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="OutputCliSerialisation"><span class="annot"><a href="Cardano.CLI.Types.html#OutputCliSerialisation"><span class="hs-identifier hs-var">OutputCliSerialisation</span></a></span></span><span>
-</span><span id="line-196"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348585"><span id="local-6989586621679348587"><span id="local-6989586621679348589"><span class="annot"><span class="annottext">Int -&gt; OutputSerialisation -&gt; ShowS
+</span><span id="line-196"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679350131"><span id="local-6989586621679350133"><span id="local-6989586621679350135"><span class="annot"><span class="annottext">Int -&gt; OutputSerialisation -&gt; ShowS
 [OutputSerialisation] -&gt; ShowS
 OutputSerialisation -&gt; String
 (Int -&gt; OutputSerialisation -&gt; ShowS)
@@ -655,7 +655,7 @@ $cshowsPrec :: Int -&gt; OutputSerialisation -&gt; ShowS
 </span><a href="Cardano.CLI.Types.html#setTotal"><span class="hs-identifier hs-var hs-var">setTotal</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/integer-gmp-1.0.3.0/src"><span class="hs-identifier hs-type">Integer</span></a></span><span>
 </span><span id="line-211"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="goTotal"><span class="annot"><span class="annottext">Stakes -&gt; Integer
 </span><a href="Cardano.CLI.Types.html#goTotal"><span class="hs-identifier hs-var hs-var">goTotal</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/integer-gmp-1.0.3.0/src"><span class="hs-identifier hs-type">Integer</span></a></span><span>
-</span><span id="line-212"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348572"><span id="local-6989586621679348574"><span id="local-6989586621679348576"><span class="annot"><span class="annottext">Int -&gt; Stakes -&gt; ShowS
+</span><span id="line-212"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679350118"><span id="local-6989586621679350120"><span id="local-6989586621679350122"><span class="annot"><span class="annottext">Int -&gt; Stakes -&gt; ShowS
 [Stakes] -&gt; ShowS
 Stakes -&gt; String
 (Int -&gt; Stakes -&gt; ShowS)
@@ -671,56 +671,56 @@ $cshowsPrec :: Int -&gt; Stakes -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span>
 </span><span id="line-213"></span><span>
 </span><span id="line-214"></span><span class="hs-comment">-- | Pretty printing for stake information</span><span>
-</span><span id="line-215"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348566"><span id="local-6989586621679348568"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-216"></span><span>  </span><span id="local-6989586621679348565"><span class="annot"><span class="annottext">toJSON :: Stakes -&gt; Value
-</span><a href="#local-6989586621679348565"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span><span> </span><span id="local-6989586621679348564"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348564"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679348563"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348563"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679348562"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348562"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679348561"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348561"><span class="hs-identifier hs-var">mt</span></a></span></span><span> </span><span id="local-6989586621679348560"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348560"><span class="hs-identifier hs-var">st</span></a></span></span><span> </span><span id="local-6989586621679348559"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348559"><span class="hs-identifier hs-var">gt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
+</span><span id="line-215"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350112"><span id="local-6989586621679350114"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-216"></span><span>  </span><span id="local-6989586621679350111"><span class="annot"><span class="annottext">toJSON :: Stakes -&gt; Value
+</span><a href="#local-6989586621679350111"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span><span> </span><span id="local-6989586621679350110"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350110"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679350109"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350109"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679350108"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350108"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679350107"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350107"><span class="hs-identifier hs-var">mt</span></a></span></span><span> </span><span id="local-6989586621679350106"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350106"><span class="hs-identifier hs-var">st</span></a></span></span><span> </span><span id="local-6989586621679350105"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350105"><span class="hs-identifier hs-var">gt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
 </span><span class="hs-identifier hs-var">object</span></span><span>
 </span><span id="line-217"></span><span>    </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolStakeMark&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348564"><span class="hs-identifier hs-var">m</span></a></span><span>
+</span><a href="#local-6989586621679350110"><span class="hs-identifier hs-var">m</span></a></span><span>
 </span><span id="line-218"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolStakeSet&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348563"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621679350109"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-219"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolStakeGo&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348562"><span class="hs-identifier hs-var">g</span></a></span><span>
+</span><a href="#local-6989586621679350108"><span class="hs-identifier hs-var">g</span></a></span><span>
 </span><span id="line-220"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeMark&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348561"><span class="hs-identifier hs-var">mt</span></a></span><span>
+</span><a href="#local-6989586621679350107"><span class="hs-identifier hs-var">mt</span></a></span><span>
 </span><span id="line-221"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeSet&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348560"><span class="hs-identifier hs-var">st</span></a></span><span>
+</span><a href="#local-6989586621679350106"><span class="hs-identifier hs-var">st</span></a></span><span>
 </span><span id="line-222"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeGo&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348559"><span class="hs-identifier hs-var">gt</span></a></span><span>
+</span><a href="#local-6989586621679350105"><span class="hs-identifier hs-var">gt</span></a></span><span>
 </span><span id="line-223"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-224"></span><span>
-</span><span id="line-225"></span><span>  </span><span id="local-6989586621679348558"><span class="annot"><span class="annottext">toEncoding :: Stakes -&gt; Encoding
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toEncoding</span></span></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span><span> </span><span id="local-6989586621679348556"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348556"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679348555"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348555"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679348554"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348554"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679348553"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348553"><span class="hs-identifier hs-var">mt</span></a></span></span><span> </span><span id="local-6989586621679348552"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348552"><span class="hs-identifier hs-var">st</span></a></span></span><span> </span><span id="local-6989586621679348551"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348551"><span class="hs-identifier hs-var">gt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Series -&gt; Encoding
+</span><span id="line-225"></span><span>  </span><span id="local-6989586621679350104"><span class="annot"><span class="annottext">toEncoding :: Stakes -&gt; Encoding
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">toEncoding</span></span></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Stakes"><span class="hs-identifier hs-type">Stakes</span></a></span><span> </span><span id="local-6989586621679350102"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350102"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679350101"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350101"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679350100"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350100"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679350099"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350099"><span class="hs-identifier hs-var">mt</span></a></span></span><span> </span><span id="local-6989586621679350098"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350098"><span class="hs-identifier hs-var">st</span></a></span></span><span> </span><span id="local-6989586621679350097"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679350097"><span class="hs-identifier hs-var">gt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Series -&gt; Encoding
 </span><span class="hs-identifier hs-var">pairs</span></span><span> </span><span class="annot"><span class="annottext">(Series -&gt; Encoding) -&gt; Series -&gt; Encoding
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">[Series] -&gt; Series
@@ -730,45 +730,45 @@ forall a. Monoid a =&gt; [a] -&gt; a
 </span><span class="hs-string">&quot;poolStakeMark&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348556"><span class="hs-identifier hs-var">m</span></a></span><span>
+</span><a href="#local-6989586621679350102"><span class="hs-identifier hs-var">m</span></a></span><span>
 </span><span id="line-227"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolStakeSet&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348555"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621679350101"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-228"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolStakeGo&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348554"><span class="hs-identifier hs-var">g</span></a></span><span>
+</span><a href="#local-6989586621679350100"><span class="hs-identifier hs-var">g</span></a></span><span>
 </span><span id="line-229"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeMark&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348553"><span class="hs-identifier hs-var">mt</span></a></span><span>
+</span><a href="#local-6989586621679350099"><span class="hs-identifier hs-var">mt</span></a></span><span>
 </span><span id="line-230"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeSet&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348552"><span class="hs-identifier hs-var">st</span></a></span><span>
+</span><a href="#local-6989586621679350098"><span class="hs-identifier hs-var">st</span></a></span><span>
 </span><span id="line-231"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;activeStakeGo&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Integer -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621679348551"><span class="hs-identifier hs-var">gt</span></a></span><span>
+</span><a href="#local-6989586621679350097"><span class="hs-identifier hs-var">gt</span></a></span><span>
 </span><span id="line-232"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-233"></span><span>
 </span><span id="line-234"></span><span class="hs-comment">-- | This data structure is used to allow nicely formatted output in the query pool-params command.</span><span>
 </span><span id="line-235"></span><span class="hs-comment">-- params are the current pool parameter settings, futureparams are new parameters, retiringEpoch is the</span><span>
 </span><span id="line-236"></span><span class="hs-comment">-- epoch that has been set for pool retirement.  Any of these may be Nothing.</span><span>
-</span><span id="line-237"></span><span class="hs-keyword">data</span><span> </span><span id="Params"><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-var">Params</span></a></span></span><span> </span><span id="local-6989586621679348550"><span class="annot"><a href="#local-6989586621679348550"><span class="hs-identifier hs-type">crypto</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Params"><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-var">Params</span></a></span></span><span>
+</span><span id="line-237"></span><span class="hs-keyword">data</span><span> </span><span id="Params"><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-var">Params</span></a></span></span><span> </span><span id="local-6989586621679350096"><span class="annot"><a href="#local-6989586621679350096"><span class="hs-identifier hs-type">crypto</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Params"><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-var">Params</span></a></span></span><span>
 </span><span id="line-238"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="poolParameters"><span class="annot"><span class="annottext">Params crypto -&gt; Maybe (PoolParams crypto)
-</span><a href="Cardano.CLI.Types.html#poolParameters"><span class="hs-identifier hs-var hs-var">poolParameters</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">PoolParams</span></span><span> </span><span class="annot"><a href="#local-6989586621679348550"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span><span>
+</span><a href="Cardano.CLI.Types.html#poolParameters"><span class="hs-identifier hs-var hs-var">poolParameters</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">PoolParams</span></span><span> </span><span class="annot"><a href="#local-6989586621679350096"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-239"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="futurePoolParameters"><span class="annot"><span class="annottext">Params crypto -&gt; Maybe (PoolParams crypto)
-</span><a href="Cardano.CLI.Types.html#futurePoolParameters"><span class="hs-identifier hs-var hs-var">futurePoolParameters</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">PoolParams</span></span><span> </span><span class="annot"><a href="#local-6989586621679348550"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span><span>
+</span><a href="Cardano.CLI.Types.html#futurePoolParameters"><span class="hs-identifier hs-var hs-var">futurePoolParameters</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">PoolParams</span></span><span> </span><span class="annot"><a href="#local-6989586621679350096"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-240"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="retiringEpoch"><span class="annot"><span class="annottext">Params crypto -&gt; Maybe EpochNo
 </span><a href="Cardano.CLI.Types.html#retiringEpoch"><span class="hs-identifier hs-var hs-var">retiringEpoch</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Maybe</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">EpochNo</span></span><span>
-</span><span id="line-241"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348540"><span id="local-6989586621679348542"><span id="local-6989586621679348544"><span class="annot"><span class="annottext">Int -&gt; Params crypto -&gt; ShowS
+</span><span id="line-241"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679350086"><span id="local-6989586621679350088"><span id="local-6989586621679350090"><span class="annot"><span class="annottext">Int -&gt; Params crypto -&gt; ShowS
 [Params crypto] -&gt; ShowS
 Params crypto -&gt; String
 (Int -&gt; Params crypto -&gt; ShowS)
@@ -789,35 +789,35 @@ $cshowsPrec :: forall crypto. Int -&gt; Params crypto -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span>
 </span><span id="line-242"></span><span>
 </span><span id="line-243"></span><span class="hs-comment">-- | Pretty printing for pool parameters</span><span>
-</span><span id="line-244"></span><span id="local-6989586621679348539"><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348533"><span id="local-6989586621679348535"><span class="annot"><span class="hs-identifier hs-type">Crypto.Crypto</span></span><span> </span><span class="annot"><a href="#local-6989586621679348539"><span class="hs-identifier hs-type">crypto</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span>  </span><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348539"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-245"></span><span>  </span><span id="local-6989586621679348532"><span class="annot"><span class="annottext">toJSON :: Params crypto -&gt; Value
-</span><a href="#local-6989586621679348532"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span id="local-6989586621679348531"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348531"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679348530"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348530"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span id="local-6989586621679348529"><span class="annot"><span class="annottext">Maybe EpochNo
-</span><a href="#local-6989586621679348529"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
+</span><span id="line-244"></span><span id="local-6989586621679350085"><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679350079"><span id="local-6989586621679350081"><span class="annot"><span class="hs-identifier hs-type">Crypto.Crypto</span></span><span> </span><span class="annot"><a href="#local-6989586621679350085"><span class="hs-identifier hs-type">crypto</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span>  </span><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679350085"><span class="hs-identifier hs-type">crypto</span></a></span><span class="hs-special">)</span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-245"></span><span>  </span><span id="local-6989586621679350078"><span class="annot"><span class="annottext">toJSON :: Params crypto -&gt; Value
+</span><a href="#local-6989586621679350078"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span id="local-6989586621679350077"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
+</span><a href="#local-6989586621679350077"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679350076"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
+</span><a href="#local-6989586621679350076"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span id="local-6989586621679350075"><span class="annot"><span class="annottext">Maybe EpochNo
+</span><a href="#local-6989586621679350075"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
 </span><span class="hs-identifier hs-var">object</span></span><span>
 </span><span id="line-246"></span><span>    </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;poolParams&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe (PoolParams crypto) -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348531"><span class="hs-identifier hs-var">p</span></a></span><span>
+</span><a href="#local-6989586621679350077"><span class="hs-identifier hs-var">p</span></a></span><span>
 </span><span id="line-247"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;futurePoolParams&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe (PoolParams crypto) -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348530"><span class="hs-identifier hs-var">fp</span></a></span><span>
+</span><a href="#local-6989586621679350076"><span class="hs-identifier hs-var">fp</span></a></span><span>
 </span><span id="line-248"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;retiring&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe EpochNo -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe EpochNo
-</span><a href="#local-6989586621679348529"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621679350075"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-249"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-250"></span><span>
-</span><span id="line-251"></span><span>  </span><span id="local-6989586621679348528"><span class="annot"><span class="annottext">toEncoding :: Params crypto -&gt; Encoding
-</span><a href="#local-6989586621679348528"><span class="hs-identifier hs-var hs-var hs-var hs-var">toEncoding</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span id="local-6989586621679348527"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348527"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679348526"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348526"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span id="local-6989586621679348525"><span class="annot"><span class="annottext">Maybe EpochNo
-</span><a href="#local-6989586621679348525"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Series -&gt; Encoding
+</span><span id="line-251"></span><span>  </span><span id="local-6989586621679350074"><span class="annot"><span class="annottext">toEncoding :: Params crypto -&gt; Encoding
+</span><a href="#local-6989586621679350074"><span class="hs-identifier hs-var hs-var hs-var hs-var">toEncoding</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#Params"><span class="hs-identifier hs-type">Params</span></a></span><span> </span><span id="local-6989586621679350073"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
+</span><a href="#local-6989586621679350073"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679350072"><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
+</span><a href="#local-6989586621679350072"><span class="hs-identifier hs-var">fp</span></a></span></span><span> </span><span id="local-6989586621679350071"><span class="annot"><span class="annottext">Maybe EpochNo
+</span><a href="#local-6989586621679350071"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Series -&gt; Encoding
 </span><span class="hs-identifier hs-var">pairs</span></span><span> </span><span class="annot"><span class="annottext">(Series -&gt; Encoding) -&gt; Series -&gt; Encoding
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="annot"><span class="annottext">[Series] -&gt; Series
@@ -827,23 +827,23 @@ forall a. Monoid a =&gt; [a] -&gt; a
 </span><span class="hs-string">&quot;poolParams&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe (PoolParams crypto) -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348527"><span class="hs-identifier hs-var">p</span></a></span><span>
+</span><a href="#local-6989586621679350073"><span class="hs-identifier hs-var">p</span></a></span><span>
 </span><span id="line-253"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;futurePoolParams&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe (PoolParams crypto) -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe (PoolParams crypto)
-</span><a href="#local-6989586621679348526"><span class="hs-identifier hs-var">fp</span></a></span><span>
+</span><a href="#local-6989586621679350072"><span class="hs-identifier hs-var">fp</span></a></span><span>
 </span><span id="line-254"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Key
 </span><span class="hs-string">&quot;retiring&quot;</span></span><span> </span><span class="annot"><span class="annottext">Key -&gt; Maybe EpochNo -&gt; Series
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Key -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Maybe EpochNo
-</span><a href="#local-6989586621679348525"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621679350071"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-255"></span><span>    </span><span class="hs-special">]</span></span><span>
 </span><span id="line-256"></span><span>
 </span><span id="line-257"></span><span class="hs-keyword">newtype</span><span> </span><span id="SigningKeyFile"><span class="annot"><a href="Cardano.CLI.Types.html#SigningKeyFile"><span class="hs-identifier hs-var">SigningKeyFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="SigningKeyFile"><span class="annot"><a href="Cardano.CLI.Types.html#SigningKeyFile"><span class="hs-identifier hs-var">SigningKeyFile</span></a></span></span><span>
 </span><span id="line-258"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="unSigningKeyFile"><span class="annot"><span class="annottext">SigningKeyFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unSigningKeyFile"><span class="hs-identifier hs-var hs-var">unSigningKeyFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-259"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348519"><span id="local-6989586621679348521"><span class="annot"><span class="annottext">SigningKeyFile -&gt; SigningKeyFile -&gt; Bool
+</span><span id="line-259"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">stock</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350065"><span id="local-6989586621679350067"><span class="annot"><span class="annottext">SigningKeyFile -&gt; SigningKeyFile -&gt; Bool
 (SigningKeyFile -&gt; SigningKeyFile -&gt; Bool)
 -&gt; (SigningKeyFile -&gt; SigningKeyFile -&gt; Bool) -&gt; Eq SigningKeyFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -851,7 +851,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: SigningKeyFile -&gt; SigningKeyFile -&gt; Bool
 == :: SigningKeyFile -&gt; SigningKeyFile -&gt; Bool
 $c== :: SigningKeyFile -&gt; SigningKeyFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348504"><span id="local-6989586621679348506"><span id="local-6989586621679348508"><span id="local-6989586621679348510"><span id="local-6989586621679348512"><span id="local-6989586621679348514"><span id="local-6989586621679348516"><span class="annot"><span class="annottext">Eq SigningKeyFile
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350050"><span id="local-6989586621679350052"><span id="local-6989586621679350054"><span id="local-6989586621679350056"><span id="local-6989586621679350058"><span id="local-6989586621679350060"><span id="local-6989586621679350062"><span class="annot"><span class="annottext">Eq SigningKeyFile
 Eq SigningKeyFile
 -&gt; (SigningKeyFile -&gt; SigningKeyFile -&gt; Ordering)
 -&gt; (SigningKeyFile -&gt; SigningKeyFile -&gt; Bool)
@@ -890,12 +890,12 @@ compare :: SigningKeyFile -&gt; SigningKeyFile -&gt; Ordering
 $ccompare :: SigningKeyFile -&gt; SigningKeyFile -&gt; Ordering
 $cp1Ord :: Eq SigningKeyFile
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></a></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
-</span><span id="line-260"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348502"><span class="annot"><span class="annottext">String -&gt; SigningKeyFile
+</span><span id="line-260"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350048"><span class="annot"><span class="annottext">String -&gt; SigningKeyFile
 (String -&gt; SigningKeyFile) -&gt; IsString SigningKeyFile
 forall a. (String -&gt; a) -&gt; IsString a
 fromString :: String -&gt; SigningKeyFile
 $cfromString :: String -&gt; SigningKeyFile
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348496"><span id="local-6989586621679348498"><span id="local-6989586621679348500"><span class="annot"><span class="annottext">Int -&gt; SigningKeyFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var">IsString</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350042"><span id="local-6989586621679350044"><span id="local-6989586621679350046"><span class="annot"><span class="annottext">Int -&gt; SigningKeyFile -&gt; ShowS
 [SigningKeyFile] -&gt; ShowS
 SigningKeyFile -&gt; String
 (Int -&gt; SigningKeyFile -&gt; ShowS)
@@ -917,7 +917,7 @@ $cshowsPrec :: Int -&gt; SigningKeyFile -&gt; ShowS
 </span><span id="line-263"></span><span>
 </span><span id="line-264"></span><span class="hs-keyword">newtype</span><span> </span><span id="UpdateProposalFile"><span class="annot"><a href="Cardano.CLI.Types.html#UpdateProposalFile"><span class="hs-identifier hs-var">UpdateProposalFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="UpdateProposalFile"><span class="annot"><a href="Cardano.CLI.Types.html#UpdateProposalFile"><span class="hs-identifier hs-var">UpdateProposalFile</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unUpdateProposalFile"><span class="annot"><span class="annottext">UpdateProposalFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unUpdateProposalFile"><span class="hs-identifier hs-var hs-var">unUpdateProposalFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-265"></span><span>                             </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348488"><span id="local-6989586621679348490"><span class="annot"><span class="annottext">UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool
+</span><span id="line-265"></span><span>                             </span><span class="hs-keyword">deriving</span><span> </span><span class="annot"><span class="hs-keyword">newtype</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350034"><span id="local-6989586621679350036"><span class="annot"><span class="annottext">UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool
 (UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool)
 -&gt; (UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool)
 -&gt; Eq UpdateProposalFile
@@ -926,7 +926,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool
 == :: UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool
 $c== :: UpdateProposalFile -&gt; UpdateProposalFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348482"><span id="local-6989586621679348484"><span id="local-6989586621679348486"><span class="annot"><span class="annottext">Int -&gt; UpdateProposalFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350028"><span id="local-6989586621679350030"><span id="local-6989586621679350032"><span class="annot"><span class="annottext">Int -&gt; UpdateProposalFile -&gt; ShowS
 [UpdateProposalFile] -&gt; ShowS
 UpdateProposalFile -&gt; String
 (Int -&gt; UpdateProposalFile -&gt; ShowS)
@@ -946,7 +946,7 @@ $cshowsPrec :: Int -&gt; UpdateProposalFile -&gt; ShowS
 </span><span id="line-267"></span><span class="hs-keyword">newtype</span><span> </span><span id="VerificationKeyFile"><span class="annot"><a href="Cardano.CLI.Types.html#VerificationKeyFile"><span class="hs-identifier hs-var">VerificationKeyFile</span></a></span></span><span>
 </span><span id="line-268"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="VerificationKeyFile"><span class="annot"><a href="Cardano.CLI.Types.html#VerificationKeyFile"><span class="hs-identifier hs-var">VerificationKeyFile</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unVerificationKeyFile"><span class="annot"><span class="annottext">VerificationKeyFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unVerificationKeyFile"><span class="hs-identifier hs-var hs-var">unVerificationKeyFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-269"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348476"><span id="local-6989586621679348478"><span class="annot"><span class="annottext">VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool
+</span><span id="line-269"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350022"><span id="local-6989586621679350024"><span class="annot"><span class="annottext">VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool
 (VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool)
 -&gt; (VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool)
 -&gt; Eq VerificationKeyFile
@@ -955,7 +955,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool
 == :: VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool
 $c== :: VerificationKeyFile -&gt; VerificationKeyFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348470"><span id="local-6989586621679348472"><span id="local-6989586621679348474"><span class="annot"><span class="annottext">Int -&gt; VerificationKeyFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350016"><span id="local-6989586621679350018"><span id="local-6989586621679350020"><span class="annot"><span class="annottext">Int -&gt; VerificationKeyFile -&gt; ShowS
 [VerificationKeyFile] -&gt; ShowS
 VerificationKeyFile -&gt; String
 (Int -&gt; VerificationKeyFile -&gt; ShowS)
@@ -974,7 +974,7 @@ $cshowsPrec :: Int -&gt; VerificationKeyFile -&gt; ShowS
 </span><span id="line-270"></span><span>
 </span><span id="line-271"></span><span class="hs-keyword">newtype</span><span> </span><span id="ScriptFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-var">ScriptFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="ScriptFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-var">ScriptFile</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unScriptFile"><span class="annot"><span class="annottext">ScriptFile -&gt; String
 </span><a href="Cardano.CLI.Types.html#unScriptFile"><span class="hs-identifier hs-var hs-var">unScriptFile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-272"></span><span>                     </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348464"><span id="local-6989586621679348466"><span class="annot"><span class="annottext">ScriptFile -&gt; ScriptFile -&gt; Bool
+</span><span id="line-272"></span><span>                     </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679350010"><span id="local-6989586621679350012"><span class="annot"><span class="annottext">ScriptFile -&gt; ScriptFile -&gt; Bool
 (ScriptFile -&gt; ScriptFile -&gt; Bool)
 -&gt; (ScriptFile -&gt; ScriptFile -&gt; Bool) -&gt; Eq ScriptFile
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -982,7 +982,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ScriptFile -&gt; ScriptFile -&gt; Bool
 == :: ScriptFile -&gt; ScriptFile -&gt; Bool
 $c== :: ScriptFile -&gt; ScriptFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348458"><span id="local-6989586621679348460"><span id="local-6989586621679348462"><span class="annot"><span class="annottext">Int -&gt; ScriptFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679350004"><span id="local-6989586621679350006"><span id="local-6989586621679350008"><span class="annot"><span class="annottext">Int -&gt; ScriptFile -&gt; ShowS
 [ScriptFile] -&gt; ShowS
 ScriptFile -&gt; String
 (Int -&gt; ScriptFile -&gt; ShowS)
@@ -1002,7 +1002,7 @@ $cshowsPrec :: Int -&gt; ScriptFile -&gt; ShowS
 </span><span id="line-274"></span><span class="hs-keyword">data</span><span> </span><span id="ScriptDataOrFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataOrFile"><span class="hs-identifier hs-var">ScriptDataOrFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="ScriptDataCborFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataCborFile"><span class="hs-identifier hs-var">ScriptDataCborFile</span></a></span></span><span>  </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>   </span><span class="hs-comment">-- ^ By reference to a CBOR file</span><span>
 </span><span id="line-275"></span><span>                      </span><span class="hs-glyph">|</span><span> </span><span id="ScriptDataJsonFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataJsonFile"><span class="hs-identifier hs-var">ScriptDataJsonFile</span></a></span></span><span>  </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>   </span><span class="hs-comment">-- ^ By reference to a JSON file</span><span>
 </span><span id="line-276"></span><span>                      </span><span class="hs-glyph">|</span><span> </span><span id="ScriptDataValue"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataValue"><span class="hs-identifier hs-var">ScriptDataValue</span></a></span></span><span>     </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">ScriptData</span></a></span><span> </span><span class="hs-comment">-- ^ By value</span><span>
-</span><span id="line-277"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348451"><span id="local-6989586621679348453"><span class="annot"><span class="annottext">ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool
+</span><span id="line-277"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349997"><span id="local-6989586621679349999"><span class="annot"><span class="annottext">ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool
 (ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool)
 -&gt; (ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool)
 -&gt; Eq ScriptDataOrFile
@@ -1011,7 +1011,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool
 == :: ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool
 $c== :: ScriptDataOrFile -&gt; ScriptDataOrFile -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348445"><span id="local-6989586621679348447"><span id="local-6989586621679348449"><span class="annot"><span class="annottext">Int -&gt; ScriptDataOrFile -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349991"><span id="local-6989586621679349993"><span id="local-6989586621679349995"><span class="annot"><span class="annottext">Int -&gt; ScriptDataOrFile -&gt; ShowS
 [ScriptDataOrFile] -&gt; ShowS
 ScriptDataOrFile -&gt; String
 (Int -&gt; ScriptDataOrFile -&gt; ShowS)
@@ -1035,30 +1035,30 @@ $cshowsPrec :: Int -&gt; ScriptDataOrFile -&gt; ShowS
 </span><span id="line-283"></span><span class="hs-comment">--</span><span>
 </span><span id="line-284"></span><span class="hs-comment">-- It is era-independent, but witness context-dependent.</span><span>
 </span><span id="line-285"></span><span class="hs-comment">--</span><span>
-</span><span id="line-286"></span><span class="hs-keyword">data</span><span> </span><span id="ScriptWitnessFiles"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-var">ScriptWitnessFiles</span></a></span></span><span> </span><span id="local-6989586621679348444"><span class="annot"><a href="#local-6989586621679348444"><span class="hs-identifier hs-type">witctx</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-287"></span><span>     </span><span id="local-6989586621679348443"><span id="SimpleScriptWitnessFile"><span class="annot"><a href="Cardano.CLI.Types.html#SimpleScriptWitnessFile"><span class="hs-identifier hs-var">SimpleScriptWitnessFile</span></a></span></span><span>  </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-type">ScriptFile</span></a></span><span>
-</span><span id="line-288"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348443"><span class="hs-identifier hs-type">witctx</span></a></span></span><span>
+</span><span id="line-286"></span><span class="hs-keyword">data</span><span> </span><span id="ScriptWitnessFiles"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-var">ScriptWitnessFiles</span></a></span></span><span> </span><span id="local-6989586621679349990"><span class="annot"><a href="#local-6989586621679349990"><span class="hs-identifier hs-type">witctx</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-287"></span><span>     </span><span id="local-6989586621679349989"><span id="SimpleScriptWitnessFile"><span class="annot"><a href="Cardano.CLI.Types.html#SimpleScriptWitnessFile"><span class="hs-identifier hs-var">SimpleScriptWitnessFile</span></a></span></span><span>  </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-type">ScriptFile</span></a></span><span>
+</span><span id="line-288"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679349989"><span class="hs-identifier hs-type">witctx</span></a></span></span><span>
 </span><span id="line-289"></span><span>
-</span><span id="line-290"></span><span>     </span><span id="local-6989586621679348441"><span id="PlutusScriptWitnessFiles"><span class="annot"><a href="Cardano.CLI.Types.html#PlutusScriptWitnessFiles"><span class="hs-identifier hs-var">PlutusScriptWitnessFiles</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-type">ScriptFile</span></a></span><span>
-</span><span id="line-291"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348441"><span class="hs-identifier hs-type">witctx</span></a></span><span>
+</span><span id="line-290"></span><span>     </span><span id="local-6989586621679349987"><span id="PlutusScriptWitnessFiles"><span class="annot"><a href="Cardano.CLI.Types.html#PlutusScriptWitnessFiles"><span class="hs-identifier hs-var">PlutusScriptWitnessFiles</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptFile"><span class="hs-identifier hs-type">ScriptFile</span></a></span><span>
+</span><span id="line-291"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679349987"><span class="hs-identifier hs-type">witctx</span></a></span><span>
 </span><span id="line-292"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptRedeemerOrFile"><span class="hs-identifier hs-type">ScriptRedeemerOrFile</span></a></span><span>
 </span><span id="line-293"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">ExecutionUnits</span></a></span><span>
-</span><span id="line-294"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348441"><span class="hs-identifier hs-type">witctx</span></a></span></span><span>
+</span><span id="line-294"></span><span>                              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679349987"><span class="hs-identifier hs-type">witctx</span></a></span></span><span>
 </span><span id="line-295"></span><span>
-</span><span id="line-296"></span><span id="local-6989586621679348433"><span id="local-6989586621679348435"><span id="local-6989586621679348437"><span id="local-6989586621679348439"><span class="hs-keyword">deriving</span><span> </span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Show</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348439"><span class="hs-identifier hs-type">witctx</span></a></span><span class="hs-special">)</span></span></span></span></span><span>
+</span><span id="line-296"></span><span id="local-6989586621679349979"><span id="local-6989586621679349981"><span id="local-6989586621679349983"><span id="local-6989586621679349985"><span class="hs-keyword">deriving</span><span> </span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Show</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptWitnessFiles"><span class="hs-identifier hs-type">ScriptWitnessFiles</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679349985"><span class="hs-identifier hs-type">witctx</span></a></span><span class="hs-special">)</span></span></span></span></span><span>
 </span><span id="line-297"></span><span>
-</span><span id="line-298"></span><span class="hs-keyword">data</span><span> </span><span id="ScriptDatumOrFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-var">ScriptDatumOrFile</span></a></span></span><span> </span><span id="local-6989586621679348432"><span class="annot"><a href="#local-6989586621679348432"><span class="hs-identifier hs-type">witctx</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-298"></span><span class="hs-keyword">data</span><span> </span><span id="ScriptDatumOrFile"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-var">ScriptDatumOrFile</span></a></span></span><span> </span><span id="local-6989586621679349978"><span class="annot"><a href="#local-6989586621679349978"><span class="hs-identifier hs-type">witctx</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
 </span><span id="line-299"></span><span>     </span><span id="ScriptDatumOrFileForTxIn"><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFileForTxIn"><span class="hs-identifier hs-var">ScriptDatumOrFileForTxIn</span></a></span></span><span>    </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataOrFile"><span class="hs-identifier hs-type">ScriptDataOrFile</span></a></span><span>
 </span><span id="line-300"></span><span>                                 </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">WitCtxTxIn</span></a></span><span>
 </span><span id="line-301"></span><span>
 </span><span id="line-302"></span><span>     </span><span id="NoScriptDatumOrFileForMint"><span class="annot"><a href="Cardano.CLI.Types.html#NoScriptDatumOrFileForMint"><span class="hs-identifier hs-var">NoScriptDatumOrFileForMint</span></a></span></span><span>  </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">WitCtxMint</span></a></span><span>
 </span><span id="line-303"></span><span>     </span><span id="NoScriptDatumOrFileForStake"><span class="annot"><a href="Cardano.CLI.Types.html#NoScriptDatumOrFileForStake"><span class="hs-identifier hs-var">NoScriptDatumOrFileForStake</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">WitCtxStake</span></a></span><span>
 </span><span id="line-304"></span><span>
-</span><span id="line-305"></span><span id="local-6989586621679348422"><span id="local-6989586621679348424"><span id="local-6989586621679348426"><span id="local-6989586621679348428"><span class="hs-keyword">deriving</span><span> </span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Show</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679348428"><span class="hs-identifier hs-type">witctx</span></a></span><span class="hs-special">)</span></span></span></span></span><span>
+</span><span id="line-305"></span><span id="local-6989586621679349968"><span id="local-6989586621679349970"><span id="local-6989586621679349972"><span id="local-6989586621679349974"><span class="hs-keyword">deriving</span><span> </span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Show</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDatumOrFile"><span class="hs-identifier hs-type">ScriptDatumOrFile</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679349974"><span class="hs-identifier hs-type">witctx</span></a></span><span class="hs-special">)</span></span></span></span></span><span>
 </span><span id="line-306"></span><span>
 </span><span id="line-307"></span><span class="hs-keyword">newtype</span><span> </span><span id="SlotsTillKesKeyExpiry"><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-var">SlotsTillKesKeyExpiry</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="SlotsTillKesKeyExpiry"><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-var">SlotsTillKesKeyExpiry</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="unSlotsTillKesKeyExpiry"><span class="annot"><span class="annottext">SlotsTillKesKeyExpiry -&gt; SlotNo
 </span><a href="Cardano.CLI.Types.html#unSlotsTillKesKeyExpiry"><span class="hs-identifier hs-var hs-var">unSlotsTillKesKeyExpiry</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">SlotNo</span></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-308"></span><span>                                </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348416"><span id="local-6989586621679348418"><span class="annot"><span class="annottext">SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool
+</span><span id="line-308"></span><span>                                </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349962"><span id="local-6989586621679349964"><span class="annot"><span class="annottext">SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool
 (SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool)
 -&gt; (SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool)
 -&gt; Eq SlotsTillKesKeyExpiry
@@ -1067,7 +1067,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool
 == :: SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool
 $c== :: SlotsTillKesKeyExpiry -&gt; SlotsTillKesKeyExpiry -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348410"><span id="local-6989586621679348412"><span id="local-6989586621679348414"><span class="annot"><span class="annottext">Int -&gt; SlotsTillKesKeyExpiry -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349956"><span id="local-6989586621679349958"><span id="local-6989586621679349960"><span class="annot"><span class="annottext">Int -&gt; SlotsTillKesKeyExpiry -&gt; ShowS
 [SlotsTillKesKeyExpiry] -&gt; ShowS
 SlotsTillKesKeyExpiry -&gt; String
 (Int -&gt; SlotsTillKesKeyExpiry -&gt; ShowS)
@@ -1084,29 +1084,29 @@ showsPrec :: Int -&gt; SlotsTillKesKeyExpiry -&gt; ShowS
 $cshowsPrec :: Int -&gt; SlotsTillKesKeyExpiry -&gt; ShowS
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></a></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-309"></span><span>
-</span><span id="line-310"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348403"><span id="local-6989586621679348405"><span id="local-6989586621679348407"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-311"></span><span>  </span><span id="local-6989586621679348402"><span class="annot"><span class="annottext">toJSON :: SlotsTillKesKeyExpiry -&gt; Value
-</span><a href="#local-6989586621679348402"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span><span> </span><span id="local-6989586621679348401"><span class="annot"><span class="annottext">SlotNo
-</span><a href="#local-6989586621679348401"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SlotNo -&gt; Value
+</span><span id="line-310"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679349949"><span id="local-6989586621679349951"><span id="local-6989586621679349953"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-311"></span><span>  </span><span id="local-6989586621679349948"><span class="annot"><span class="annottext">toJSON :: SlotsTillKesKeyExpiry -&gt; Value
+</span><a href="#local-6989586621679349948"><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span><span> </span><span id="local-6989586621679349947"><span class="annot"><span class="annottext">SlotNo
+</span><a href="#local-6989586621679349947"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SlotNo -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">SlotNo
-</span><a href="#local-6989586621679348401"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621679349947"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-312"></span><span>
-</span><span id="line-313"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679348398"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-314"></span><span>  </span><span id="local-6989586621679348397"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser SlotsTillKesKeyExpiry
-</span><a href="#local-6989586621679348397"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679348396"><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348396"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SlotNo -&gt; SlotsTillKesKeyExpiry
+</span><span id="line-313"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679349944"><span class="annot"><span class="hs-identifier hs-type">FromJSON</span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-type">SlotsTillKesKeyExpiry</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-314"></span><span>  </span><span id="local-6989586621679349943"><span class="annot"><span class="annottext">parseJSON :: Value -&gt; Parser SlotsTillKesKeyExpiry
+</span><a href="#local-6989586621679349943"><span class="hs-identifier hs-var hs-var hs-var hs-var">parseJSON</span></a></span></span><span> </span><span id="local-6989586621679349942"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679349942"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">SlotNo -&gt; SlotsTillKesKeyExpiry
 </span><a href="Cardano.CLI.Types.html#SlotsTillKesKeyExpiry"><span class="hs-identifier hs-var">SlotsTillKesKeyExpiry</span></a></span><span> </span><span class="annot"><span class="annottext">(SlotNo -&gt; SlotsTillKesKeyExpiry)
 -&gt; Parser SlotNo -&gt; Parser SlotsTillKesKeyExpiry
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">&lt;$&gt;</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Parser SlotNo
 forall a. FromJSON a =&gt; Value -&gt; Parser a
 </span><span class="hs-identifier hs-var">parseJSON</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621679348396"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><a href="#local-6989586621679349942"><span class="hs-identifier hs-var">v</span></a></span><span>
 </span><span id="line-315"></span><span>
 </span><span id="line-316"></span><span class="hs-comment">-- | Determines the direction in which the MIR certificate will transfer ADA.</span><span>
 </span><span id="line-317"></span><span class="hs-keyword">data</span><span> </span><span id="TransferDirection"><span class="annot"><a href="Cardano.CLI.Types.html#TransferDirection"><span class="hs-identifier hs-var">TransferDirection</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="TransferToReserves"><span class="annot"><a href="Cardano.CLI.Types.html#TransferToReserves"><span class="hs-identifier hs-var">TransferToReserves</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="TransferToTreasury"><span class="annot"><a href="Cardano.CLI.Types.html#TransferToTreasury"><span class="hs-identifier hs-var">TransferToTreasury</span></a></span></span><span>
-</span><span id="line-318"></span><span>                         </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348388"><span id="local-6989586621679348390"><span id="local-6989586621679348392"><span class="annot"><span class="annottext">Int -&gt; TransferDirection -&gt; ShowS
+</span><span id="line-318"></span><span>                         </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679349934"><span id="local-6989586621679349936"><span id="local-6989586621679349938"><span class="annot"><span class="annottext">Int -&gt; TransferDirection -&gt; ShowS
 [TransferDirection] -&gt; ShowS
 TransferDirection -&gt; String
 (Int -&gt; TransferDirection -&gt; ShowS)
@@ -1133,7 +1133,7 @@ $cshowsPrec :: Int -&gt; TransferDirection -&gt; ShowS
 </span><span id="line-327"></span><span>                     </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">Value</span></a></span><span>
 </span><span id="line-328"></span><span>                     </span><span class="annot"><a href="Cardano.CLI.Types.html#TxOutDatumAnyEra"><span class="hs-identifier hs-type">TxOutDatumAnyEra</span></a></span><span>
 </span><span id="line-329"></span><span>                     </span><span class="annot"><a href="Cardano.CLI.Types.html#ReferenceScriptAnyEra"><span class="hs-identifier hs-type">ReferenceScriptAnyEra</span></a></span><span>
-</span><span id="line-330"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348383"><span id="local-6989586621679348385"><span class="annot"><span class="annottext">TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool
+</span><span id="line-330"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349929"><span id="local-6989586621679349931"><span class="annot"><span class="annottext">TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool
 (TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool)
 -&gt; (TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool) -&gt; Eq TxOutAnyEra
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -1141,7 +1141,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool
 == :: TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool
 $c== :: TxOutAnyEra -&gt; TxOutAnyEra -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348377"><span id="local-6989586621679348379"><span id="local-6989586621679348381"><span class="annot"><span class="annottext">Int -&gt; TxOutAnyEra -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349923"><span id="local-6989586621679349925"><span id="local-6989586621679349927"><span class="annot"><span class="annottext">Int -&gt; TxOutAnyEra -&gt; ShowS
 [TxOutAnyEra] -&gt; ShowS
 TxOutAnyEra -&gt; String
 (Int -&gt; TxOutAnyEra -&gt; ShowS)
@@ -1163,7 +1163,7 @@ $cshowsPrec :: Int -&gt; TxOutAnyEra -&gt; ShowS
 </span><span id="line-334"></span><span>                      </span><span class="hs-glyph">|</span><span> </span><span id="TxOutDatumByValue"><span class="annot"><a href="Cardano.CLI.Types.html#TxOutDatumByValue"><span class="hs-identifier hs-var">TxOutDatumByValue</span></a></span></span><span>     </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataOrFile"><span class="hs-identifier hs-type">ScriptDataOrFile</span></a></span><span>
 </span><span id="line-335"></span><span>                      </span><span class="hs-glyph">|</span><span> </span><span id="TxOutInlineDatumByValue"><span class="annot"><a href="Cardano.CLI.Types.html#TxOutInlineDatumByValue"><span class="hs-identifier hs-var">TxOutInlineDatumByValue</span></a></span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#ScriptDataOrFile"><span class="hs-identifier hs-type">ScriptDataOrFile</span></a></span><span>
 </span><span id="line-336"></span><span>                      </span><span class="hs-glyph">|</span><span> </span><span id="TxOutDatumByNone"><span class="annot"><a href="Cardano.CLI.Types.html#TxOutDatumByNone"><span class="hs-identifier hs-var">TxOutDatumByNone</span></a></span></span><span>
-</span><span id="line-337"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348368"><span id="local-6989586621679348370"><span class="annot"><span class="annottext">TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool
+</span><span id="line-337"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349914"><span id="local-6989586621679349916"><span class="annot"><span class="annottext">TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool
 (TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool)
 -&gt; (TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool)
 -&gt; Eq TxOutDatumAnyEra
@@ -1172,7 +1172,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool
 == :: TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool
 $c== :: TxOutDatumAnyEra -&gt; TxOutDatumAnyEra -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348362"><span id="local-6989586621679348364"><span id="local-6989586621679348366"><span class="annot"><span class="annottext">Int -&gt; TxOutDatumAnyEra -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349908"><span id="local-6989586621679349910"><span id="local-6989586621679349912"><span class="annot"><span class="annottext">Int -&gt; TxOutDatumAnyEra -&gt; ShowS
 [TxOutDatumAnyEra] -&gt; ShowS
 TxOutDatumAnyEra -&gt; String
 (Int -&gt; TxOutDatumAnyEra -&gt; ShowS)
@@ -1192,7 +1192,7 @@ $cshowsPrec :: Int -&gt; TxOutDatumAnyEra -&gt; ShowS
 </span><span id="line-339"></span><span class="hs-keyword">data</span><span> </span><span id="ReferenceScriptAnyEra"><span class="annot"><a href="Cardano.CLI.Types.html#ReferenceScriptAnyEra"><span class="hs-identifier hs-var">ReferenceScriptAnyEra</span></a></span></span><span>
 </span><span id="line-340"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="ReferenceScriptAnyEraNone"><span class="annot"><a href="Cardano.CLI.Types.html#ReferenceScriptAnyEraNone"><span class="hs-identifier hs-var">ReferenceScriptAnyEraNone</span></a></span></span><span>
 </span><span id="line-341"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="ReferenceScriptAnyEra"><span class="annot"><a href="Cardano.CLI.Types.html#ReferenceScriptAnyEra"><span class="hs-identifier hs-var">ReferenceScriptAnyEra</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
-</span><span id="line-342"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348356"><span id="local-6989586621679348358"><span class="annot"><span class="annottext">ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool
+</span><span id="line-342"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349902"><span id="local-6989586621679349904"><span class="annot"><span class="annottext">ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool
 (ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool)
 -&gt; (ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool)
 -&gt; Eq ReferenceScriptAnyEra
@@ -1201,7 +1201,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool
 == :: ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool
 $c== :: ReferenceScriptAnyEra -&gt; ReferenceScriptAnyEra -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348350"><span id="local-6989586621679348352"><span id="local-6989586621679348354"><span class="annot"><span class="annottext">Int -&gt; ReferenceScriptAnyEra -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349896"><span id="local-6989586621679349898"><span id="local-6989586621679349900"><span class="annot"><span class="annottext">Int -&gt; ReferenceScriptAnyEra -&gt; ShowS
 [ReferenceScriptAnyEra] -&gt; ShowS
 ReferenceScriptAnyEra -&gt; String
 (Int -&gt; ReferenceScriptAnyEra -&gt; ShowS)
@@ -1227,7 +1227,7 @@ $cshowsPrec :: Int -&gt; ReferenceScriptAnyEra -&gt; ShowS
 </span><span id="line-350"></span><span class="hs-comment">-- change outputs.</span><span>
 </span><span id="line-351"></span><span class="hs-comment">--</span><span>
 </span><span id="line-352"></span><span class="hs-keyword">newtype</span><span> </span><span id="TxOutChangeAddress"><span class="annot"><a href="Cardano.CLI.Types.html#TxOutChangeAddress"><span class="hs-identifier hs-var">TxOutChangeAddress</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="TxOutChangeAddress"><span class="annot"><a href="Cardano.CLI.Types.html#TxOutChangeAddress"><span class="hs-identifier hs-var">TxOutChangeAddress</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">AddressAny</span></a></span><span>
-</span><span id="line-353"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679348345"><span id="local-6989586621679348347"><span class="annot"><span class="annottext">TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool
+</span><span id="line-353"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679349891"><span id="local-6989586621679349893"><span class="annot"><span class="annottext">TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool
 (TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool)
 -&gt; (TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool)
 -&gt; Eq TxOutChangeAddress
@@ -1236,7 +1236,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool
 == :: TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool
 $c== :: TxOutChangeAddress -&gt; TxOutChangeAddress -&gt; Bool
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679348339"><span id="local-6989586621679348341"><span id="local-6989586621679348343"><span class="annot"><span class="annottext">Int -&gt; TxOutChangeAddress -&gt; ShowS
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/ghc-prim-0.6.1/src"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679349885"><span id="local-6989586621679349887"><span id="local-6989586621679349889"><span class="annot"><span class="annottext">Int -&gt; TxOutChangeAddress -&gt; ShowS
 [TxOutChangeAddress] -&gt; ShowS
 TxOutChangeAddress -&gt; String
 (Int -&gt; TxOutChangeAddress -&gt; ShowS)
@@ -1261,7 +1261,7 @@ $cshowsPrec :: Int -&gt; TxOutChangeAddress -&gt; ShowS
 </span><span id="line-360"></span><span class="hs-keyword">data</span><span> </span><span id="RequiredSigner"><span class="annot"><a href="Cardano.CLI.Types.html#RequiredSigner"><span class="hs-identifier hs-var">RequiredSigner</span></a></span></span><span>
 </span><span id="line-361"></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="RequiredSignerSkeyFile"><span class="annot"><a href="Cardano.CLI.Types.html#RequiredSignerSkeyFile"><span class="hs-identifier hs-var">RequiredSignerSkeyFile</span></a></span></span><span> </span><span class="annot"><a href="Cardano.CLI.Types.html#SigningKeyFile"><span class="hs-identifier hs-type">SigningKeyFile</span></a></span><span>
 </span><span id="line-362"></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="RequiredSignerHash"><span class="annot"><a href="Cardano.CLI.Types.html#RequiredSignerHash"><span class="hs-identifier hs-var">RequiredSignerHash</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">Hash</span></a></span><span> </span><span class="annot"><a href="../file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/src"><span class="hs-identifier hs-type">PaymentKey</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-363"></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348329"><span id="local-6989586621679348331"><span id="local-6989586621679348333"><span class="annot"><span class="annottext">Int -&gt; RequiredSigner -&gt; ShowS
+</span><span id="line-363"></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679349875"><span id="local-6989586621679349877"><span id="local-6989586621679349879"><span class="annot"><span class="annottext">Int -&gt; RequiredSigner -&gt; ShowS
 [RequiredSigner] -&gt; ShowS
 RequiredSigner -&gt; String
 (Int -&gt; RequiredSigner -&gt; ShowS)
@@ -1283,7 +1283,7 @@ $cshowsPrec :: Int -&gt; RequiredSigner -&gt; ShowS
 </span><span id="line-367"></span><span class="hs-keyword">data</span><span> </span><span id="EpochLeadershipSchedule"><span class="annot"><a href="Cardano.CLI.Types.html#EpochLeadershipSchedule"><span class="hs-identifier hs-var">EpochLeadershipSchedule</span></a></span></span><span>
 </span><span id="line-368"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="CurrentEpoch"><span class="annot"><a href="Cardano.CLI.Types.html#CurrentEpoch"><span class="hs-identifier hs-var">CurrentEpoch</span></a></span></span><span>
 </span><span id="line-369"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="NextEpoch"><span class="annot"><a href="Cardano.CLI.Types.html#NextEpoch"><span class="hs-identifier hs-var">NextEpoch</span></a></span></span><span>
-</span><span id="line-370"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348321"><span id="local-6989586621679348323"><span id="local-6989586621679348325"><span class="annot"><span class="annottext">Int -&gt; EpochLeadershipSchedule -&gt; ShowS
+</span><span id="line-370"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679349867"><span id="local-6989586621679349869"><span id="local-6989586621679349871"><span class="annot"><span class="annottext">Int -&gt; EpochLeadershipSchedule -&gt; ShowS
 [EpochLeadershipSchedule] -&gt; ShowS
 EpochLeadershipSchedule -&gt; String
 (Int -&gt; EpochLeadershipSchedule -&gt; ShowS)
@@ -1302,7 +1302,7 @@ $cshowsPrec :: Int -&gt; EpochLeadershipSchedule -&gt; ShowS
 </span><span id="line-371"></span><span>
 </span><span id="line-372"></span><span class="hs-keyword">newtype</span><span> </span><span id="TxBodyFile"><span class="annot"><a href="Cardano.CLI.Types.html#TxBodyFile"><span class="hs-identifier hs-var">TxBodyFile</span></a></span></span><span>
 </span><span id="line-373"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="TxBodyFile"><span class="annot"><a href="Cardano.CLI.Types.html#TxBodyFile"><span class="hs-identifier hs-var">TxBodyFile</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
-</span><span id="line-374"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348314"><span id="local-6989586621679348316"><span id="local-6989586621679348318"><span class="annot"><span class="annottext">Int -&gt; TxBodyFile -&gt; ShowS
+</span><span id="line-374"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679349860"><span id="local-6989586621679349862"><span id="local-6989586621679349864"><span class="annot"><span class="annottext">Int -&gt; TxBodyFile -&gt; ShowS
 [TxBodyFile] -&gt; ShowS
 TxBodyFile -&gt; String
 (Int -&gt; TxBodyFile -&gt; ShowS)
@@ -1321,7 +1321,7 @@ $cshowsPrec :: Int -&gt; TxBodyFile -&gt; ShowS
 </span><span id="line-375"></span><span>
 </span><span id="line-376"></span><span class="hs-keyword">newtype</span><span> </span><span id="TxFile"><span class="annot"><a href="Cardano.CLI.Types.html#TxFile"><span class="hs-identifier hs-var">TxFile</span></a></span></span><span>
 </span><span id="line-377"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="TxFile"><span class="annot"><a href="Cardano.CLI.Types.html#TxFile"><span class="hs-identifier hs-var">TxFile</span></a></span></span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">FilePath</span></a></span><span>
-</span><span id="line-378"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679348307"><span id="local-6989586621679348309"><span id="local-6989586621679348311"><span class="annot"><span class="annottext">Int -&gt; TxFile -&gt; ShowS
+</span><span id="line-378"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679349853"><span id="local-6989586621679349855"><span id="local-6989586621679349857"><span class="annot"><span class="annottext">Int -&gt; TxFile -&gt; ShowS
 [TxFile] -&gt; ShowS
 TxFile -&gt; String
 (Int -&gt; TxFile -&gt; ShowS)

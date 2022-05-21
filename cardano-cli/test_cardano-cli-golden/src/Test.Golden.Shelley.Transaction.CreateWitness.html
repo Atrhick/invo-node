@@ -38,15 +38,15 @@ String -&gt; (String -&gt; m ()) -&gt; m ()
 </span><span class="hs-string">&quot;tmp&quot;</span></span><span> </span><span class="annot"><span class="annottext">((String -&gt; PropertyT IO ()) -&gt; PropertyT IO ())
 -&gt; (String -&gt; PropertyT IO ()) -&gt; PropertyT IO ()
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679214027"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214027"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-26"></span><span>  </span><span id="local-6989586621679214026"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214026"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; PropertyT IO String
+</span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679215712"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215712"><span class="hs-identifier hs-var">tempDir</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-26"></span><span>  </span><span id="local-6989586621679215711"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215711"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; PropertyT IO String
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 String -&gt; String -&gt; m String
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214027"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215712"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;tx-body-out&quot;</span></span><span>
 </span><span id="line-27"></span><span>
 </span><span id="line-28"></span><span>  </span><span class="hs-comment">-- Create tx body file</span><span>
@@ -79,20 +79,20 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;12&quot;</span></span><span>
 </span><span id="line-36"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;--tx-body-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214026"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
+</span><a href="#local-6989586621679215711"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
 </span><span id="line-37"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-38"></span><span>
 </span><span id="line-39"></span><span>  </span><span class="hs-comment">-- Create all multisig witness</span><span>
-</span><span id="line-40"></span><span>  </span><span id="local-6989586621679214022"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214022"><span class="hs-identifier hs-var">witnessOutFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; PropertyT IO String
+</span><span id="line-40"></span><span>  </span><span id="local-6989586621679215707"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215707"><span class="hs-identifier hs-var">witnessOutFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; PropertyT IO String
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 String -&gt; String -&gt; m String
 </span><a href="Test.OptParse.html#noteTempFile"><span class="hs-identifier hs-var">noteTempFile</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214027"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215712"><span class="hs-identifier hs-var">tempDir</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;signingkey-witness&quot;</span></span><span>
-</span><span id="line-41"></span><span>  </span><span id="local-6989586621679214021"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214021"><span class="hs-identifier hs-var">signingKeyFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; PropertyT IO String
+</span><span id="line-41"></span><span>  </span><span id="local-6989586621679215706"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679215706"><span class="hs-identifier hs-var">signingKeyFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; PropertyT IO String
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 String -&gt; m String
@@ -113,15 +113,15 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;witness&quot;</span></span><span>
 </span><span id="line-44"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;--tx-body-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214026"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
+</span><a href="#local-6989586621679215711"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
 </span><span id="line-45"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;--signing-key-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214021"><span class="hs-identifier hs-var">signingKeyFile</span></a></span><span>
+</span><a href="#local-6989586621679215706"><span class="hs-identifier hs-var">signingKeyFile</span></a></span><span>
 </span><span id="line-46"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;--mainnet&quot;</span></span><span>
 </span><span id="line-47"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;--out-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214022"><span class="hs-identifier hs-var">witnessOutFile</span></a></span><span>
+</span><a href="#local-6989586621679215707"><span class="hs-identifier hs-var">witnessOutFile</span></a></span><span>
 </span><span id="line-48"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-49"></span><span>
 </span><span id="line-50"></span><span>  </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; String -&gt; PropertyT IO ()
@@ -131,11 +131,11 @@ Int -&gt; String -&gt; String -&gt; m ()
 </span><span class="hs-identifier hs-var">H.assertFileOccurences</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;TxWitnessShelley&quot;</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214022"><span class="hs-identifier hs-var">witnessOutFile</span></a></span><span>
+</span><a href="#local-6989586621679215707"><span class="hs-identifier hs-var">witnessOutFile</span></a></span><span>
 </span><span id="line-51"></span><span>  </span><span class="annot"><span class="annottext">String -&gt; PropertyT IO ()
 forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 String -&gt; m ()
 </span><span class="hs-identifier hs-var">H.assertEndsWithSingleNewline</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679214026"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
+</span><a href="#local-6989586621679215711"><span class="hs-identifier hs-var">txBodyOutFile</span></a></span><span>
 </span><span id="line-52"></span></pre></body></html>

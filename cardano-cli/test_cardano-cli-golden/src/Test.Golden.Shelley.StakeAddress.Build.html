@@ -33,23 +33,23 @@ FilePath -&gt; (FilePath -&gt; m ()) -&gt; m ()
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-glyph">\</span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-18"></span><span>  </span><span id="local-6989586621679215140"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215140"><span class="hs-identifier hs-var">verificationKeyFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-18"></span><span>  </span><span id="local-6989586621679216825"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216825"><span class="hs-identifier hs-var">verificationKeyFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/stake_keys/verification_key&quot;</span></span><span>
-</span><span id="line-19"></span><span>  </span><span id="local-6989586621679215138"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215138"><span class="hs-identifier hs-var">goldenRewardAddressFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-19"></span><span>  </span><span id="local-6989586621679216823"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216823"><span class="hs-identifier hs-var">goldenRewardAddressFile</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><a href="Test.OptParse.html#noteInputFile"><span class="hs-identifier hs-var">noteInputFile</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;test/data/golden/shelley/keys/stake_keys/reward_address&quot;</span></span><span>
 </span><span id="line-20"></span><span>
-</span><span id="line-21"></span><span>  </span><span id="local-6989586621679215137"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215137"><span class="hs-identifier hs-var">rewardAddress</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[FilePath] -&gt; PropertyT IO FilePath
+</span><span id="line-21"></span><span>  </span><span id="local-6989586621679216822"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216822"><span class="hs-identifier hs-var">rewardAddress</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[FilePath] -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, MonadCatch m, MonadIO m, HasCallStack) =&gt;
 [FilePath] -&gt; m FilePath
@@ -61,22 +61,22 @@ forall (m :: * -&gt; *).
 </span><span class="hs-string">&quot;--mainnet&quot;</span></span><span>
 </span><span id="line-24"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
 </span><span class="hs-string">&quot;--staking-verification-key-file&quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215140"><span class="hs-identifier hs-var">verificationKeyFile</span></a></span><span>
+</span><a href="#local-6989586621679216825"><span class="hs-identifier hs-var">verificationKeyFile</span></a></span><span>
 </span><span id="line-25"></span><span>    </span><span class="hs-special">]</span><span>
 </span><span id="line-26"></span><span>
-</span><span id="line-27"></span><span>  </span><span id="local-6989586621679215135"><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215135"><span class="hs-identifier hs-var">goldenRewardsAddress</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
+</span><span id="line-27"></span><span>  </span><span id="local-6989586621679216820"><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216820"><span class="hs-identifier hs-var">goldenRewardsAddress</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FilePath -&gt; PropertyT IO FilePath
 forall (m :: * -&gt; *).
 (MonadTest m, MonadIO m, HasCallStack) =&gt;
 FilePath -&gt; m FilePath
 </span><span class="hs-identifier hs-var">H.readFile</span></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215138"><span class="hs-identifier hs-var">goldenRewardAddressFile</span></a></span><span>
+</span><a href="#local-6989586621679216823"><span class="hs-identifier hs-var">goldenRewardAddressFile</span></a></span><span>
 </span><span id="line-28"></span><span>
 </span><span id="line-29"></span><span>  </span><span class="annot"><span class="annottext">FilePath -&gt; FilePath -&gt; PropertyT IO ()
 forall (m :: * -&gt; *) a.
 (MonadTest m, Eq a, Show a, HasCallStack) =&gt;
 a -&gt; a -&gt; m ()
 </span><a href="Test.OptParse.html#equivalence"><span class="hs-identifier hs-var">equivalence</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215137"><span class="hs-identifier hs-var">rewardAddress</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
-</span><a href="#local-6989586621679215135"><span class="hs-identifier hs-var">goldenRewardsAddress</span></a></span><span>
+</span><a href="#local-6989586621679216822"><span class="hs-identifier hs-var">rewardAddress</span></a></span><span> </span><span class="annot"><span class="annottext">FilePath
+</span><a href="#local-6989586621679216820"><span class="hs-identifier hs-var">goldenRewardsAddress</span></a></span><span>
 </span><span id="line-30"></span></pre></body></html>
