@@ -263,8 +263,8 @@ docChainSyncClientEvent' = Documented [
 severityChainSyncServerEvent :: TraceChainSyncServerEvent blk -> SeverityS
 severityChainSyncServerEvent (TraceChainSyncServerUpdate _tip _upd _blocking enclosing) =
     case enclosing of
-      RisingEdge         -> Info
-      FallingEdgeWith () -> Debug
+      RisingEdge  -> Info
+      FallingEdge -> Debug
 
 namesForChainSyncServerEvent :: TraceChainSyncServerEvent blk -> [Text]
 namesForChainSyncServerEvent ev =
