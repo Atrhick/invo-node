@@ -16,23 +16,23 @@
 </span><span id="line-16"></span><span class="hs-comment">--</span><span>
 </span><span id="line-17"></span><span class="annot"><a href="Cardano.Api.Json.html#toRationalJSON"><span class="hs-identifier hs-type">toRationalJSON</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Rational</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
 </span><span id="line-18"></span><span id="toRationalJSON"><span class="annot"><span class="annottext">toRationalJSON :: Rational -&gt; Value
-</span><a href="Cardano.Api.Json.html#toRationalJSON"><span class="hs-identifier hs-var hs-var">toRationalJSON</span></a></span></span><span> </span><span id="local-6989586621679536686"><span class="annot"><span class="annottext">Rational
-</span><a href="#local-6989586621679536686"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Cardano.Api.Json.html#toRationalJSON"><span class="hs-identifier hs-var hs-var">toRationalJSON</span></a></span></span><span> </span><span id="local-6989586621679536778"><span class="annot"><span class="annottext">Rational
+</span><a href="#local-6989586621679536778"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-19"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Rational
 -&gt; Either (Scientific, Rational) (Scientific, Maybe Int)
 </span><span class="hs-identifier hs-var">fromRationalRepetendLimited</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">20</span></span><span> </span><span class="annot"><span class="annottext">Rational
-</span><a href="#local-6989586621679536686"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-20"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679536684"><span class="annot"><span class="annottext">Scientific
-</span><a href="#local-6989586621679536684"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Maybe Int
+</span><a href="#local-6989586621679536778"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-20"></span><span>    </span><span class="annot"><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-type">Right</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679536776"><span class="annot"><span class="annottext">Scientific
+</span><a href="#local-6989586621679536776"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Maybe Int
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-identifier hs-var">Nothing</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Scientific -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Scientific
-</span><a href="#local-6989586621679536684"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621679536776"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-21"></span><span>    </span><span class="annot"><span class="annottext">Either (Scientific, Rational) (Scientific, Maybe Int)
 </span><span class="hs-identifier">_</span></span><span>                  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Rational -&gt; Value
 forall a. ToJSON a =&gt; a -&gt; Value
 </span><span class="hs-identifier hs-var">toJSON</span></span><span> </span><span class="annot"><span class="annottext">Rational
-</span><a href="#local-6989586621679536686"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621679536778"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-22"></span></pre></body></html>

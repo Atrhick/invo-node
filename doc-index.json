@@ -8172,6 +8172,12 @@
     "link": "lib_gen/Gen-Cardano-Api-Typed.html#v:genTxBody"
   },
   {
+    "display_html": "<a href=\"#v:genTxBodyContent\">genTxBodyContent</a> &#8759; <a href=\"file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/Cardano-Api-Eras.html#t:CardanoEra\" title=\"Cardano.Api.Eras\">CardanoEra</a> era &#8594; Gen (<a href=\"file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/Cardano-Api-TxBody.html#t:TxBodyContent\" title=\"Cardano.Api.TxBody\">TxBodyContent</a> <a href=\"file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/Cardano-Api-TxBody.html#t:BuildTx\" title=\"Cardano.Api.TxBody\">BuildTx</a> era)",
+    "name": "genTxBodyContent",
+    "module": "Gen.Cardano.Api.Typed",
+    "link": "lib_gen/Gen-Cardano-Api-Typed.html#v:genTxBodyContent"
+  },
+  {
     "display_html": "<a href=\"#v:genLovelace\">genLovelace</a> &#8759; Gen <a href=\"file:///home/runner/work/cardano-node/cardano-node/dist-newstyle/build/x86_64-linux/ghc-8.10.7/cardano-api-1.33.0/noopt/doc/html/cardano-api/Cardano-Api-Value.html#t:Lovelace\" title=\"Cardano.Api.Value\">Lovelace</a>",
     "name": "genLovelace",
     "module": "Gen.Cardano.Api.Typed",
@@ -8386,6 +8392,12 @@
     "name": "tests",
     "module": "Test.Cardano.Api.Typed.Script",
     "link": "test_cardano-api-test/Test-Cardano-Api-Typed-Script.html#v:tests"
+  },
+  {
+    "display_html": "<a href=\"#v:tests\">tests</a> &#8759; TestTree",
+    "name": "tests",
+    "module": "Test.Cardano.Api.Typed.TxBody",
+    "link": "test_cardano-api-test/Test-Cardano-Api-Typed-TxBody.html#v:tests"
   },
   {
     "display_html": "<a href=\"#v:tests\">tests</a> &#8759; TestTree",

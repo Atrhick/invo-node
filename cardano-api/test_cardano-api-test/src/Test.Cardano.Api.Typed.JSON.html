@@ -35,8 +35,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">H.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-33"></span><span>  </span><span id="local-6989586621679326383"><span class="annot"><span class="annottext">PraosNonce
-</span><a href="#local-6989586621679326383"><span class="hs-identifier hs-var">pNonce</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen PraosNonce -&gt; PropertyT IO PraosNonce
+</span><span id="line-33"></span><span>  </span><span id="local-6989586621679331141"><span class="annot"><span class="annottext">PraosNonce
+</span><a href="#local-6989586621679331141"><span class="hs-identifier hs-var">pNonce</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen PraosNonce -&gt; PropertyT IO PraosNonce
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -58,7 +58,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span> </span><span class="annot"><span class="annottext">PraosNonce
-</span><a href="#local-6989586621679326383"><span class="hs-identifier hs-var">pNonce</span></a></span><span> </span><span class="annot"><span class="annottext">PraosNonce -&gt; ByteString
+</span><a href="#local-6989586621679331141"><span class="hs-identifier hs-var">pNonce</span></a></span><span> </span><span class="annot"><span class="annottext">PraosNonce -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Either String PraosNonce
 forall a. FromJSON a =&gt; ByteString -&gt; Either String a
@@ -71,8 +71,8 @@ PropertyT IO () -&gt; Property
 </span><span class="hs-identifier hs-var">H.property</span></span><span> </span><span class="annot"><span class="annottext">(PropertyT IO () -&gt; Property) -&gt; PropertyT IO () -&gt; Property
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="../file:///home/runner/.ghcup/ghc/8.10.7/share/doc/ghc-8.10.7/html/libraries/base-4.14.3.0/src"><span class="hs-operator hs-var">$</span></a></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-38"></span><span>  </span><span id="local-6989586621679326380"><span class="annot"><span class="annottext">ProtocolParameters
-</span><a href="#local-6989586621679326380"><span class="hs-identifier hs-var">pp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen ProtocolParameters -&gt; PropertyT IO ProtocolParameters
+</span><span id="line-38"></span><span>  </span><span id="local-6989586621679331138"><span class="annot"><span class="annottext">ProtocolParameters
+</span><a href="#local-6989586621679331138"><span class="hs-identifier hs-var">pp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Gen ProtocolParameters -&gt; PropertyT IO ProtocolParameters
 forall (m :: * -&gt; *) a.
 (Monad m, Show a, HasCallStack) =&gt;
 Gen a -&gt; PropertyT m a
@@ -87,7 +87,7 @@ forall (m :: * -&gt; *) (f :: * -&gt; *) b a.
  HasCallStack) =&gt;
 a -&gt; (a -&gt; b) -&gt; (b -&gt; f a) -&gt; m ()
 </span><span class="hs-identifier hs-var">tripping</span></span><span> </span><span class="annot"><span class="annottext">ProtocolParameters
-</span><a href="#local-6989586621679326380"><span class="hs-identifier hs-var">pp</span></a></span><span> </span><span class="annot"><span class="annottext">ProtocolParameters -&gt; ByteString
+</span><a href="#local-6989586621679331138"><span class="hs-identifier hs-var">pp</span></a></span><span> </span><span class="annot"><span class="annottext">ProtocolParameters -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; Either String ProtocolParameters
 forall a. FromJSON a =&gt; ByteString -&gt; Either String a
