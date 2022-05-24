@@ -5,6 +5,7 @@
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE StandaloneDeriving #-}
 {-# LANGUAGE TypeFamilies #-}
 
 -- | The various Cardano protocol parameters, including:
@@ -64,8 +65,8 @@ module Cardano.Api.ProtocolParameters (
 import           Prelude
 
 import           Control.Monad
-import           Data.Aeson (FromJSON (..), ToJSON (..), object, withObject, (.!=), (.:), (.:?),
-                   (.=))
+import           Data.Aeson (FromJSON (..), ToJSON (..), camelTo2, defaultOptions,
+                   fieldLabelModifier, genericToJSON, object, withObject, (.!=), (.:), (.:?), (.=))
 import           Data.Bifunctor (bimap)
 import           Data.ByteString (ByteString)
 import           Data.Map.Strict (Map)
@@ -104,8 +105,8 @@ import           Cardano.Ledger.Babbage.Translation (coinsPerUTxOWordToCoinsPerU
 import           Cardano.Api.Address
 import           Cardano.Api.Eras
 import           Cardano.Api.Error
-import           Cardano.Api.HasTypeProxy
 import           Cardano.Api.Hash
+import           Cardano.Api.HasTypeProxy
 import           Cardano.Api.KeysByron
 import           Cardano.Api.KeysShelley
 import           Cardano.Api.Script
@@ -512,7 +513,7 @@ data ProtocolParametersUpdate =
        -- /Introduced in Alonzo/
        protocolUpdateMaxCollateralInputs :: Maybe Natural
     }
-  deriving (Eq, Show)
+  deriving (Eq, Generic, Show)
 
 instance Semigroup ProtocolParametersUpdate where
     ppu1 <> ppu2 =
@@ -641,6 +642,10 @@ instance FromCBOR ProtocolParametersUpdate where
         <*> fromCBOR
         <*> fromCBOR
         <*> fromCBOR
+
+instance ToJSON ProtocolParametersUpdate where
+  toJSON =
+    genericToJSON defaultOptions{fieldLabelModifier = camelTo2 '_' . drop 14}
 
 
 -- ----------------------------------------------------------------------------
@@ -811,7 +816,7 @@ data UpdateProposal =
      UpdateProposal
        !(Map (Hash GenesisKey) ProtocolParametersUpdate)
        !EpochNo
-    deriving stock (Eq, Show)
+    deriving stock (Eq, Generic, Show)
     deriving anyclass SerialiseAsCBOR
 
 instance HasTypeProxy UpdateProposal where
@@ -833,6 +838,18 @@ instance FromCBOR UpdateProposal where
       UpdateProposal
         <$> fromCBOR
         <*> fromCBOR
+
+newtype UpdateProposalToJson = UpdateProposalToJson UpdateProposal
+
+instance ToJSON UpdateProposalToJson where
+  toJSON (UpdateProposalToJson (UpdateProposal updates epoch)) =
+    object
+      [ "tag" .= ("UpdateProposal" :: Text)
+      , "update" .= Map.mapKeys serialiseToRawBytesHexText updates
+      , "epoch" .= epoch
+      ]
+
+deriving via UpdateProposalToJson instance ToJSON UpdateProposal
 
 makeShelleyUpdateProposal :: ProtocolParametersUpdate
                           -> [Hash GenesisKey]

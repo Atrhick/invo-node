@@ -1,7 +1,7 @@
+{-# LANGUAGE BlockArguments #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE GADTs #-}
-{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE RankNTypes #-}
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -17,8 +17,10 @@ module Cardano.CLI.Shelley.Run.Transaction
 import           Cardano.Prelude hiding (All, Any)
 import           Prelude (String, error)
 
+import           Data.Aeson ((.=))
 import qualified Data.Aeson as Aeson
 import           Data.Aeson.Encode.Pretty (encodePretty)
+import qualified Data.Aeson.Types as Aeson
 import qualified Data.ByteString.Char8 as BS
 import qualified Data.ByteString.Lazy.Char8 as LBS
 import           Data.List (intersect, (\\))
@@ -333,7 +335,7 @@ runTransactionCmd cmd =
     TxCalculateMinRequiredUTxO era pParamSpec txOuts -> runTxCalculateMinRequiredUTxO era pParamSpec txOuts
     TxHashScriptData scriptDataOrFile -> runTxHashScriptData scriptDataOrFile
     TxGetTxId txinfile -> runTxGetTxId txinfile
-    TxView txinfile -> runTxView txinfile
+    TxView txinfile jsonOut -> runTxView txinfile jsonOut
     TxMintedPolicyId sFile -> runTxCreatePolicyId sFile
     TxCreateWitness txBodyfile witSignData mbNw outFile ->
       runTxCreateWitness txBodyfile witSignData mbNw outFile
@@ -1521,19 +1523,43 @@ runTxGetTxId txfile = do
 
     liftIO $ BS.putStrLn $ serialiseToRawBytesHex (getTxId txbody)
 
-runTxView :: InputTxBodyOrTxFile -> ExceptT ShelleyTxCmdError IO ()
-runTxView = \case
-  InputTxBodyFile (TxBodyFile txbodyFile) -> do
-    unwitnessed <- readFileTxBody txbodyFile
-    InAnyCardanoEra era txbody <-
-      case unwitnessed of
-        UnwitnessedCliFormattedTxBody anyTxBody -> pure anyTxBody
-        IncompleteCddlFormattedTx (InAnyCardanoEra era tx) ->
-          pure $ InAnyCardanoEra era (getTxBody tx)
-    liftIO $ BS.putStr $ friendlyTxBodyBS era txbody
-  InputTxFile (TxFile txFile) -> do
-    InAnyCardanoEra era tx <- readFileTx txFile
-    liftIO $ BS.putStr $ friendlyTxBS era tx
+runTxView
+  :: InputTxBodyOrTxFile -> JsonOutput -> ExceptT ShelleyTxCmdError IO ()
+runTxView input (JsonOutput isJsonOutputRequsted) =
+  case input of
+    InputTxBodyFile (TxBodyFile txbodyFile) -> do
+      unwitnessed <- readFileTxBody txbodyFile
+      InAnyCardanoEra era txbody <-
+        case unwitnessed of
+          UnwitnessedCliFormattedTxBody anyTxBody -> pure anyTxBody
+          IncompleteCddlFormattedTx (InAnyCardanoEra era tx) ->
+            pure $ InAnyCardanoEra era (getTxBody tx)
+      liftIO
+        if isJsonOutputRequsted then
+          LBS.putStr $ prettyTxBodyLBS era txbody
+        else
+          BS.putStr $ friendlyTxBodyBS era txbody
+    InputTxFile (TxFile txFile) -> do
+      InAnyCardanoEra era tx <- readFileTx txFile
+      liftIO
+        if isJsonOutputRequsted then
+          LBS.putStr $ prettyTxLBS era tx
+        else
+          BS.putStr $ friendlyTxBS era tx
+
+prettyTxLBS :: CardanoEra era -> Tx era -> LByteString
+prettyTxLBS era = encodePretty . Aeson.object . prettyTx era
+
+prettyTxBodyLBS :: CardanoEra era -> TxBody era -> LByteString
+prettyTxBodyLBS era =  encodePretty . Aeson.object . prettyTxBody era
+
+prettyTx :: CardanoEra era -> Tx era -> [Aeson.Pair]
+prettyTx era (Tx (TxBody body) witnesses) =
+  withCardanoEra era ["era" .= era, "body" .= body, "witnesses" .= witnesses]
+
+prettyTxBody :: CardanoEra era -> TxBody era -> [Aeson.Pair]
+prettyTxBody era (TxBody body) =
+  withCardanoEra era ["era" .= era, "body" .= body]
 
 
 -- ----------------------------------------------------------------------------

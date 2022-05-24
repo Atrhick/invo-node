@@ -1,4 +1,5 @@
 {-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DeriveAnyClass #-}
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE DerivingVia #-}
 {-# LANGUAGE DisambiguateRecordFields #-}
@@ -7,9 +8,11 @@
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GADTs #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE PatternSynonyms #-}
 {-# LANGUAGE RankNTypes #-}
+{-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE StandaloneDeriving #-}
 {-# LANGUAGE TypeApplications #-}
@@ -307,6 +310,9 @@ data TxScriptValidity era where
 
 deriving instance Eq   (TxScriptValiditySupportedInEra era)
 deriving instance Show (TxScriptValiditySupportedInEra era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxScriptValidity era)
 
 data TxScriptValiditySupportedInEra era where
   TxScriptValiditySupportedInAlonzoEra  :: TxScriptValiditySupportedInEra AlonzoEra
@@ -1299,6 +1305,9 @@ deriving instance Show a => Show (BuildTxWith build a)
 
 type TxIns build era = [(TxIn, BuildTxWith build (Witness WitCtxTxIn era))]
 
+txInsToJson :: TxIns ViewTx era -> Aeson.Value
+txInsToJson = toJSON . map fst
+
 data TxInsCollateral era where
 
      TxInsCollateralNone :: TxInsCollateral era
@@ -1310,6 +1319,10 @@ data TxInsCollateral era where
 deriving instance Eq   (TxInsCollateral era)
 deriving instance Show (TxInsCollateral era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxInsCollateral era)
+
+
 data TxInsReference era where
 
      TxInsReferenceNone :: TxInsReference era
@@ -1320,6 +1333,10 @@ data TxInsReference era where
 
 deriving instance Eq   (TxInsReference era)
 deriving instance Show (TxInsReference era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxInsReference era)
+
 
 -- ----------------------------------------------------------------------------
 -- Transaction output values (era-dependent)
@@ -1414,6 +1431,10 @@ data TxReturnCollateral ctx era where
 deriving instance Eq   (TxReturnCollateral ctx era)
 deriving instance Show (TxReturnCollateral ctx era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxReturnCollateral CtxTx era)
+
+
 data TxTotalCollateral era where
 
      TxTotalCollateralNone :: TxTotalCollateral era
@@ -1424,6 +1445,10 @@ data TxTotalCollateral era where
 
 deriving instance Eq   (TxTotalCollateral era)
 deriving instance Show (TxTotalCollateral era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxTotalCollateral era)
+
 
 data TxTotalAndReturnCollateralSupportedInEra era where
 
@@ -1507,6 +1532,9 @@ data TxFee era where
 deriving instance Eq   (TxFee era)
 deriving instance Show (TxFee era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxFee era)
+
 
 -- ----------------------------------------------------------------------------
 -- Transaction validity range
@@ -1526,6 +1554,9 @@ data TxValidityUpperBound era where
 deriving instance Eq   (TxValidityUpperBound era)
 deriving instance Show (TxValidityUpperBound era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxValidityUpperBound era)
+
 
 data TxValidityLowerBound era where
 
@@ -1537,6 +1568,9 @@ data TxValidityLowerBound era where
 
 deriving instance Eq   (TxValidityLowerBound era)
 deriving instance Show (TxValidityLowerBound era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxValidityLowerBound era)
 
 
 -- ----------------------------------------------------------------------------
@@ -1554,6 +1588,9 @@ data TxMetadataInEra era where
 deriving instance Eq   (TxMetadataInEra era)
 deriving instance Show (TxMetadataInEra era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxMetadataInEra era)
+
 
 -- ----------------------------------------------------------------------------
 -- Auxiliary scripts (era-dependent)
@@ -1570,6 +1607,10 @@ data TxAuxScripts era where
 deriving instance Eq   (TxAuxScripts era)
 deriving instance Show (TxAuxScripts era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxAuxScripts era)
+
+
 -- ----------------------------------------------------------------------------
 -- Optionally required signatures (era-dependent)
 --
@@ -1584,6 +1625,10 @@ data TxExtraKeyWitnesses era where
 
 deriving instance Eq   (TxExtraKeyWitnesses era)
 deriving instance Show (TxExtraKeyWitnesses era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxExtraKeyWitnesses era)
+
 
 -- ----------------------------------------------------------------------------
 -- Withdrawals within transactions (era-dependent)
@@ -1600,6 +1645,9 @@ data TxWithdrawals build era where
 
 deriving instance Eq   (TxWithdrawals build era)
 deriving instance Show (TxWithdrawals build era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxWithdrawals ViewTx era)
 
 
 -- ----------------------------------------------------------------------------
@@ -1619,6 +1667,9 @@ data TxCertificates build era where
 deriving instance Eq   (TxCertificates build era)
 deriving instance Show (TxCertificates build era)
 
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxCertificates ViewTx era)
+
 
 -- ----------------------------------------------------------------------------
 -- Transaction update proposal (era-dependent)
@@ -1634,6 +1685,9 @@ data TxUpdateProposal era where
 
 deriving instance Eq   (TxUpdateProposal era)
 deriving instance Show (TxUpdateProposal era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxUpdateProposal era)
 
 
 -- ----------------------------------------------------------------------------
@@ -1652,6 +1706,9 @@ data TxMintValue build era where
 
 deriving instance Eq   (TxMintValue build era)
 deriving instance Show (TxMintValue build era)
+
+-- | Public JSON API over CLI
+-- deriving anyclass instance ToJSON (TxMintValue ViewTx era)
 
 
 -- ----------------------------------------------------------------------------
@@ -1681,6 +1738,29 @@ data TxBodyContent build era =
      }
      deriving (Eq, Show)
 
+-- | Public JSON API over CLI
+instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
+  toJSON TxBodyContent{..} =
+    Aeson.object
+      [ "ins" .= txInsToJson txIns
+        -- txInsCollateral    :: TxInsCollateral era,
+        -- txInsReference     :: TxInsReference era,
+        -- txOuts             :: [TxOut CtxTx era],
+        -- txTotalCollateral  :: TxTotalCollateral era,
+        -- txReturnCollateral :: TxReturnCollateral CtxTx era,
+        -- txFee              :: TxFee era,
+        -- txValidityRange    :: (TxValidityLowerBound era,
+        --                         TxValidityUpperBound era),
+        -- txMetadata         :: TxMetadataInEra era,
+        -- txAuxScripts       :: TxAuxScripts era,
+        -- txExtraKeyWits     :: TxExtraKeyWitnesses era,
+        -- txProtocolParams   :: BuildTxWith build (Maybe ProtocolParameters),
+        -- txWithdrawals      :: TxWithdrawals  build era,
+        -- txCertificates     :: TxCertificates build era,
+        -- txUpdateProposal   :: TxUpdateProposal era,
+        -- txMintValue        :: TxMintValue    build era,
+        -- txScriptValidity   :: TxScriptValidity era
+      ]
 
 -- ----------------------------------------------------------------------------
 -- Transaction bodies

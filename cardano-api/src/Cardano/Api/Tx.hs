@@ -2,6 +2,8 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GADTs #-}
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE PatternSynonyms #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeApplications #-}
@@ -48,16 +50,15 @@ module Cardano.Api.Tx (
 
 import           Prelude
 
-import           Data.Maybe
-
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Lazy as LBS
-
 import           Data.Functor.Identity (Identity)
 import qualified Data.Map.Strict as Map
+import           Data.Maybe
 import qualified Data.Set as Set
 import qualified Data.Vector as Vector
+
 --
 -- Common types, consensus, network
 --
