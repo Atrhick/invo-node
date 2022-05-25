@@ -1320,7 +1320,10 @@ deriving instance Eq   (TxInsCollateral era)
 deriving instance Show (TxInsCollateral era)
 
 -- | Public JSON API over CLI
--- deriving anyclass instance ToJSON (TxInsCollateral era)
+instance ToJSON (TxInsCollateral era) where
+  toJSON = \case
+    TxInsCollateralNone -> Aeson.Null
+    TxInsCollateral _support ins -> toJSON ins
 
 
 data TxInsReference era where
@@ -1743,7 +1746,7 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
   toJSON TxBodyContent{..} =
     Aeson.object
       [ "ins" .= txInsToJson txIns
-        -- txInsCollateral    :: TxInsCollateral era,
+      , "ins_collateral" .= txInsCollateral
         -- txInsReference     :: TxInsReference era,
         -- txOuts             :: [TxOut CtxTx era],
         -- txTotalCollateral  :: TxTotalCollateral era,
