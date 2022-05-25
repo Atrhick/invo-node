@@ -57,6 +57,7 @@ in
   inherit node-process;
 
   membench-node-this-1     = mkMembench 1 { node = input.self;    rev = node-self-rev; };
+  membench-node-this-3     = mkMembench 3 { node = input.self;    rev = node-self-rev; };
   membench-node-this-5     = mkMembench 5 { node = input.self;    rev = node-self-rev; };
   membench-node-measured-1 = mkMembench 1 { node = node-measured; rev = input.node-measured.rev; };
   membench-node-measured-5 = mkMembench 5 { node = node-measured; rev = input.node-measured.rev; };
