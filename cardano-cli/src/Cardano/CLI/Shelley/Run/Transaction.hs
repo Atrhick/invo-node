@@ -20,7 +20,6 @@ import           Prelude (String, error)
 import           Data.Aeson ((.=))
 import qualified Data.Aeson as Aeson
 import           Data.Aeson.Encode.Pretty (encodePretty)
-import qualified Data.Aeson.Types as Aeson
 import qualified Data.ByteString.Char8 as BS
 import qualified Data.ByteString.Lazy.Char8 as LBS
 import           Data.List (intersect, (\\))
@@ -1548,18 +1547,21 @@ runTxView input (JsonOutput isJsonOutputRequsted) =
           BS.putStr $ friendlyTxBS era tx
 
 prettyTxLBS :: CardanoEra era -> Tx era -> LByteString
-prettyTxLBS era = encodePretty . Aeson.object . prettyTx era
+prettyTxLBS era (Tx (TxBody body) witnesses) =
+  encodePretty
+  $ Aeson.object
+  $ withCardanoEra
+      era
+      [ "era" .= era
+      , "body" .= body
+      , "witnesses"
+        .= [Aeson.object ["TODO" .= Text.pack (show w)] | w <- witnesses]
+      ]
 
 prettyTxBodyLBS :: CardanoEra era -> TxBody era -> LByteString
-prettyTxBodyLBS era =  encodePretty . Aeson.object . prettyTxBody era
-
-prettyTx :: CardanoEra era -> Tx era -> [Aeson.Pair]
-prettyTx era (Tx (TxBody body) witnesses) =
-  withCardanoEra era ["era" .= era, "body" .= body, "witnesses" .= witnesses]
-
-prettyTxBody :: CardanoEra era -> TxBody era -> [Aeson.Pair]
-prettyTxBody era (TxBody body) =
-  withCardanoEra era ["era" .= era, "body" .= body]
+prettyTxBodyLBS era (TxBody body) =
+  encodePretty
+  $ Aeson.object $ withCardanoEra era ["era" .= era, "body" .= body]
 
 
 -- ----------------------------------------------------------------------------
