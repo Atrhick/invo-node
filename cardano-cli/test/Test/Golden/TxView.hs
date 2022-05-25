@@ -315,3 +315,9 @@ golden_view_alonzo_signed =
         execCardanoCLI
           ["transaction", "view", "--tx-file", transactionFile]
       diffVsGoldenFile result (testData </> "signed-transaction-view.out")
+
+      -- JSON version
+      resultJson <-
+        execCardanoCLI
+          ["transaction", "view", "--json", "--tx-file", transactionFile]
+      diffVsGoldenFile resultJson (testData </> "signed-transaction-view.json")

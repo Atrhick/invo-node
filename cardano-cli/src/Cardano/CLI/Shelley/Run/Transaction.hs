@@ -1550,13 +1550,7 @@ prettyTxLBS :: CardanoEra era -> Tx era -> LByteString
 prettyTxLBS era (Tx (TxBody body) witnesses) =
   encodePretty
   $ Aeson.object
-  $ withCardanoEra
-      era
-      [ "era" .= era
-      , "body" .= body
-      , "witnesses"
-        .= [Aeson.object ["TODO" .= Text.pack (show w)] | w <- witnesses]
-      ]
+  $ withCardanoEra era ["era" .= era, "body" .= body, "witnesses" .= witnesses]
 
 prettyTxBodyLBS :: CardanoEra era -> TxBody era -> LByteString
 prettyTxBodyLBS era (TxBody body) =

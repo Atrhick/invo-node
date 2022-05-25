@@ -1,0 +1,15 @@
+{
+    "body": {
+        "ins": [
+            "ed7c8f68c194cc763ee65ad22ef0973e26481be058c65005fd39fb93f9c43a20#212"
+        ]
+    },
+    "era": "Alonzo",
+    "witnesses": [
+        {
+            "key:TODO": "VKey (VerKeyEd25519DSIGN \"84ce03e08b05533685d593c14cd6ca5c7485824156ca11fb303ddac9dd3ef41c\")",
+            "signature:TODO": "SignedDSIGN (SigEd25519DSIGN \"f6aae8023de4858244c6aac4b1ca7428f669a142731fe7354021059887b5366f24abba49355e14d435dbc7726df66dfeafe269e2752a7a6f752529600d1e9a00\")",
+            "type": "key"
+        }
+    ]
+}
