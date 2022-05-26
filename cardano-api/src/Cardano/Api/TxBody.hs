@@ -1453,7 +1453,10 @@ deriving instance Eq   (TxTotalCollateral era)
 deriving instance Show (TxTotalCollateral era)
 
 -- | Public JSON API over CLI
--- deriving anyclass instance ToJSON (TxTotalCollateral era)
+instance ToJSON (TxTotalCollateral era) where
+  toJSON = \case
+    TxTotalCollateralNone -> Aeson.Null
+    TxTotalCollateral _support lovelace -> toJSON lovelace
 
 
 data TxTotalAndReturnCollateralSupportedInEra era where
@@ -1752,8 +1755,8 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
       , "ins_collateral" .= txInsCollateral
       , "ins_reference" .= txInsReference
       , "outs" .= txOuts
+      , "total_collateral" .= txTotalCollateral
         -- TODO
-        -- txTotalCollateral  :: TxTotalCollateral era,
         -- txReturnCollateral :: TxReturnCollateral CtxTx era,
         -- txFee              :: TxFee era,
         -- txValidityRange    :: (TxValidityLowerBound era,

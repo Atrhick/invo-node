@@ -22,7 +22,8 @@
                     "lovelace": 138
                 }
             }
-        ]
+        ],
+        "total_collateral": null
     },
     "era": "Mary"
 }
