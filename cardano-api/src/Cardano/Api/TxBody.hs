@@ -1570,7 +1570,10 @@ deriving instance Eq   (TxValidityUpperBound era)
 deriving instance Show (TxValidityUpperBound era)
 
 -- | Public JSON API over CLI
--- deriving anyclass instance ToJSON (TxValidityUpperBound era)
+instance ToJSON (TxValidityUpperBound era) where
+  toJSON = \case
+    TxValidityNoUpperBound _support -> Aeson.Null
+    TxValidityUpperBound _support slot -> object ["slot" .= slot]
 
 
 data TxValidityLowerBound era where
@@ -1585,7 +1588,10 @@ deriving instance Eq   (TxValidityLowerBound era)
 deriving instance Show (TxValidityLowerBound era)
 
 -- | Public JSON API over CLI
--- deriving anyclass instance ToJSON (TxValidityLowerBound era)
+instance ToJSON (TxValidityLowerBound era) where
+  toJSON = \case
+    TxValidityNoLowerBound -> Aeson.Null
+    TxValidityLowerBound _support slot -> object ["slot" .= slot]
 
 
 -- ----------------------------------------------------------------------------
@@ -1764,9 +1770,9 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
       , "totalCollateral" .= txTotalCollateral
       , "returnCollateral" .= txReturnCollateral
       , "fee" .= txFee
+      , "validityRange"
+        .= object ["lowerBound" .= lowerBound, "upperBound" .= upperBound]
         -- TODO
-        -- txValidityRange    :: (TxValidityLowerBound era,
-        --                         TxValidityUpperBound era),
         -- txMetadata         :: TxMetadataInEra era,
         -- txAuxScripts       :: TxAuxScripts era,
         -- txExtraKeyWits     :: TxExtraKeyWitnesses era,
@@ -1777,6 +1783,8 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
         -- txMintValue        :: TxMintValue    build era,
         -- txScriptValidity   :: TxScriptValidity era
       ]
+    where
+      (lowerBound, upperBound) = txValidityRange
 
 -- ----------------------------------------------------------------------------
 -- Transaction bodies

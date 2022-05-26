@@ -25,7 +25,13 @@
             }
         ],
         "returnCollateral": null,
-        "totalCollateral": null
+        "totalCollateral": null,
+        "validityRange": {
+            "lowerBound": {
+                "slot": 140
+            },
+            "upperBound": null
+        }
     },
     "era": "Mary"
 }

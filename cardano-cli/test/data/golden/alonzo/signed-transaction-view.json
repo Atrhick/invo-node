@@ -10,7 +10,11 @@
         "insReference": null,
         "outs": [],
         "returnCollateral": null,
-        "totalCollateral": null
+        "totalCollateral": null,
+        "validityRange": {
+            "lowerBound": null,
+            "upperBound": null
+        }
     },
     "era": "Alonzo",
     "witnesses": [
