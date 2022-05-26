@@ -1751,8 +1751,8 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
       [ "ins" .= txInsToJson txIns
       , "ins_collateral" .= txInsCollateral
       , "ins_reference" .= txInsReference
+      , "outs" .= txOuts
         -- TODO
-        -- txOuts             :: [TxOut CtxTx era],
         -- txTotalCollateral  :: TxTotalCollateral era,
         -- txReturnCollateral :: TxReturnCollateral CtxTx era,
         -- txFee              :: TxFee era,
