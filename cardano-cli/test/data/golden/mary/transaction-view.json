@@ -3,8 +3,8 @@
         "ins": [
             "fe5dd07fb576bff960d6e066eade5b26cdb5afebe29f76ea58d0a098bce5d891#135"
         ],
-        "ins_collateral": null,
-        "ins_reference": null,
+        "insCollateral": null,
+        "insReference": null,
         "outs": [
             {
                 "address": "addr_test1qrefnr4k09pvge6dq83v6s67ruter8sftmky8qrmkqqsxy7q5psgn8tgqmupq4r79jmxlyk4eqt6z6hj5g8jd8393msqaw47f4",
@@ -23,7 +23,8 @@
                 }
             }
         ],
-        "total_collateral": null
+        "returnCollateral": null,
+        "totalCollateral": null
     },
     "era": "Mary"
 }

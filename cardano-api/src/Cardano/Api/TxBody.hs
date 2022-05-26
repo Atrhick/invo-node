@@ -1438,7 +1438,10 @@ deriving instance Eq   (TxReturnCollateral ctx era)
 deriving instance Show (TxReturnCollateral ctx era)
 
 -- | Public JSON API over CLI
--- deriving anyclass instance ToJSON (TxReturnCollateral CtxTx era)
+instance IsCardanoEra era => ToJSON (TxReturnCollateral CtxTx era) where
+  toJSON = \case
+    TxReturnCollateralNone -> Aeson.Null
+    TxReturnCollateral _support out -> toJSON out
 
 
 data TxTotalCollateral era where
@@ -1752,12 +1755,12 @@ instance IsCardanoEra era => ToJSON (TxBodyContent ViewTx era) where
   toJSON TxBodyContent{..} =
     Aeson.object
       [ "ins" .= txInsToJson txIns
-      , "ins_collateral" .= txInsCollateral
-      , "ins_reference" .= txInsReference
+      , "insCollateral" .= txInsCollateral
+      , "insReference" .= txInsReference
       , "outs" .= txOuts
-      , "total_collateral" .= txTotalCollateral
+      , "totalCollateral" .= txTotalCollateral
+      , "returnCollateral" .= txReturnCollateral
         -- TODO
-        -- txReturnCollateral :: TxReturnCollateral CtxTx era,
         -- txFee              :: TxFee era,
         -- txValidityRange    :: (TxValidityLowerBound era,
         --                         TxValidityUpperBound era),
