@@ -229,6 +229,12 @@ golden_view_mary =
         ["transaction", "view", "--tx-body-file", transactionBodyFile]
     diffVsGoldenFile result "test/data/golden/mary/transaction-view.out"
 
+    -- JSON version
+    resultJson <-
+      execCardanoCLI
+        ["transaction", "view", "--json", "--tx-body-file", transactionBodyFile]
+    diffVsGoldenFile resultJson "test/data/golden/mary/transaction-view.json"
+
 createAlonzoTxBody :: Maybe FilePath -> FilePath -> Integration ()
 createAlonzoTxBody mUpdateProposalFile transactionBodyFile = do
   void $
